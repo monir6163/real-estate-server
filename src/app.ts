@@ -16,11 +16,7 @@ const app: Application = express();
 app.set("view engine", "ejs");
 app.set("views", path.resolve(process.cwd(), "src/app/templates"));
 app.set("trust proxy", true);
-
-// Security middleware
 app.use(helmet());
-
-// HTTP Logging
 app.use(httpLogger);
 
 app.use("/api/auth", toNodeHandler(auth));
