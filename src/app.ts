@@ -1,10 +1,12 @@
 import { toNodeHandler } from "better-auth/node";
 import cors from "cors";
 import express, { Application } from "express";
+import helmet from "helmet";
 import { StatusCodes } from "http-status-codes";
 import path from "node:path";
 import { auth } from "./app/lib/auth";
 import globalErrorHandler from "./app/middleware/GlobalErrorHandler";
+import httpLogger from "./app/middleware/HttpLogger";
 import notFound from "./app/middleware/NotFound";
 import { IndexRoutes } from "./app/routes";
 import sendResponse from "./app/shared/sendResponse";
@@ -14,6 +16,13 @@ const app: Application = express();
 app.set("view engine", "ejs");
 app.set("views", path.resolve(process.cwd(), "src/app/templates"));
 app.set("trust proxy", true);
+
+// Security middleware
+app.use(helmet());
+
+// HTTP Logging
+app.use(httpLogger);
+
 app.use("/api/auth", toNodeHandler(auth));
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));

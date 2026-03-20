@@ -6,6 +6,7 @@ import { StatusCodes } from "http-status-codes";
 import z from "zod";
 import { deleteFileFromCloudinary } from "../../config/cloudinary.config";
 import { envConfig } from "../../config/env";
+import { logger } from "../../config/logger";
 import ApiError from "../errors/ApiError";
 import { TErrorResponse, TErrorSources } from "../errors/ErrorInterface";
 import { handleZodError } from "../errors/handleZodError";
@@ -16,9 +17,11 @@ const globalErrorHandler = async (
   res: Response,
   next: NextFunction,
 ) => {
-  if (envConfig.NODE_ENV === "development") {
-    console.log("Error from Global Error Handler", err);
-  }
+  logger.error(`[Error Handler] ${err?.message || "Unknown error"}`, {
+    error: err,
+    url: req.url,
+    method: req.method,
+  });
 
   if (req.file) {
     await deleteFileFromCloudinary(req.file.path);
