@@ -8,31 +8,31 @@ import { AuthValidation } from "./auth.validation";
 const router = Router();
 router.get(
   "/me",
-  checkAuth(Role.PATIENT, Role.DOCTOR, Role.ADMIN, Role.SUPER_ADMIN),
+  checkAuth(Role.ADMIN, Role.AGENT, Role.USER),
   AuthController.getMe,
 );
 router.post(
   "/register",
   validateRequest(AuthValidation.patientRegistrationSchema),
-  AuthController.registerPatient,
+  AuthController.register,
 );
 
 router.post(
   "/login",
   validateRequest(AuthValidation.patientLoginSchema),
-  AuthController.loginPatient,
+  AuthController.login,
 );
 
 router.post(
   "/change-password",
-  checkAuth(Role.PATIENT, Role.DOCTOR, Role.ADMIN, Role.SUPER_ADMIN),
+  checkAuth(Role.ADMIN, Role.AGENT, Role.USER),
   validateRequest(AuthValidation.changePasswordSchema),
   AuthController.changePassword,
 );
 
 router.post(
   "/logout",
-  checkAuth(Role.PATIENT, Role.DOCTOR, Role.ADMIN, Role.SUPER_ADMIN),
+  checkAuth(Role.ADMIN, Role.AGENT, Role.USER),
   AuthController.logOut,
 );
 

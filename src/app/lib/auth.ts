@@ -87,9 +87,9 @@ export const auth = betterAuth({
         const user = await prisma.user.findUnique({
           where: { email },
         });
-        if (user && user.status === UserStatus.BLOCKED) {
+        if (user && user.status === UserStatus.SUSPENDED) {
           throw new APIError("BAD_REQUEST", {
-            message: "Your account is Blocked. Please contact support.",
+            message: "Your account is Suspended. Please contact support.",
             statusCode: StatusCodes.BAD_REQUEST,
           });
         } else if (user && user.emailVerified === false) {

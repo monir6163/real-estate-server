@@ -6,17 +6,41 @@ enum Role {
 
 enum UserStatus {
   ACTIVE
-  DELETED
-  BLOCKED
+  INACTIVE
+  SUSPENDED
 }
 
-enum Gender {
-  MALE
-  FEMALE
-  OTHER
+enum PropertyType {
+  APARTMENT
+  HOUSE
+  COMMERCIAL
+  LAND
+}
+
+enum ListingType {
+  RENT
+  SALE
+}
+
+enum PropertyStatus {
+  AVAILABLE
+  SOLD
+  RENTED
+}
+
+enum RequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
 }
 
 enum PaymentStatus {
-  PAID
-  UNPAID
+  PENDING
+  SUCCESS
+  FAILED
+}
+
+enum PaymentPurpose {
+  BOOKING_FEE
+  PREMIUM_LISTING
 }

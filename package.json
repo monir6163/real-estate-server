@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "prisma generate && tsup",
+    "typecheck": "tsc --noEmit",
+    "check": "eslint src --ext .ts && tsc --noEmit",
+    "check:all": "pnpm run check && pnpm run build",
     "postinstall": "prisma generate",
     "start": "node api/server.mjs",
     "admin:seed": "tsx src/script/seed.ts",
@@ -15,7 +18,9 @@
     "studio": "prisma studio",
     "push": "prisma db push",
     "pull": "prisma db pull",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prisma format",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -50,6 +55,7 @@
     "@types/nodemailer": "^7.0.9",
     "@types/pg": "^8.16.0",
     "eslint": "^10.0.0",
+    "husky": "^9.1.7",
     "prisma": "^7.3.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",

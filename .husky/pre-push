@@ -1,0 +1,10 @@
+echo "\n🚀 [PRE-PUSH] Starting full checks and build...\n"
+echo "  📌 Running: lint src/, typecheck, and build\n"
+
+eslint src --ext .ts && tsc --noEmit && pnpm run build
+if [ $? -eq 0 ]; then
+  echo "\n✅ [PRE-PUSH] All checks passed! Ready to push.\n"
+else
+  echo "\n❌ [PRE-PUSH] Checks failed! Fix errors before pushing.\n"
+  exit 1
+fi

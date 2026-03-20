@@ -1,0 +1,8 @@
+echo "\n🔍 [PRE-COMMIT] Checking src/ directory...\n"
+eslint src --ext .ts && tsc --noEmit
+if [ $? -eq 0 ]; then
+  echo "\n✅ [PRE-COMMIT] All checks passed! Ready to commit.\n"
+else
+  echo "\n❌ [PRE-COMMIT] Checks failed! Fix errors before committing.\n"
+  exit 1
+fi

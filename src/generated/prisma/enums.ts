@@ -20,25 +20,61 @@ export type Role = (typeof Role)[keyof typeof Role]
 
 export const UserStatus = {
   ACTIVE: 'ACTIVE',
-  DELETED: 'DELETED',
-  BLOCKED: 'BLOCKED'
+  INACTIVE: 'INACTIVE',
+  SUSPENDED: 'SUSPENDED'
 } as const
 
 export type UserStatus = (typeof UserStatus)[keyof typeof UserStatus]
 
 
-export const Gender = {
-  MALE: 'MALE',
-  FEMALE: 'FEMALE',
-  OTHER: 'OTHER'
+export const PropertyType = {
+  APARTMENT: 'APARTMENT',
+  HOUSE: 'HOUSE',
+  COMMERCIAL: 'COMMERCIAL',
+  LAND: 'LAND'
 } as const
 
-export type Gender = (typeof Gender)[keyof typeof Gender]
+export type PropertyType = (typeof PropertyType)[keyof typeof PropertyType]
+
+
+export const ListingType = {
+  RENT: 'RENT',
+  SALE: 'SALE'
+} as const
+
+export type ListingType = (typeof ListingType)[keyof typeof ListingType]
+
+
+export const PropertyStatus = {
+  AVAILABLE: 'AVAILABLE',
+  SOLD: 'SOLD',
+  RENTED: 'RENTED'
+} as const
+
+export type PropertyStatus = (typeof PropertyStatus)[keyof typeof PropertyStatus]
+
+
+export const RequestStatus = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  REJECTED: 'REJECTED'
+} as const
+
+export type RequestStatus = (typeof RequestStatus)[keyof typeof RequestStatus]
 
 
 export const PaymentStatus = {
-  PAID: 'PAID',
-  UNPAID: 'UNPAID'
+  PENDING: 'PENDING',
+  SUCCESS: 'SUCCESS',
+  FAILED: 'FAILED'
 } as const
 
 export type PaymentStatus = (typeof PaymentStatus)[keyof typeof PaymentStatus]
+
+
+export const PaymentPurpose = {
+  BOOKING_FEE: 'BOOKING_FEE',
+  PREMIUM_LISTING: 'PREMIUM_LISTING'
+} as const
+
+export type PaymentPurpose = (typeof PaymentPurpose)[keyof typeof PaymentPurpose]

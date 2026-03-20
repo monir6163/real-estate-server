@@ -1,0 +1,23 @@
+msg_file="$1"
+msg="$(head -n 1 "$msg_file")"
+
+echo "\n📝 [COMMIT-MSG] Validating commit message...\n"
+
+case "$msg" in
+  Merge*|Revert*)
+    echo "✅ [COMMIT-MSG] Auto-generated message detected (Merge/Revert). Skipping validation.\n"
+    exit 0
+    ;;
+esac
+
+pattern='^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert)(\([a-z0-9._/-]+\))?!?: .{3,}$'
+
+if ! printf "%s" "$msg" | grep -Eq "$pattern"; then
+  echo "❌ [COMMIT-MSG] Invalid commit message: $msg\n"
+  echo "📋 Expected format: type(scope): short summary\n"
+  echo "📌 Valid types: feat, fix, docs, style, refactor, perf, test, chore, build, ci, revert\n"
+  echo "💡 Example: feat(auth): add refresh token endpoint\n"
+  exit 1
+else
+  echo "✅ [COMMIT-MSG] Commit message format is valid.\n"
+fi

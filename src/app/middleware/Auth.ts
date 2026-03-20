@@ -23,10 +23,10 @@ const checkAuth = (...roles: string[]) => {
           "Please verify your email to access this resource.",
         );
       }
-      if (session.user.status === UserStatus.BLOCKED) {
+      if (session.user.status === UserStatus.SUSPENDED) {
         throw new ApiError(
           StatusCodes.FORBIDDEN,
-          "Your account has been blocked. Please contact support.",
+          "Your account has been suspended. Please contact support.",
         );
       }
 
