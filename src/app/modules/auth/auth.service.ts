@@ -4,11 +4,7 @@ import { StatusCodes } from "http-status-codes";
 import ApiError from "../../errors/ApiError";
 import { auth } from "../../lib/auth";
 import { prisma } from "../../lib/prisma";
-import {
-  IChangePasswordPayload,
-  ILoginPatient,
-  IRegisterPatient,
-} from "./auth.interface";
+import { IChangePasswordPayload, ILogin, IRegister } from "./auth.interface";
 
 const getMe = async (req: Request) => {
   const session = await auth.api.getSession({
@@ -17,61 +13,14 @@ const getMe = async (req: Request) => {
   return session?.user || null;
 };
 
-const registerPatient = async (payload: IRegisterPatient) => {
-  const { name, email, password } = payload;
+const register = async (payload: IRegister) => {
   const existingUser = await prisma.user.findUnique({
-    where: { email },
+    where: { email: payload.email },
   });
-
-  if (existingUser) {
-    throw new ApiError(
-      StatusCodes.CONFLICT,
-      "User with this email already exists",
-    );
-  }
-  const newUser = await auth.api.signUpEmail({
-    body: {
-      name,
-      email,
-      password,
-    },
-  });
-  if (!newUser) {
-    throw new ApiError(
-      StatusCodes.INTERNAL_SERVER_ERROR,
-      "Failed to register patient",
-    );
-  }
-  try {
-    // patient profile creation transaction pataient model
-    const createdPatient = await prisma.$transaction(async (tx) => {
-      const patientTx = await tx.patient.create({
-        data: {
-          userId: newUser?.user?.id,
-          name: newUser?.user?.name || name,
-          email: newUser?.user?.email || email,
-        },
-      });
-      return patientTx;
-    });
-    return {
-      ...newUser,
-      patient: createdPatient,
-    };
-  } catch (error) {
-    console.log("err", error);
-    // Rollback user creation if patient profile creation fails
-    await prisma.user.delete({
-      where: { id: newUser.user?.id },
-    });
-    throw new ApiError(
-      StatusCodes.INTERNAL_SERVER_ERROR,
-      "Failed to create patient profile",
-    );
-  }
+  return existingUser;
 };
 
-const loginPatient = async (payload: ILoginPatient) => {
+const login = async (payload: ILogin) => {
   const { email, password } = payload;
 
   const response = await auth.api.signInEmail({
@@ -191,8 +140,8 @@ const resetPassword = async (
 };
 
 export const AuthService = {
-  registerPatient,
-  loginPatient,
+  register,
+  login,
   changePassword,
   logOut,
   verifyEmail,

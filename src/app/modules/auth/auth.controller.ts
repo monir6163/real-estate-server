@@ -16,25 +16,25 @@ const getMe = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
-const registerPatient = catchAsync(async (req: Request, res: Response) => {
+const register = catchAsync(async (req: Request, res: Response) => {
   const payload = req.body;
-  const result = await AuthService.registerPatient(payload);
+  const result = await AuthService.register(payload);
   sendResponse(res, {
     statusCode: StatusCodes.CREATED,
     success: true,
-    message: "Patient registered successfully",
+    message: "Registered successfully",
     data: result,
   });
 });
 
-const loginPatient = catchAsync(async (req: Request, res: Response) => {
-  const response = await AuthService.loginPatient(req.body);
+const login = catchAsync(async (req: Request, res: Response) => {
+  const response = await AuthService.login(req.body);
   betterAuthHeaderForward(response, res);
   const data = await response.json();
   sendResponse(res, {
     statusCode: response.status,
     success: true,
-    message: "Patient logged in successfully",
+    message: "Logged in successfully",
     data: data,
   });
 });
@@ -96,8 +96,8 @@ const resetPassword = catchAsync(async (req: Request, res: Response) => {
 });
 
 export const AuthController = {
-  registerPatient,
-  loginPatient,
+  register,
+  login,
   changePassword,
   logOut,
   verifyEmail,
