@@ -1,23 +1,27 @@
 model Property {
-  id             String          @id @default(uuid())
-  title          String
-  description    String
-  price          Float
-  location       String
-  address        String?
-  bedrooms       Int
-  bathrooms      Int
-  area           Float
-  type           PropertyType
-  listingType    ListingType
-  status         PropertyStatus  @default(AVAILABLE)
-  isPremium      Boolean         @default(false)
-  isFeatured     Boolean         @default(false)
-  agentId        String
-  createdAt      DateTime        @default(now())
-  updatedAt      DateTime        @updatedAt
-  agent          User            @relation(fields: [agentId], references: [id], onDelete: Cascade)
-  propertyImages PropertyImage[]
+  id              String           @id @default(uuid())
+  title           String
+  description     String
+  price           Float
+  location        String
+  address         String?
+  bedrooms        Int
+  bathrooms       Int
+  area            Float
+  type            PropertyType
+  listingType     ListingType
+  status          PropertyStatus   @default(AVAILABLE)
+  isPremium       Boolean          @default(false)
+  isFeatured      Boolean          @default(false)
+  agentId         String
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  agent           User             @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  propertyImages  PropertyImage[]
+  reviews         Review[]
+  favorites       Favorite[]
+  bookingRequests BookingRequest[]
+  payments        Payment[]
 
   @@map("properties")
 }

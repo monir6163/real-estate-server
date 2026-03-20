@@ -1,0 +1,18 @@
+model Payment {
+  id              String          @id @default(uuid())
+  agentId         String
+  propertyId      String
+  bookingId       String?         @unique
+  amount          Float
+  purpose         PaymentPurpose
+  status          PaymentStatus   @default(PENDING)
+  transactionId   String?         @unique
+  gatewayResponse Json?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  agent           User            @relation(fields: [agentId], references: [id])
+  property        Property        @relation(fields: [propertyId], references: [id])
+  booking         BookingRequest? @relation(fields: [bookingId], references: [id])
+
+  @@map("payments")
+}

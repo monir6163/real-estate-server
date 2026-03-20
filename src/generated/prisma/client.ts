@@ -62,6 +62,21 @@ export type Account = Prisma.AccountModel
  */
 export type Verification = Prisma.VerificationModel
 /**
+ * Model BookingRequest
+ * 
+ */
+export type BookingRequest = Prisma.BookingRequestModel
+/**
+ * Model Favorite
+ * 
+ */
+export type Favorite = Prisma.FavoriteModel
+/**
+ * Model Payment
+ * 
+ */
+export type Payment = Prisma.PaymentModel
+/**
  * Model Property
  * 
  */
@@ -71,3 +86,8 @@ export type Property = Prisma.PropertyModel
  * 
  */
 export type PropertyImage = Prisma.PropertyImageModel
+/**
+ * Model Review
+ * 
+ */
+export type Review = Prisma.ReviewModel

@@ -1,0 +1,17 @@
+model BookingRequest {
+  id         String        @id @default(uuid())
+  agentId    String
+  propertyId String
+  status     RequestStatus @default(PENDING)
+  message    String?
+  visitDate  DateTime?
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  agent    User     @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  payment  Payment?
+
+  @@unique([agentId, propertyId])
+  @@map("booking_requests")
+}

@@ -1,0 +1,15 @@
+model Review {
+  id         String   @id @default(uuid())
+  agentId    String
+  propertyId String
+  rating     Int
+  comment    String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  agent    User     @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  property Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+
+  @@unique([agentId, propertyId])
+  @@map("reviews")
+}
