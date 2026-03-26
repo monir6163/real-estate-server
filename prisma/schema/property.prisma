@@ -5,6 +5,7 @@ model Property {
   price           Float
   location        String
   address         String?
+  thumbnail       String
   bedrooms        Int
   bathrooms       Int
   area            Float

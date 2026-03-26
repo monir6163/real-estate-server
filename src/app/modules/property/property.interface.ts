@@ -10,6 +10,7 @@ export interface Property {
   price: number;
   location: string;
   address?: string;
+  thumbnail: string;
   bedrooms: number;
   bathrooms: number;
   area: number;
