@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { multerUpload } from "../../../config/multer.config";
 import { Role } from "../../../generated/prisma/enums";
 import checkAuth from "../../middleware/Auth";
 import validateRequest from "../../middleware/ValidateRequest";
@@ -9,8 +10,9 @@ const router = Router();
 
 router.post(
   "/",
-  validateRequest(PropertyValidation.propertyCreateSchema),
   checkAuth(Role.ADMIN, Role.AGENT),
+  multerUpload.single("thumbnail"),
+  validateRequest(PropertyValidation.propertyCreateSchema),
   PropertyController.createProperty,
 );
 
