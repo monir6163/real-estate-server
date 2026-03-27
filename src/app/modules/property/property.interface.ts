@@ -4,7 +4,7 @@ import {
   PropertyType,
 } from "../../../generated/prisma/enums";
 
-export interface Property {
+export interface IProperty {
   title: string;
   description: string;
   price: number;
