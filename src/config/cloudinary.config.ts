@@ -33,7 +33,7 @@ export const uploadFileToCloudinary = async (
     cloudinary.uploader
       .upload_stream(
         {
-          folder: `healthcare/${folderName}`,
+          folder: `real-estate/${folderName}`,
           public_id: finalFilename,
           allowed_formats: ["jpg", "jpeg", "png", "webp", "pdf"],
           resource_type: "auto",
