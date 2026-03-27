@@ -7,6 +7,7 @@ import z from "zod";
 import { deleteFileFromCloudinary } from "../../config/cloudinary.config";
 import { envConfig } from "../../config/env";
 import { logger } from "../../config/logger";
+import { Prisma } from "../../generated/prisma/client";
 import ApiError from "../errors/ApiError";
 import { TErrorResponse, TErrorSources } from "../errors/ErrorInterface";
 import { handleZodError } from "../errors/handleZodError";
@@ -47,6 +48,92 @@ const globalErrorHandler = async (
     message = simplifiedError.message;
     errorSources = [...simplifiedError.errors];
     stack = err.stack;
+  } else if (err instanceof Prisma.PrismaClientKnownRequestError) {
+    stack = err.stack;
+
+    if (err.code === "P2002") {
+      const targets = Array.isArray(err.meta?.target)
+        ? (err.meta?.target as string[])
+        : [];
+
+      statusCode = StatusCodes.CONFLICT;
+      message = "Duplicate value found";
+      errorSources = [
+        {
+          path: targets.join(", ") || "",
+          message: targets.length
+            ? `${targets.join(", ")} already exists`
+            : "Unique constraint failed",
+        },
+      ];
+    } else if (err.code === "P2025") {
+      statusCode = StatusCodes.NOT_FOUND;
+      message = "Requested record was not found";
+      errorSources = [
+        {
+          path: "",
+          message: "The requested resource no longer exists",
+        },
+      ];
+    } else if (err.code === "P2003") {
+      statusCode = StatusCodes.BAD_REQUEST;
+      message = "Invalid relation reference";
+      errorSources = [
+        {
+          path: String(err.meta?.field_name || ""),
+          message: "Foreign key constraint failed",
+        },
+      ];
+    } else {
+      statusCode = StatusCodes.BAD_REQUEST;
+      message = "Database request failed";
+      errorSources = [
+        {
+          path: "",
+          message: err.message,
+        },
+      ];
+    }
+  } else if (err instanceof Prisma.PrismaClientValidationError) {
+    statusCode = StatusCodes.BAD_REQUEST;
+    message = "Invalid database query payload";
+    stack = err.stack;
+    errorSources = [
+      {
+        path: "",
+        message: err.message,
+      },
+    ];
+  } else if (err instanceof Prisma.PrismaClientInitializationError) {
+    statusCode = StatusCodes.SERVICE_UNAVAILABLE;
+    message = "Database connection initialization failed";
+    stack = err.stack;
+    errorSources = [
+      {
+        path: "",
+        message: err.message,
+      },
+    ];
+  } else if (err instanceof Prisma.PrismaClientRustPanicError) {
+    statusCode = StatusCodes.INTERNAL_SERVER_ERROR;
+    message = "Database engine panic occurred";
+    stack = err.stack;
+    errorSources = [
+      {
+        path: "",
+        message: "Unexpected database engine failure",
+      },
+    ];
+  } else if (err instanceof Prisma.PrismaClientUnknownRequestError) {
+    statusCode = StatusCodes.INTERNAL_SERVER_ERROR;
+    message = "Unknown database error occurred";
+    stack = err.stack;
+    errorSources = [
+      {
+        path: "",
+        message: err.message,
+      },
+    ];
   } else if (err instanceof APIError) {
     statusCode = err.statusCode;
     message = err.message;
