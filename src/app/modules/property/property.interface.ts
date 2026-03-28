@@ -20,4 +20,5 @@ export interface IProperty {
   isPremium: boolean;
   isFeatured: boolean;
   agentId: string;
+  images: string[];
 }

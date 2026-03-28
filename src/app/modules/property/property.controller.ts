@@ -7,7 +7,12 @@ import { PropertyService } from "./property.service";
 const createProperty = catchAsync(async (req: Request, res: Response) => {
   const payload = {
     ...req.body,
-    thumbnail: req.file?.path,
+    thumbnail: req.files && !Array.isArray(req.files) && req.files.thumbnail
+      ? (req.files.thumbnail as Express.Multer.File[])[0].path
+      : undefined,
+    images: req.files && !Array.isArray(req.files) && req.files.images
+      ? (req.files.images as Express.Multer.File[]).map((file) => file.path)
+      : [],
     agentId: req.user?.id,
   };
   const result = await PropertyService.createProperty(payload);
@@ -18,7 +23,6 @@ const createProperty = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
-
 export const PropertyController = {
   createProperty,
 };

@@ -11,7 +11,10 @@ const router = Router();
 router.post(
   "/",
   checkAuth(Role.ADMIN, Role.AGENT),
-  multerUpload.single("file"),
+  multerUpload.fields([
+    { name: "thumbnail", maxCount: 1 },
+    { name: "images", maxCount: 5 },
+  ]),
   validateRequest(PropertyValidation.propertyCreateSchema),
   PropertyController.createProperty,
 );
