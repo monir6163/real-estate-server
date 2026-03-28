@@ -143,3 +143,40 @@
 2026-03-28 20:28:00:280 error: POST /api/v1/auth/login - 429 - 2ms
 2026-03-28 20:28:02:282 error: [Error Handler] Too many requests, please try again later.
 2026-03-28 20:28:02:282 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:45:46:4546 http: POST /api/v1/auth/login - 200 - 4606ms
+2026-03-28 20:45:52:4552 http: POST /api/v1/auth/login - 200 - 1384ms
+2026-03-28 20:45:53:4553 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:45:53:4553 error: POST /api/v1/auth/login - 429 - 5ms
+2026-03-28 20:45:58:4558 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:45:58:4558 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:45:59:4559 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:45:59:4559 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:46:01:461 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:46:01:461 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:46:03:463 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:46:03:463 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:46:04:464 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:46:04:464 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:47:35:4735 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:47:35:4735 error: POST /api/v1/auth/login - 429 - 5ms
+2026-03-28 20:52:45:5245 http: POST /api/v1/auth/login - 200 - 3858ms
+2026-03-28 20:54:14:5414 http: POST /api/v1/auth/logout - 200 - 3647ms
+2026-03-28 20:54:46:5446 http: POST /api/v1/auth/login - 200 - 3780ms
+2026-03-28 20:57:56:5756 error: [Error Handler] 
+Invalid `prisma.user.findUnique()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\auth\auth.service.ts:102:36
+
+   99 };
+  100 
+  101 const forgotPassword = async (email: string) => {
+→ 102   const isUser = await prisma.user.findUnique({
+          where: {
+            email: {
+              email: "monirhossain6164@gmail.com"
+            }
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          }
+        })
+
+Argument `email`: Invalid value provided. Expected String, provided Object.
+2026-03-28 20:57:56:5756 error: POST /api/v1/auth/forgot-password - 400 - 55ms
