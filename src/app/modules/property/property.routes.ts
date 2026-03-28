@@ -11,7 +11,7 @@ const router = Router();
 router.post(
   "/",
   checkAuth(Role.ADMIN, Role.AGENT),
-  multerUpload.single("thumbnail"),
+  multerUpload.single("file"),
   validateRequest(PropertyValidation.propertyCreateSchema),
   PropertyController.createProperty,
 );

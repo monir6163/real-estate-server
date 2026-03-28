@@ -19,4 +19,5 @@ export interface IProperty {
   status: PropertyStatus;
   isPremium: boolean;
   isFeatured: boolean;
+  agentId: string;
 }
