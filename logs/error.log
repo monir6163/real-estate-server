@@ -1,0 +1,2 @@
+2026-03-28 18:54:38:5438 error: [Error Handler] Invalid email or password
+2026-03-28 18:54:38:5438 error: POST /api/v1/auth/login - 401 - 4546ms

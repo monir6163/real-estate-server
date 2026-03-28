@@ -17,7 +17,17 @@ const register = async (payload: IRegister) => {
   const existingUser = await prisma.user.findUnique({
     where: { email: payload.email },
   });
-  return existingUser;
+  if (existingUser) {
+    throw new ApiError(StatusCodes.CONFLICT, "Email already in use");
+  }
+  const user = await auth.api.signUpEmail({
+    body: {
+      email: payload.email,
+      password: payload.password,
+      name: payload.name,
+    },
+  });
+  return user;
 };
 
 const login = async (payload: ILogin) => {
