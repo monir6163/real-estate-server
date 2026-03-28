@@ -142,6 +142,26 @@ const resetPassword = async (
   return null;
 };
 
+const resendVerificationEmail = async (email: string) => {
+  const user = await prisma.user.findUnique({
+    where: { email },
+  });
+  if (!user) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "User not found");
+  }
+
+  if (user.emailVerified) {
+    throw new ApiError(StatusCodes.BAD_REQUEST, "Email is already verified");
+  }
+
+  await auth.api.sendVerificationEmail({
+    body: {
+      email,
+    },
+  });
+  return null;
+};
+
 export const AuthService = {
   register,
   login,
@@ -151,4 +171,5 @@ export const AuthService = {
   getMe,
   forgotPassword,
   resetPassword,
+  resendVerificationEmail,
 };

@@ -54,4 +54,9 @@ router.post(
   AuthController.verifyEmail,
 );
 
+router.post(
+  "/resend-verification-email",
+  validateRequest(AuthValidation.resendVerificationEmailSchema),
+  AuthController.resendVerificationEmail,
+);
 export const AuthRoutes = router;

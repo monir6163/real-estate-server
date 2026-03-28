@@ -1,2 +1,30 @@
 2026-03-28 18:54:38:5438 error: [Error Handler] Invalid email or password
 2026-03-28 18:54:38:5438 error: POST /api/v1/auth/login - 401 - 4546ms
+2026-03-28 19:14:28:1428 error: [Error Handler] Please verify your email before signing in.
+2026-03-28 19:14:28:1428 error: POST /api/v1/auth/login - 400 - 2733ms
+2026-03-28 19:16:54:1654 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "otp"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+2026-03-28 19:16:54:1654 error: POST /api/v1/auth/verify-email - 400 - 5ms
+2026-03-28 19:17:05:175 error: [Error Handler] User not found
+2026-03-28 19:17:05:175 error: POST /api/v1/auth/verify-email - 404 - 2668ms
+2026-03-28 19:17:23:1723 error: [Error Handler] OTP expired
+2026-03-28 19:17:23:1723 error: POST /api/v1/auth/verify-email - 400 - 4430ms
+2026-03-28 19:18:54:1854 error: [Error Handler] Invalid OTP
+2026-03-28 19:18:54:1854 error: POST /api/v1/auth/verify-email - 400 - 3353ms
+2026-03-28 19:21:25:2125 error: [Error Handler] Invalid OTP
+2026-03-28 19:21:25:2125 error: POST /api/v1/auth/verify-email - 400 - 3617ms
+2026-03-28 19:49:28:4928 error: [Error Handler] User not found
+2026-03-28 19:49:28:4928 error: POST /api/v1/auth/resend-verification-email - 404 - 3298ms
+2026-03-28 19:50:21:5021 error: [Error Handler] Invalid OTP
+2026-03-28 19:50:21:5021 error: POST /api/v1/auth/verify-email - 400 - 4249ms
+2026-03-28 19:51:01:511 error: [Error Handler] Invalid OTP
+2026-03-28 19:51:01:511 error: POST /api/v1/auth/verify-email - 400 - 1431ms

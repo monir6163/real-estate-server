@@ -50,4 +50,9 @@ export const AuthValidation = {
       otp: z.string().length(6, "OTP must be 6 characters long"),
     }),
   }),
+  resendVerificationEmailSchema: z.object({
+    body: z.object({
+      email: z.string().email("Invalid email address"),
+    }),
+  }),
 };
