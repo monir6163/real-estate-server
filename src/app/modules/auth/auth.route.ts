@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { Role } from "../../../generated/prisma/enums";
 import checkAuth from "../../middleware/Auth";
+import rateLimiter from "../../middleware/RateLimiter";
 import validateRequest from "../../middleware/ValidateRequest";
 import { AuthController } from "./auth.controller";
 import { AuthValidation } from "./auth.validation";
@@ -20,6 +21,11 @@ router.post(
 router.post(
   "/login",
   validateRequest(AuthValidation.patientLoginSchema),
+  rateLimiter({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 2, // limit each IP to 2 requests per windowMs
+    getIdentifier: (req) => `${req.ip}:${req.body?.email || ""}`, // Use IP and email for rate limiting to prevent abuse while allowing multiple users from the same IP
+  }),
   AuthController.login,
 );
 

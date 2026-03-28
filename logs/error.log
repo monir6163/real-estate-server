@@ -28,3 +28,66 @@
 2026-03-28 19:50:21:5021 error: POST /api/v1/auth/verify-email - 400 - 4249ms
 2026-03-28 19:51:01:511 error: [Error Handler] Invalid OTP
 2026-03-28 19:51:01:511 error: POST /api/v1/auth/verify-email - 400 - 1431ms
+2026-03-28 19:51:39:5139 error: [Error Handler] Email is already verified
+2026-03-28 19:51:39:5139 error: POST /api/v1/auth/resend-verification-email - 400 - 2727ms
+2026-03-28 20:14:30:1430 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:14:35:1435 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:14:36:1436 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:14:38:1438 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:14:46:1446 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:17:16:1716 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:17:16:1716 error: POST /api/v1/auth/login - 429 - 5ms
+2026-03-28 20:18:35:1835 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:18:35:1835 error: POST /api/v1/auth/login - 500 - 6ms
+2026-03-28 20:19:41:1941 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:19:41:1941 error: POST /api/v1/auth/login - 429 - 8ms
+2026-03-28 20:20:39:2039 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:20:39:2039 error: POST /api/v1/auth/login - 429 - 4ms
+2026-03-28 20:21:47:2147 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:21:47:2147 error: POST /api/v1/auth/login - 429 - 5ms
+2026-03-28 20:23:25:2325 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:23:25:2325 error: POST /api/v1/auth/login - 429 - 6ms
+2026-03-28 20:24:40:2440 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:24:40:2440 error: POST /api/v1/auth/login - 429 - 4ms
+2026-03-28 20:26:48:2648 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:26:48:2648 error: POST /api/v1/auth/login - 429 - 5ms
+2026-03-28 20:27:34:2734 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:34:2734 error: POST /api/v1/auth/login - 429 - 4ms
+2026-03-28 20:27:42:2742 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:42:2742 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:27:44:2744 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:44:2744 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:45:2745 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:45:2745 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:27:46:2746 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:46:2746 error: POST /api/v1/auth/login - 429 - 4ms
+2026-03-28 20:27:47:2747 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:47:2747 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:48:2748 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:48:2748 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:27:49:2749 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:49:2749 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:50:2750 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:50:2750 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:51:2751 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:51:2751 error: POST /api/v1/auth/login - 429 - 3ms
+2026-03-28 20:27:52:2752 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:52:2752 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:27:52:2752 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:52:2752 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:53:2753 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:53:2753 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:27:54:2754 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:54:2754 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:55:2755 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:55:2755 error: POST /api/v1/auth/login - 429 - 1ms
+2026-03-28 20:27:56:2756 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:56:2756 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:57:2757 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:57:2757 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:27:58:2758 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:27:58:2758 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:28:00:280 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:28:00:280 error: POST /api/v1/auth/login - 429 - 2ms
+2026-03-28 20:28:02:282 error: [Error Handler] Too many requests, please try again later.
+2026-03-28 20:28:02:282 error: POST /api/v1/auth/login - 429 - 2ms

@@ -170,7 +170,10 @@ const globalErrorHandler = async (
     success: false,
     message: message,
     errors: errorSources,
-    error: envConfig.NODE_ENV === "development" ? err : undefined,
+    error:
+      envConfig.NODE_ENV === "development"
+        ? { statusCode: err.statusCode, message: err.message }
+        : undefined,
     stack: envConfig.NODE_ENV === "development" ? stack : undefined,
   };
 
