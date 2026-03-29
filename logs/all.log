@@ -523,3 +523,5 @@ Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options ar
 2026-03-29 15:43:18:4318 http: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 4361ms
 2026-03-29 15:45:52:4552 error: PATCH /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 404 - 65ms
 2026-03-29 15:46:41:4641 http: PATCH /api/v1/properties/status/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 3788ms
+2026-03-29 15:52:11:5211 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-29 15:52:11:5211 error: PATCH /api/v1/properties/featured/fb216d4c-3827-4025-974e-5623232ceee1 - 403 - 3762ms

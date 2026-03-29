@@ -438,3 +438,5 @@ F:\level-2-assignment\real-state-server\src\app\modules\property\property.servic
 Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options are marked with ?.
 2026-03-29 15:41:49:4149 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 400 - 3248ms
 2026-03-29 15:45:52:4552 error: PATCH /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 404 - 65ms
+2026-03-29 15:52:11:5211 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-29 15:52:11:5211 error: PATCH /api/v1/properties/featured/fb216d4c-3827-4025-974e-5623232ceee1 - 403 - 3762ms
