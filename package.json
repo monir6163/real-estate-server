@@ -44,6 +44,7 @@
     "multer-storage-cloudinary": "^4.0.0",
     "nodemailer": "^7.0.13",
     "pg": "^8.18.0",
+    "stripe": "^21.0.1",
     "tsup": "^8.5.1",
     "winston": "^3.19.0",
     "zod": "^4.1.13"

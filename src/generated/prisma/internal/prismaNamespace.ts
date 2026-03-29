@@ -391,6 +391,7 @@ export const ModelName = {
   BookingRequest: 'BookingRequest',
   Favorite: 'Favorite',
   Payment: 'Payment',
+  PaymentSetting: 'PaymentSetting',
   Property: 'Property',
   PropertyImage: 'PropertyImage',
   Review: 'Review'
@@ -409,7 +410,7 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
     omit: GlobalOmitOptions
   }
   meta: {
-    modelProps: "user" | "session" | "account" | "verification" | "bookingRequest" | "favorite" | "payment" | "property" | "propertyImage" | "review"
+    modelProps: "user" | "session" | "account" | "verification" | "bookingRequest" | "favorite" | "payment" | "paymentSetting" | "property" | "propertyImage" | "review"
     txIsolationLevel: TransactionIsolationLevel
   }
   model: {
@@ -931,6 +932,80 @@ export type TypeMap<ExtArgs extends runtime.Types.Extensions.InternalArgs = runt
         }
       }
     }
+    PaymentSetting: {
+      payload: Prisma.$PaymentSettingPayload<ExtArgs>
+      fields: Prisma.PaymentSettingFieldRefs
+      operations: {
+        findUnique: {
+          args: Prisma.PaymentSettingFindUniqueArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload> | null
+        }
+        findUniqueOrThrow: {
+          args: Prisma.PaymentSettingFindUniqueOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        findFirst: {
+          args: Prisma.PaymentSettingFindFirstArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload> | null
+        }
+        findFirstOrThrow: {
+          args: Prisma.PaymentSettingFindFirstOrThrowArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        findMany: {
+          args: Prisma.PaymentSettingFindManyArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>[]
+        }
+        create: {
+          args: Prisma.PaymentSettingCreateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        createMany: {
+          args: Prisma.PaymentSettingCreateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        createManyAndReturn: {
+          args: Prisma.PaymentSettingCreateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>[]
+        }
+        delete: {
+          args: Prisma.PaymentSettingDeleteArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        update: {
+          args: Prisma.PaymentSettingUpdateArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        deleteMany: {
+          args: Prisma.PaymentSettingDeleteManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateMany: {
+          args: Prisma.PaymentSettingUpdateManyArgs<ExtArgs>
+          result: BatchPayload
+        }
+        updateManyAndReturn: {
+          args: Prisma.PaymentSettingUpdateManyAndReturnArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>[]
+        }
+        upsert: {
+          args: Prisma.PaymentSettingUpsertArgs<ExtArgs>
+          result: runtime.Types.Utils.PayloadToResult<Prisma.$PaymentSettingPayload>
+        }
+        aggregate: {
+          args: Prisma.PaymentSettingAggregateArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.AggregatePaymentSetting>
+        }
+        groupBy: {
+          args: Prisma.PaymentSettingGroupByArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.PaymentSettingGroupByOutputType>[]
+        }
+        count: {
+          args: Prisma.PaymentSettingCountArgs<ExtArgs>
+          result: runtime.Types.Utils.Optional<Prisma.PaymentSettingCountAggregateOutputType> | number
+        }
+      }
+    }
     Property: {
       payload: Prisma.$PropertyPayload<ExtArgs>
       fields: Prisma.PropertyFieldRefs
@@ -1292,6 +1367,18 @@ export const PaymentScalarFieldEnum = {
 } as const
 
 export type PaymentScalarFieldEnum = (typeof PaymentScalarFieldEnum)[keyof typeof PaymentScalarFieldEnum]
+
+
+export const PaymentSettingScalarFieldEnum = {
+  id: 'id',
+  bookingFeeAmount: 'bookingFeeAmount',
+  premiumListingFeeAmount: 'premiumListingFeeAmount',
+  currency: 'currency',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type PaymentSettingScalarFieldEnum = (typeof PaymentSettingScalarFieldEnum)[keyof typeof PaymentSettingScalarFieldEnum]
 
 
 export const PropertyScalarFieldEnum = {
@@ -1679,6 +1766,7 @@ export type GlobalOmitConfig = {
   bookingRequest?: Prisma.BookingRequestOmit
   favorite?: Prisma.FavoriteOmit
   payment?: Prisma.PaymentOmit
+  paymentSetting?: Prisma.PaymentSettingOmit
   property?: Prisma.PropertyOmit
   propertyImage?: Prisma.PropertyImageOmit
   review?: Prisma.ReviewOmit

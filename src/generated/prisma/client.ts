@@ -77,6 +77,11 @@ export type Favorite = Prisma.FavoriteModel
  */
 export type Payment = Prisma.PaymentModel
 /**
+ * Model PaymentSetting
+ * 
+ */
+export type PaymentSetting = Prisma.PaymentSettingModel
+/**
  * Model Property
  * 
  */

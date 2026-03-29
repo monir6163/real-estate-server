@@ -8,6 +8,7 @@ import { auth } from "./app/lib/auth";
 import globalErrorHandler from "./app/middleware/GlobalErrorHandler";
 import httpLogger from "./app/middleware/HttpLogger";
 import notFound from "./app/middleware/NotFound";
+import { paymentController } from "./app/modules/payment/payment.controller";
 import { IndexRoutes } from "./app/routes";
 import sendResponse from "./app/shared/sendResponse";
 import { envConfig } from "./config/env";
@@ -20,6 +21,11 @@ app.use(helmet());
 app.use(httpLogger);
 
 app.use("/api/auth", toNodeHandler(auth));
+app.post(
+  "/api/v1/payments/webhook",
+  express.raw({ type: "application/json" }),
+  paymentController.handleStripeWebhook,
+);
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(

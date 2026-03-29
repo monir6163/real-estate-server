@@ -1,0 +1,43 @@
+import { Router } from "express";
+import { Role } from "../../../generated/prisma/enums";
+import checkAuth from "../../middleware/Auth";
+import validateRequest from "../../middleware/ValidateRequest";
+import { paymentController } from "./payment.controller";
+import { PaymentValidation } from "./payment.validation";
+
+const router = Router();
+
+router.post(
+  "/checkout/booking/:bookingId",
+  checkAuth(Role.USER),
+  validateRequest(PaymentValidation.bookingCheckoutSchema),
+  paymentController.createBookingCheckoutSession,
+);
+
+router.post(
+  "/checkout/premium/:propertyId",
+  checkAuth(Role.AGENT),
+  validateRequest(PaymentValidation.premiumCheckoutSchema),
+  paymentController.createPremiumCheckoutSession,
+);
+
+router.get(
+  "/my-payments",
+  checkAuth(Role.USER, Role.AGENT),
+  paymentController.getMyPayments,
+);
+
+router.get(
+  "/settings",
+  checkAuth(Role.ADMIN),
+  paymentController.getPaymentSettings,
+);
+
+router.patch(
+  "/settings",
+  checkAuth(Role.ADMIN),
+  validateRequest(PaymentValidation.updateSettingsSchema),
+  paymentController.updatePaymentSettings,
+);
+
+export const PaymentRoutes = router;

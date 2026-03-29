@@ -10,6 +10,11 @@ interface EnvConfig {
   BETTER_AUTH_SECRET: string;
   BETTER_AUTH_URL: string;
   FRONTEND_URL: string;
+  STRIPE_SECRET_KEY: string;
+  STRIPE_WEBHOOK_SECRET: string;
+  STRIPE_CURRENCY: string;
+  BOOKING_FEE_AMOUNT?: string;
+  PREMIUM_LISTING_FEE_AMOUNT?: string;
   EMAIL_HOST: string;
   EMAIL_PORT: string | number;
   EMAIL_USER: string;
@@ -32,6 +37,9 @@ const loadEnv = (): EnvConfig => {
     "BETTER_AUTH_SECRET",
     "BETTER_AUTH_URL",
     "FRONTEND_URL",
+    "STRIPE_SECRET_KEY",
+    "STRIPE_WEBHOOK_SECRET",
+    "STRIPE_CURRENCY",
     "EMAIL_HOST",
     "EMAIL_PORT",
     "EMAIL_USER",
@@ -59,6 +67,11 @@ const loadEnv = (): EnvConfig => {
     BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET as string,
     BETTER_AUTH_URL: process.env.BETTER_AUTH_URL as string,
     FRONTEND_URL: process.env.FRONTEND_URL as string,
+    STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY as string,
+    STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET as string,
+    STRIPE_CURRENCY: process.env.STRIPE_CURRENCY as string,
+    BOOKING_FEE_AMOUNT: process.env.BOOKING_FEE_AMOUNT,
+    PREMIUM_LISTING_FEE_AMOUNT: process.env.PREMIUM_LISTING_FEE_AMOUNT,
     EMAIL_HOST: process.env.EMAIL_HOST as string,
     EMAIL_PORT: process.env.EMAIL_PORT as string | number,
     EMAIL_USER: process.env.EMAIL_USER as string,

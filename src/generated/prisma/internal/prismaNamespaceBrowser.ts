@@ -58,6 +58,7 @@ export const ModelName = {
   BookingRequest: 'BookingRequest',
   Favorite: 'Favorite',
   Payment: 'Payment',
+  PaymentSetting: 'PaymentSetting',
   Property: 'Property',
   PropertyImage: 'PropertyImage',
   Review: 'Review'
@@ -179,6 +180,18 @@ export const PaymentScalarFieldEnum = {
 } as const
 
 export type PaymentScalarFieldEnum = (typeof PaymentScalarFieldEnum)[keyof typeof PaymentScalarFieldEnum]
+
+
+export const PaymentSettingScalarFieldEnum = {
+  id: 'id',
+  bookingFeeAmount: 'bookingFeeAmount',
+  premiumListingFeeAmount: 'premiumListingFeeAmount',
+  currency: 'currency',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type PaymentSettingScalarFieldEnum = (typeof PaymentSettingScalarFieldEnum)[keyof typeof PaymentSettingScalarFieldEnum]
 
 
 export const PropertyScalarFieldEnum = {
