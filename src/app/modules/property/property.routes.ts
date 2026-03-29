@@ -14,7 +14,7 @@ router.get("/:id", PropertyController.getSingleProperty);
 
 router.post(
   "/",
-  checkAuth(Role.ADMIN, Role.AGENT),
+  checkAuth(Role.AGENT),
   multerUpload.fields([
     { name: "thumbnail", maxCount: 1 },
     { name: "images", maxCount: 5 },
@@ -25,7 +25,7 @@ router.post(
 
 router.put(
   "/:id",
-  checkAuth(Role.ADMIN, Role.AGENT),
+  checkAuth(Role.AGENT),
   multerUpload.fields([
     { name: "thumbnail", maxCount: 1 },
     { name: "images", maxCount: 5 },
@@ -35,22 +35,22 @@ router.put(
 );
 
 router.patch(
-  "/:id/status",
+  "/status/:id",
   checkAuth(Role.AGENT),
   validateRequest(PropertyValidation.propertyStatusUpdateSchema),
   PropertyController.updatePropertyStatus,
+);
+
+router.patch(
+  "/featured/:id",
+  checkAuth(Role.ADMIN),
+  PropertyController.isFeaturedProperty,
 );
 
 router.delete(
   "/:id",
   checkAuth(Role.ADMIN, Role.AGENT),
   PropertyController.deleteProperty,
-);
-
-router.patch(
-  "/:id/featured",
-  checkAuth(Role.ADMIN),
-  PropertyController.isFeaturedProperty,
 );
 
 export const PropertyRoutes = router;

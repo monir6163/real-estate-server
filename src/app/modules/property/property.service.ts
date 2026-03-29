@@ -59,6 +59,7 @@ const getSingleProperty = async (id: string) => {
     include: {
       agent: true,
       propertyImages: true,
+      reviews: true,
     },
   });
   return result;
@@ -95,7 +96,7 @@ const updateProperty = async (
   const result = await prisma.property.update({
     where: {
       id: id,
-      agentId: existingProperty.agentId,
+      agentId: agentId,
     },
     data: {
       ...propertyData,

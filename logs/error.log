@@ -248,3 +248,193 @@ Argument `title` is missing.
   }
 ]
 2026-03-29 09:42:28:4228 error: POST /api/v1/properties - 400 - 14040ms
+2026-03-29 14:54:49:5449 error: [Error Handler] Invalid email or password
+2026-03-29 14:54:49:5449 error: POST /api/v1/auth/login - 401 - 3250ms
+2026-03-29 14:57:57:5757 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-29 14:57:57:5757 error: POST /api/v1/properties - 403 - 2818ms
+2026-03-29 15:13:36:1336 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-29 15:13:36:1336 error: POST /api/v1/properties - 403 - 2855ms
+2026-03-29 15:25:30:2530 error: POST /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 404 - 2ms
+2026-03-29 15:28:08:288 error: [Error Handler] You are not authorized to update this property
+2026-03-29 15:28:08:288 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 403 - 3204ms
+2026-03-29 15:39:34:3934 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "fb216d4c-3827-4025-974e-5623232ceee1",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Modern Luxury Apartment update",
+         description: "A beautiful apartment in the city center with all modern facilities.",
+         price: 85000,
+         location: "Dhaka",
+         address: "Banani, Road 12",
+         bedrooms: 3,
+         bathrooms: 2,
+         area: 1450,
+         type: "APARTMENT",
+         listingType: "SALE",
+         isisFeatured: true,
+         ~~~~~~~~~~~~
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         },
+     ?   id?: String | StringFieldUpdateOperationsInput,
+     ?   status?: PropertyStatus | EnumPropertyStatusFieldUpdateOperationsInput,
+     ?   isPremium?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   isFeatured?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   agent?: UserUpdateOneRequiredWithoutPropertiesNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutPropertyNestedInput,
+     ?   favorites?: FavoriteUpdateManyWithoutPropertyNestedInput,
+     ?   bookingRequests?: BookingRequestUpdateManyWithoutPropertyNestedInput,
+     ?   payments?: PaymentUpdateManyWithoutPropertyNestedInput
+       }
+     })
+
+Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options are marked with ?.
+2026-03-29 15:39:34:3934 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 400 - 3985ms
+2026-03-29 15:40:48:4048 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "fb216d4c-3827-4025-974e-5623232ceee1",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Modern Luxury Apartment update",
+         description: "A beautiful apartment in the city center with all modern facilities.",
+         price: 85000,
+         location: "Dhaka",
+         address: "Banani, Road 12",
+         bedrooms: 3,
+         bathrooms: 2,
+         area: 1450,
+         type: "APARTMENT",
+         listingType: "SALE",
+         isisFeatured: true,
+         ~~~~~~~~~~~~
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         },
+     ?   id?: String | StringFieldUpdateOperationsInput,
+     ?   status?: PropertyStatus | EnumPropertyStatusFieldUpdateOperationsInput,
+     ?   isPremium?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   isFeatured?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   agent?: UserUpdateOneRequiredWithoutPropertiesNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutPropertyNestedInput,
+     ?   favorites?: FavoriteUpdateManyWithoutPropertyNestedInput,
+     ?   bookingRequests?: BookingRequestUpdateManyWithoutPropertyNestedInput,
+     ?   payments?: PaymentUpdateManyWithoutPropertyNestedInput
+       }
+     })
+
+Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options are marked with ?.
+2026-03-29 15:40:48:4048 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 400 - 3259ms
+2026-03-29 15:41:30:4130 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "fb216d4c-3827-4025-974e-5623232ceee1",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Modern Luxury Apartment update",
+         description: "A beautiful apartment in the city center with all modern facilities.",
+         price: 85000,
+         location: "Dhaka",
+         address: "Banani, Road 12",
+         bedrooms: 3,
+         bathrooms: 2,
+         area: 1450,
+         type: "APARTMENT",
+         listingType: "SALE",
+         isisFeatured: true,
+         ~~~~~~~~~~~~
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         },
+     ?   id?: String | StringFieldUpdateOperationsInput,
+     ?   status?: PropertyStatus | EnumPropertyStatusFieldUpdateOperationsInput,
+     ?   isPremium?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   isFeatured?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   agent?: UserUpdateOneRequiredWithoutPropertiesNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutPropertyNestedInput,
+     ?   favorites?: FavoriteUpdateManyWithoutPropertyNestedInput,
+     ?   bookingRequests?: BookingRequestUpdateManyWithoutPropertyNestedInput,
+     ?   payments?: PaymentUpdateManyWithoutPropertyNestedInput
+       }
+     })
+
+Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options are marked with ?.
+2026-03-29 15:41:30:4130 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 400 - 3249ms
+2026-03-29 15:41:49:4149 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "fb216d4c-3827-4025-974e-5623232ceee1",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Modern Luxury Apartment update",
+         description: "A beautiful apartment in the city center with all modern facilities.",
+         price: 85000,
+         location: "Dhaka",
+         address: "Banani, Road 12",
+         bedrooms: 3,
+         bathrooms: 2,
+         area: 1450,
+         type: "APARTMENT",
+         listingType: "SALE",
+         isisFeatured: true,
+         ~~~~~~~~~~~~
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         },
+     ?   id?: String | StringFieldUpdateOperationsInput,
+     ?   status?: PropertyStatus | EnumPropertyStatusFieldUpdateOperationsInput,
+     ?   isPremium?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   isFeatured?: Boolean | BoolFieldUpdateOperationsInput,
+     ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+     ?   agent?: UserUpdateOneRequiredWithoutPropertiesNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutPropertyNestedInput,
+     ?   favorites?: FavoriteUpdateManyWithoutPropertyNestedInput,
+     ?   bookingRequests?: BookingRequestUpdateManyWithoutPropertyNestedInput,
+     ?   payments?: PaymentUpdateManyWithoutPropertyNestedInput
+       }
+     })
+
+Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options are marked with ?.
+2026-03-29 15:41:49:4149 error: PUT /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 400 - 3248ms
+2026-03-29 15:45:52:4552 error: PATCH /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 404 - 65ms

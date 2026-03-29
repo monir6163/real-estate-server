@@ -72,6 +72,9 @@ const updateProperty = catchAsync(async (req: Request, res: Response) => {
         ? (req.files.images as Express.Multer.File[]).map((file) => file.path)
         : [],
   };
+  if (payload.isFeatured) {
+    delete payload.isFeatured;
+  }
   const result = await PropertyService.updateProperty(
     id as string,
     agentId,
