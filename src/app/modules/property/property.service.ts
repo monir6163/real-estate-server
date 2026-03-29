@@ -1,4 +1,10 @@
-import { Prisma, Property } from "../../../generated/prisma/client";
+import { StatusCodes } from "http-status-codes";
+import {
+  Prisma,
+  Property,
+  PropertyStatus,
+} from "../../../generated/prisma/client";
+import ApiError from "../../errors/ApiError";
 import { IQueryParams } from "../../helper/query.interface";
 import { QueryBuilder } from "../../helper/Querybuilder";
 import { prisma } from "../../lib/prisma";
@@ -47,7 +53,138 @@ const getAllProperties = async (query: IQueryParams) => {
   return result;
 };
 
+const getSingleProperty = async (id: string) => {
+  const result = await prisma.property.findUnique({
+    where: { id },
+    include: {
+      agent: true,
+      propertyImages: true,
+    },
+  });
+  return result;
+};
+
+/*
+1. updateProperty: can not update other agent's property, only owned property can be updated by agent, admin can update any property
+2. updatePropertyStatus: only owned property can be updated by agent, admin can update any property
+3. deleteProperty: only owned property can be deleted by agent, admin can delete any property
+
+*/
+
+const updateProperty = async (
+  id: string,
+  agentId: string,
+  payload: Partial<IProperty>,
+) => {
+  const { images, thumbnail, ...propertyData } = payload;
+
+  const existingProperty = await prisma.property.findUnique({
+    where: { id },
+  });
+
+  if (!existingProperty) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Property not found");
+  }
+
+  if (existingProperty.agentId !== agentId) {
+    throw new ApiError(
+      StatusCodes.FORBIDDEN,
+      "You are not authorized to update this property",
+    );
+  }
+  const result = await prisma.property.update({
+    where: {
+      id: id,
+      agentId: existingProperty.agentId,
+    },
+    data: {
+      ...propertyData,
+      thumbnail,
+      propertyImages: {
+        create: images?.map((image: string) => ({ url: image })),
+      },
+    },
+  });
+  return result;
+};
+
+const updatePropertyStatus = async (
+  id: string,
+  agentId: string,
+  status: PropertyStatus,
+) => {
+  const existingProperty = await prisma.property.findUnique({
+    where: { id },
+  });
+
+  if (!existingProperty) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Property not found");
+  }
+
+  if (existingProperty.agentId !== agentId) {
+    throw new ApiError(
+      StatusCodes.FORBIDDEN,
+      "You are not authorized to update this property",
+    );
+  }
+  const result = await prisma.property.update({
+    where: {
+      id: id,
+      agentId: agentId,
+    },
+    data: {
+      status,
+    },
+  });
+  return result;
+};
+
+const deleteProperty = async (id: string, agentId: string) => {
+  const existingProperty = await prisma.property.findUnique({
+    where: { id },
+  });
+
+  if (!existingProperty) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Property not found");
+  }
+
+  if (existingProperty.agentId !== agentId) {
+    throw new ApiError(
+      StatusCodes.FORBIDDEN,
+      "You are not authorized to delete this property",
+    );
+  }
+  const result = await prisma.property.delete({
+    where: {
+      id: id,
+      agentId: agentId,
+    },
+  });
+  return result;
+};
+
+const isFeaturedProperty = async (id: string) => {
+  const existingProperty = await prisma.property.findUnique({
+    where: { id },
+  });
+
+  if (!existingProperty) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Property not found");
+  }
+
+  const result = await prisma.property.update({
+    where: { id },
+    data: { isFeatured: !existingProperty.isFeatured },
+  });
+  return result;
+};
+
 export const PropertyService = {
   createProperty,
   getAllProperties,
+  getSingleProperty,
+  updateProperty,
+  updatePropertyStatus,
+  deleteProperty,
+  isFeaturedProperty,
 };

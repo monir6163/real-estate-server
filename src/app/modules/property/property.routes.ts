@@ -10,6 +10,8 @@ const router = Router();
 
 router.get("/", PropertyController.getAllProperties);
 
+router.get("/:id", PropertyController.getSingleProperty);
+
 router.post(
   "/",
   checkAuth(Role.ADMIN, Role.AGENT),
@@ -19,6 +21,36 @@ router.post(
   ]),
   validateRequest(PropertyValidation.propertyCreateSchema),
   PropertyController.createProperty,
+);
+
+router.put(
+  "/:id",
+  checkAuth(Role.ADMIN, Role.AGENT),
+  multerUpload.fields([
+    { name: "thumbnail", maxCount: 1 },
+    { name: "images", maxCount: 5 },
+  ]),
+  validateRequest(PropertyValidation.propertyUpdateSchema),
+  PropertyController.updateProperty,
+);
+
+router.patch(
+  "/:id/status",
+  checkAuth(Role.AGENT),
+  validateRequest(PropertyValidation.propertyStatusUpdateSchema),
+  PropertyController.updatePropertyStatus,
+);
+
+router.delete(
+  "/:id",
+  checkAuth(Role.ADMIN, Role.AGENT),
+  PropertyController.deleteProperty,
+);
+
+router.patch(
+  "/:id/featured",
+  checkAuth(Role.ADMIN),
+  PropertyController.isFeaturedProperty,
 );
 
 export const PropertyRoutes = router;
