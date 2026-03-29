@@ -1,5 +1,32 @@
 import { Router } from "express";
+import { Role } from "../../../generated/prisma/enums";
+import checkAuth from "../../middleware/Auth";
+import validateRequest from "../../middleware/ValidateRequest";
+import { bookingController } from "./booking.controller";
+import { BookingValidation } from "./booking.validation";
 
 const router = Router();
+
+router.post(
+  "/",
+  checkAuth(Role.USER),
+  validateRequest(BookingValidation.bookingSchema),
+  bookingController.createBooking,
+);
+
+router.get(
+  "/my-bookings",
+  checkAuth(Role.USER),
+  bookingController.getMyBookings,
+);
+
+router.get("/:id", checkAuth(Role.USER), bookingController.getBookingById);
+
+router.patch(
+  "/:id/status",
+  checkAuth(Role.USER),
+  validateRequest(BookingValidation.updateStatusSchema),
+  bookingController.updateBookingStatus,
+);
 
 export const BookingRoutes = router;
