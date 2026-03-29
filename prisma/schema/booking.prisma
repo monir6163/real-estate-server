@@ -13,5 +13,7 @@ model BookingRequest {
   payment  Payment?
 
   @@unique([agentId, propertyId])
+  @@index([agentId])
+  @@index([propertyId])
   @@map("booking_requests")
 }
