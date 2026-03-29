@@ -180,3 +180,136 @@ F:\level-2-assignment\real-state-server\src\app\modules\auth\auth.service.ts:102
 
 Argument `email`: Invalid value provided. Expected String, provided Object.
 2026-03-28 20:57:56:5756 error: POST /api/v1/auth/forgot-password - 400 - 55ms
+2026-03-28 21:00:44:044 error: [Error Handler] User not found
+2026-03-28 21:00:44:044 error: POST /api/v1/auth/forgot-password - 404 - 3932ms
+2026-03-28 21:01:03:13 http: POST /api/v1/auth/forgot-password - 200 - 7887ms
+2026-03-28 21:03:53:353 error: [Error Handler] OTP expired
+2026-03-28 21:03:53:353 error: POST /api/v1/auth/reset-password - 400 - 4216ms
+2026-03-28 21:04:04:44 error: [Error Handler] Invalid OTP
+2026-03-28 21:04:04:44 error: POST /api/v1/auth/reset-password - 400 - 1243ms
+2026-03-28 21:04:29:429 http: POST /api/v1/auth/forgot-password - 200 - 8648ms
+2026-03-28 21:04:56:456 http: POST /api/v1/auth/reset-password - 200 - 6101ms
+2026-03-28 21:05:12:512 error: [Error Handler] Invalid email or password
+2026-03-28 21:05:12:512 error: POST /api/v1/auth/login - 401 - 3361ms
+2026-03-28 21:05:21:521 http: POST /api/v1/auth/login - 200 - 1387ms
+2026-03-29 09:25:53:2553 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-29 09:25:53:2553 error: POST /api/v1/properties - 403 - 4226ms
+2026-03-29 09:26:59:2659 http: POST /api/v1/auth/logout - 200 - 3416ms
+2026-03-29 09:27:08:278 http: POST /api/v1/auth/login - 200 - 1708ms
+2026-03-29 09:27:33:2733 error: [Error Handler] Cannot read properties of undefined (reading 'data')
+2026-03-29 09:27:33:2733 error: POST /api/v1/properties - 500 - 2760ms
+2026-03-29 09:30:10:3010 error: [Error Handler] Cannot read properties of undefined (reading 'data')
+2026-03-29 09:30:10:3010 error: POST /api/v1/properties - 500 - 2786ms
+2026-03-29 09:31:16:3116 error: [Error Handler] Cannot read properties of undefined (reading 'data')
+2026-03-29 09:31:16:3116 error: POST /api/v1/properties - 500 - 3118ms
+2026-03-29 09:33:23:3323 error: [Error Handler] 
+Invalid `prisma.property.create()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:6:40
+
+  3 
+  4 const createProperty = async (payload: IProperty) => {
+  5   const { images, ...propertyData } = payload;
+→ 6   const result = await prisma.property.create({
+        data: {
+          data: "{\n  \"title\": \"Modern Luxury Apartment\",\n  \"description\": \"A beautiful apartment in the city center with all modern facilities.\",\n  \"price\": 85000,\n  \"location\": \"Dhaka\",\n  \"address\": \"Banani, Road 12\",\n  \"bedrooms\": 3,\n  \"bathrooms\": 2,\n  \"area\": 1450,\n  \"type\": \"APARTMENT\",\n  \"listingType\": \"SALE\"\n}",
+          thumbnail: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774755197/healthcare/images/pexels-apartment-1851201-1774755192421.jpg.jpg",
+          agentId: "zK6Q5z19X9UTBra7lkWGGhoNIijU5HBO",
+          propertyImages: {
+            create: [
+              {
+                url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774755202/healthcare/images/clickerhappy-living-room-2732939-1774755196711.jpg.jpg"
+              },
+              {
+                url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774755202/healthcare/images/keresi72-wall-4160601920-1774755200261.jpg.jpg"
+              }
+            ]
+          },
+      +   title: String
+        }
+      })
+
+Argument `title` is missing.
+2026-03-29 09:33:23:3323 error: POST /api/v1/properties - 400 - 13697ms
+2026-03-29 09:34:46:3446 error: [Error Handler] Cannot read properties of undefined (reading 'data')
+2026-03-29 09:34:46:3446 error: POST /api/v1/properties - 500 - 3014ms
+2026-03-29 09:36:12:3612 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "thumbnail"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "code": "invalid_value",
+    "values": [
+      "AVAILABLE",
+      "RENTED",
+      "SOLD"
+    ],
+    "path": [
+      "body",
+      "status"
+    ],
+    "message": "Invalid property status"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received undefined"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isFeatured"
+    ],
+    "message": "Invalid input: expected boolean, received undefined"
+  }
+]
+2026-03-29 09:36:12:3612 error: POST /api/v1/properties - 400 - 12600ms
+2026-03-29 09:40:06:406 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "thumbnail"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+2026-03-29 09:40:06:406 error: POST /api/v1/properties - 400 - 12679ms
+2026-03-29 09:41:32:4132 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "thumbnail"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+2026-03-29 09:41:32:4132 error: POST /api/v1/properties - 400 - 12944ms
+2026-03-29 09:42:28:4228 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "thumbnail"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  }
+]
+2026-03-29 09:42:28:4228 error: POST /api/v1/properties - 400 - 14040ms
+2026-03-29 09:43:33:4333 http: POST /api/v1/properties - 201 - 17506ms
+2026-03-29 09:47:19:4719 http: POST /api/v1/properties - 201 - 14314ms

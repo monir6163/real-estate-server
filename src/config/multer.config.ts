@@ -16,7 +16,7 @@ const storage = new CloudinaryStorage({
     const finalFilename = `${filenameWithoutExt}-${timestamp}.${extension}`;
     const folderName = extension === "pdf" ? "pdfs" : "images";
     return {
-      folder: `healthcare/${folderName}`,
+      folder: `real-estate/${folderName}`,
       public_id: finalFilename,
       allowed_formats: ["jpg", "jpeg", "png", "webp", "pdf"],
       resource_type: "auto",
