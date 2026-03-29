@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
+import { IQueryParams } from "../../helper/query.interface";
 import catchAsync from "../../shared/catchAsync";
 import sendResponse from "../../shared/sendResponse";
 import { PropertyService } from "./property.service";
@@ -25,6 +26,20 @@ const createProperty = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+const getAllProperties = catchAsync(async (req: Request, res: Response) => {
+  const result = await PropertyService.getAllProperties(
+    req.query as IQueryParams,
+  );
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Properties retrieved successfully",
+    data: result.data,
+    meta: result.meta,
+  });
+});
 export const PropertyController = {
   createProperty,
+  getAllProperties,
 };

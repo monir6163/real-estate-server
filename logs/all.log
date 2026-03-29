@@ -313,3 +313,5 @@ Argument `title` is missing.
 2026-03-29 09:42:28:4228 error: POST /api/v1/properties - 400 - 14040ms
 2026-03-29 09:43:33:4333 http: POST /api/v1/properties - 201 - 17506ms
 2026-03-29 09:47:19:4719 http: POST /api/v1/properties - 201 - 14314ms
+2026-03-29 10:11:49:1149 http: GET /api/v1/properties - 200 - 3823ms
+2026-03-29 10:13:11:1311 http: GET /api/v1/properties - 200 - 2956ms

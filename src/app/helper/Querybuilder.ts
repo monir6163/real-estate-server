@@ -4,7 +4,7 @@ import {
   IQueryResult,
   PrismaCountArgs,
   PrismaFindManyArgs,
-  PrismaModelDelgate,
+  PrismaModelDelegate,
   PrismaNumberFilter,
   PrismaStringFilter,
   PrismaWhereConditions,
@@ -25,7 +25,7 @@ export class QueryBuilder<
   private selectFields: Record<string, boolean> | undefined;
 
   constructor(
-    private model: PrismaModelDelgate,
+    private model: PrismaModelDelegate,
     private queryParams: IQueryParams,
     private config: IQueryBuilderConfig,
   ) {
@@ -43,7 +43,7 @@ export class QueryBuilder<
   search(): this {
     const { searchTerm } = this.queryParams;
     const { searchableFields } = this.config;
-    // doctorSearchableFields = ['user.name', 'user.email', 'specialties.specialty.title' , 'specialties.specialty.description']
+    // Example searchable fields: ['title', 'location.city', 'owner.email']
     if (searchTerm && searchableFields && searchableFields.length > 0) {
       const searchConditions: Record<string, unknown>[] = searchableFields.map(
         (field) => {
@@ -115,6 +115,7 @@ export class QueryBuilder<
       "sortOrder",
       "fields",
       "include",
+      "includes",
     ];
 
     const filterParams: Record<string, unknown> = {};
@@ -241,8 +242,13 @@ export class QueryBuilder<
   }
 
   paginate(): this {
-    const page = Number(this.queryParams.page) || 1;
-    const limit = Number(this.queryParams.limit) || 10;
+    const rawPage = Number(this.queryParams.page);
+    const rawLimit = Number(this.queryParams.limit);
+
+    const page =
+      Number.isFinite(rawPage) && rawPage > 0 ? Math.floor(rawPage) : 1;
+    const limit =
+      Number.isFinite(rawLimit) && rawLimit > 0 ? Math.floor(rawLimit) : 10;
 
     this.page = page;
     this.limit = limit;
@@ -261,7 +267,7 @@ export class QueryBuilder<
     this.sortBy = sortBy;
     this.sortOrder = sortOrder;
 
-    // /doctors?sortBy=user.name&sortOrder=asc => orderBy: { user: { name: 'asc' } }
+    // Example: ?sortBy=owner.name&sortOrder=asc => { orderBy: { owner: { name: 'asc' } } }
 
     if (sortBy.includes(".")) {
       const parts = sortBy.split(".");
@@ -299,7 +305,7 @@ export class QueryBuilder<
 
   fields(): this {
     const fieldsParam = this.queryParams.fields;
-    // /doctors?fields=id,name,user => select: { id: true, name: true, user: { select: { name: true } } }
+    // Example: ?fields=id,title,price => { select: { id: true, title: true, price: true } }
 
     //no nested field selection for now, only direct fields
     if (fieldsParam && typeof fieldsParam === "string") {
@@ -351,7 +357,9 @@ export class QueryBuilder<
       }
     });
 
-    const includeParam = this.queryParams.include as string | undefined;
+    const includeParam =
+      (this.queryParams.include as string | undefined) ??
+      (this.queryParams.includes as string | undefined);
 
     if (includeParam && typeof includeParam === "string") {
       const requestedRelations = includeParam

@@ -6,6 +6,7 @@ export interface PrismaFindManyArgs {
   orderBy?: Record<string, unknown> | Record<string, unknown>[];
   skip?: number;
   take?: number;
+  cursor?: Record<string, unknown>;
   coursor?: Record<string, unknown>;
   distinct?: string[] | string;
   [key: string]: unknown;
@@ -18,15 +19,19 @@ export interface PrismaCountArgs {
   orderBy?: Record<string, unknown> | Record<string, unknown>[];
   skip?: number;
   take?: number;
+  cursor?: Record<string, unknown>;
   coursor?: Record<string, unknown>;
   distinct?: string[] | string;
   [key: string]: unknown;
 }
 
-export interface PrismaModelDelgate {
+export interface PrismaModelDelegate {
   findMany(args?: any): Promise<any[]>;
   count(args?: any): Promise<number>;
 }
+
+// Backward-compatible alias for older imports with typo.
+export type PrismaModelDelgate = PrismaModelDelegate;
 
 export interface IQueryParams {
   searchTerm?: string;
@@ -35,6 +40,7 @@ export interface IQueryParams {
   sortBy?: string;
   sortOrder?: "asc" | "desc";
   fields?: string;
+  include?: string;
   includes?: string;
   [key: string]: unknown;
 }

@@ -8,6 +8,8 @@ import { PropertyValidation } from "./property.validation";
 
 const router = Router();
 
+router.get("/", PropertyController.getAllProperties);
+
 router.post(
   "/",
   checkAuth(Role.ADMIN, Role.AGENT),
