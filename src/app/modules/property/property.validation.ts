@@ -10,18 +10,18 @@ export const PropertyValidation = {
     body: z.object({
       title: z.string().min(1, "Title is required"),
       description: z.string().min(1, "Description is required"),
-      price: z.number().positive("Price must be a positive number"),
+      price: z.coerce.number().positive("Price must be a positive number"),
       location: z.string().min(1, "Location is required"),
       address: z.string().optional(),
-      bedrooms: z
+      bedrooms: z.coerce
         .number()
         .int()
         .nonnegative("Bedrooms must be a non-negative integer"),
-      bathrooms: z
+      bathrooms: z.coerce
         .number()
         .int()
         .nonnegative("Bathrooms must be a non-negative integer"),
-      area: z.number().positive("Area must be a positive number"),
+      area: z.coerce.number().positive("Area must be a positive number"),
       type: z.enum(
         [
           PropertyType.APARTMENT,
@@ -48,8 +48,8 @@ export const PropertyValidation = {
           },
         )
         .default(PropertyStatus.AVAILABLE),
-      isPremium: z.boolean().default(false),
-      isFeatured: z.boolean().default(false),
+      isPremium: z.coerce.boolean().default(false),
+      isFeatured: z.coerce.boolean().default(false),
     }),
   }),
 
@@ -57,20 +57,26 @@ export const PropertyValidation = {
     body: z.object({
       title: z.string().min(1, "Title is required").optional(),
       description: z.string().min(1, "Description is required").optional(),
-      price: z.number().positive("Price must be a positive number").optional(),
+      price: z.coerce
+        .number()
+        .positive("Price must be a positive number")
+        .optional(),
       location: z.string().min(1, "Location is required").optional(),
       address: z.string().optional(),
-      bedrooms: z
+      bedrooms: z.coerce
         .number()
         .int()
         .nonnegative("Bedrooms must be a non-negative integer")
         .optional(),
-      bathrooms: z
+      bathrooms: z.coerce
         .number()
         .int()
         .nonnegative("Bathrooms must be a non-negative integer")
         .optional(),
-      area: z.number().positive("Area must be a positive number").optional(),
+      area: z.coerce
+        .number()
+        .positive("Area must be a positive number")
+        .optional(),
       type: z
         .enum(
           [
@@ -101,8 +107,8 @@ export const PropertyValidation = {
           },
         )
         .optional(),
-      isPremium: z.boolean().optional(),
-      isFeatured: z.boolean().optional(),
+      isPremium: z.coerce.boolean().optional(),
+      isFeatured: z.coerce.boolean().optional(),
     }),
   }),
 

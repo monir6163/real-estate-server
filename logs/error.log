@@ -1141,3 +1141,211 @@ F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:
 
 Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
 2026-03-31 16:14:57:1457 error: PATCH /api/v1/users/profile/update - 400 - 685ms
+2026-03-31 17:28:39:2839 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:28:39:2839 error: POST /api/v1/properties - 400 - 33244ms
+2026-03-31 17:31:30:3130 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isFeatured"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:31:30:3130 error: POST /api/v1/properties - 400 - 16167ms
+2026-03-31 17:31:56:3156 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isFeatured"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:31:56:3156 error: POST /api/v1/properties - 400 - 15591ms
+2026-03-31 17:34:06:346 error: [Error Handler] 
+Invalid `prisma.property.create()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:20:40
+
+  17 
+  18 const createProperty = async (payload: IProperty) => {
+  19   const { images, thumbnail, ...propertyData } = payload;
+→ 20   const result = await prisma.property.create({
+         data: {
+           title: "test for agent property",
+           description: "ddfhdsfsd",
+           location: "Bogura",
+           address: "",
+           type: "HOUSE",
+           listingType: "RENT",
+           status: "AVAILABLE",
+           price: "5000",
+                  ~~~~~~
+           bedrooms: "2",
+           bathrooms: "1",
+           area: "200",
+           isPremium: "true",
+           isFeatured: "false",
+           agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6",
+           thumbnail: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956837/real-estate/images/hero-city-1774956833025.jpg.jpg",
+           propertyImages: {
+             create: [
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956840/real-estate/images/hero-city-1774956836006.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956842/real-estate/images/clickerhappy-living-room-2732939-1774956838604.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956845/real-estate/images/keresi72-wall-4160601920-1774956840151.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956847/real-estate/images/pexels-apartment-1851201-1774956843153.jpg.jpg"
+               }
+             ]
+           }
+         }
+       })
+
+Argument `price`: Invalid value provided. Expected Float, provided String.
+2026-03-31 17:34:06:346 error: POST /api/v1/properties - 400 - 16885ms

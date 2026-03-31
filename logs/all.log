@@ -2040,3 +2040,501 @@ F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:
 
 Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
 2026-03-31 16:14:57:1457 error: PATCH /api/v1/users/profile/update - 400 - 685ms
+2026-03-31 16:18:04:184 http: GET /api/auth/get-session - 200 - 3059ms
+2026-03-31 16:18:05:185 http: PATCH /api/v1/users/profile/update - 200 - 941ms
+2026-03-31 16:18:05:185 http: GET /api/auth/get-session - 200 - 607ms
+2026-03-31 16:18:06:186 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 16:18:09:189 http: GET /api/v1/auth/me - 200 - 3490ms
+2026-03-31 16:18:45:1845 http: GET /api/auth/get-session - 200 - 2892ms
+2026-03-31 16:18:46:1846 http: PATCH /api/v1/users/profile/update - 200 - 892ms
+2026-03-31 16:18:47:1847 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 16:18:47:1847 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 16:18:50:1850 http: GET /api/v1/auth/me - 200 - 3475ms
+2026-03-31 16:19:57:1957 http: GET /api/auth/get-session - 200 - 2937ms
+2026-03-31 16:19:58:1958 http: PATCH /api/v1/users/profile/update - 200 - 892ms
+2026-03-31 16:19:59:1959 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 16:19:59:1959 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 16:20:02:202 http: GET /api/v1/auth/me - 200 - 3531ms
+2026-03-31 16:20:11:2011 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 16:20:13:2013 http: GET /api/v1/properties/featured?limit=10 - 200 - 2940ms
+2026-03-31 16:20:14:2014 http: GET /api/v1/properties/featured?limit=10 - 200 - 895ms
+2026-03-31 16:20:17:2017 http: GET /api/v1/payments/settings - 200 - 914ms
+2026-03-31 16:20:17:2017 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 607ms
+2026-03-31 16:20:18:2018 http: GET /api/v1/payments/settings - 200 - 908ms
+2026-03-31 16:20:19:2019 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 602ms
+2026-03-31 16:20:21:2021 http: GET /api/v1/payments/settings - 200 - 902ms
+2026-03-31 16:20:32:2032 http: GET /api/v1/properties/featured?limit=10 - 200 - 3266ms
+2026-03-31 16:20:33:2033 http: GET /api/v1/properties/featured?limit=10 - 200 - 900ms
+2026-03-31 16:20:35:2035 http: GET /api/v1/payments/settings - 200 - 901ms
+2026-03-31 16:20:36:2036 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 599ms
+2026-03-31 16:20:37:2037 http: GET /api/v1/payments/settings - 200 - 900ms
+2026-03-31 16:20:37:2037 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 600ms
+2026-03-31 16:20:39:2039 http: GET /api/v1/payments/settings - 200 - 903ms
+2026-03-31 16:21:00:210 http: GET /api/v1/properties/featured?limit=10 - 200 - 3207ms
+2026-03-31 16:21:03:213 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 16:21:03:213 http: GET /api/v1/properties/featured?limit=10 - 200 - 3216ms
+2026-03-31 16:21:03:213 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 16:21:07:217 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 16:21:07:217 http: GET /api/v1/properties/featured?limit=10 - 200 - 592ms
+2026-03-31 16:22:09:229 http: GET /api/auth/get-session - 200 - 2970ms
+2026-03-31 16:22:12:2212 http: GET /api/auth/get-session - 200 - 2871ms
+2026-03-31 16:22:13:2213 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 16:22:21:2221 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 16:22:22:2222 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 16:22:23:2223 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 16:22:23:2223 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 16:22:24:2224 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 16:22:24:2224 http: GET /api/auth/get-session - 200 - 2890ms
+2026-03-31 16:22:26:2226 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 16:22:27:2227 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 16:22:28:2228 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 16:22:29:2229 http: GET /api/v1/bookings/my-bookings - 200 - 1205ms
+2026-03-31 16:22:51:2251 http: POST /api/auth/sign-out - 200 - 2971ms
+2026-03-31 16:22:52:2252 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 16:22:52:2252 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 16:22:55:2255 http: GET /api/v1/properties/featured?limit=10 - 200 - 2884ms
+2026-03-31 16:22:58:2258 http: GET /api/v1/properties/featured?limit=10 - 200 - 3176ms
+2026-03-31 16:23:08:238 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 16:23:10:2310 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 16:23:23:2323 http: POST /api/auth/sign-in/email - 200 - 3758ms
+2026-03-31 16:23:23:2323 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 16:23:26:2326 http: GET /api/v1/properties/featured?limit=10 - 200 - 3255ms
+2026-03-31 16:23:27:2327 http: GET /api/v1/properties/featured?limit=10 - 200 - 613ms
+2026-03-31 16:23:32:2332 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 16:23:33:2333 http: GET /api/auth/get-session - 200 - 613ms
+2026-03-31 16:23:34:2334 http: GET /api/auth/get-session - 200 - 617ms
+2026-03-31 17:00:05:05 http: GET /api/auth/get-session - 200 - 5502ms
+2026-03-31 17:00:05:05 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 17:00:06:06 http: GET /api/auth/get-session - 200 - 631ms
+2026-03-31 17:00:07:07 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 17:00:08:08 http: GET /api/auth/get-session - 200 - 2862ms
+2026-03-31 17:00:32:032 http: GET /api/auth/get-session - 200 - 2880ms
+2026-03-31 17:00:32:032 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 17:00:35:035 http: GET /api/auth/get-session - 200 - 2834ms
+2026-03-31 17:00:35:035 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:00:35:035 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 17:00:36:036 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:00:36:036 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 17:00:37:037 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 17:00:37:037 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 17:00:37:037 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 17:00:38:038 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 17:00:39:039 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 17:01:23:123 http: GET /api/auth/get-session - 200 - 3375ms
+2026-03-31 17:01:24:124 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 17:01:26:126 http: GET /api/auth/get-session - 200 - 2864ms
+2026-03-31 17:01:27:127 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 17:01:27:127 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 17:01:27:127 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 17:01:27:127 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:01:28:128 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:01:28:128 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 17:01:29:129 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 17:01:29:129 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 17:01:29:129 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:01:29:129 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 17:01:30:130 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 17:01:30:130 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 17:01:31:131 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:01:31:131 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 17:01:31:131 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 17:01:31:131 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 17:01:32:132 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 17:01:54:154 http: GET /api/auth/get-session - 200 - 2839ms
+2026-03-31 17:01:55:155 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 17:01:58:158 http: GET /api/auth/get-session - 200 - 3274ms
+2026-03-31 17:01:58:158 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 17:01:59:159 http: GET /api/auth/get-session - 200 - 998ms
+2026-03-31 17:01:59:159 http: GET /api/auth/get-session - 200 - 576ms
+2026-03-31 17:02:01:21 http: GET /api/auth/get-session - 200 - 2853ms
+2026-03-31 17:02:02:22 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 17:02:02:22 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 17:02:03:23 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 17:02:31:231 http: GET /api/auth/get-session - 200 - 2900ms
+2026-03-31 17:02:46:246 http: GET /api/auth/get-session - 200 - 2757ms
+2026-03-31 17:03:25:325 http: GET /api/auth/get-session - 200 - 2773ms
+2026-03-31 17:03:26:326 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:03:28:328 http: GET /api/auth/get-session - 200 - 2763ms
+2026-03-31 17:03:28:328 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:03:29:329 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:03:30:330 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:03:30:330 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:03:31:331 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:03:31:331 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:03:32:332 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:03:33:333 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:03:33:333 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:03:34:334 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:03:35:335 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:03:35:335 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 17:03:36:336 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:03:37:337 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:03:37:337 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:03:38:338 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:03:39:339 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:03:39:339 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 17:03:40:340 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:03:41:341 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:03:41:341 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:03:42:342 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:03:43:343 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:03:43:343 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:03:44:344 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:03:45:345 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:03:45:345 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:03:46:346 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:03:46:346 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:03:47:347 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:03:48:348 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:09:51:951 http: GET /api/auth/get-session - 200 - 3560ms
+2026-03-31 17:09:52:952 http: GET /api/auth/get-session - 200 - 3917ms
+2026-03-31 17:09:53:953 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 17:09:53:953 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 17:10:07:107 http: GET /api/auth/get-session - 200 - 2925ms
+2026-03-31 17:10:08:108 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 17:11:49:1149 http: GET /api/auth/get-session - 200 - 2894ms
+2026-03-31 17:11:51:1151 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 17:12:45:1245 http: GET /api/auth/get-session - 200 - 2842ms
+2026-03-31 17:12:46:1246 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 17:13:55:1355 http: GET /api/auth/get-session - 200 - 2805ms
+2026-03-31 17:13:56:1356 http: GET /api/auth/get-session - 200 - 575ms
+2026-03-31 17:16:06:166 http: GET /api/auth/get-session - 200 - 2791ms
+2026-03-31 17:16:07:167 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:19:32:1932 http: GET /api/auth/get-session - 200 - 2953ms
+2026-03-31 17:19:33:1933 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 17:25:30:2530 http: GET /api/auth/get-session - 200 - 3665ms
+2026-03-31 17:25:31:2531 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 17:28:39:2839 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:28:39:2839 error: POST /api/v1/properties - 400 - 33244ms
+2026-03-31 17:31:30:3130 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isFeatured"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:31:30:3130 error: POST /api/v1/properties - 400 - 16167ms
+2026-03-31 17:31:56:3156 error: [Error Handler] [
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bedrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "bathrooms"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isPremium"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  },
+  {
+    "expected": "boolean",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "isFeatured"
+    ],
+    "message": "Invalid input: expected boolean, received string"
+  }
+]
+2026-03-31 17:31:56:3156 error: POST /api/v1/properties - 400 - 15591ms
+2026-03-31 17:34:06:346 error: [Error Handler] 
+Invalid `prisma.property.create()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:20:40
+
+  17 
+  18 const createProperty = async (payload: IProperty) => {
+  19   const { images, thumbnail, ...propertyData } = payload;
+→ 20   const result = await prisma.property.create({
+         data: {
+           title: "test for agent property",
+           description: "ddfhdsfsd",
+           location: "Bogura",
+           address: "",
+           type: "HOUSE",
+           listingType: "RENT",
+           status: "AVAILABLE",
+           price: "5000",
+                  ~~~~~~
+           bedrooms: "2",
+           bathrooms: "1",
+           area: "200",
+           isPremium: "true",
+           isFeatured: "false",
+           agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6",
+           thumbnail: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956837/real-estate/images/hero-city-1774956833025.jpg.jpg",
+           propertyImages: {
+             create: [
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956840/real-estate/images/hero-city-1774956836006.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956842/real-estate/images/clickerhappy-living-room-2732939-1774956838604.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956845/real-estate/images/keresi72-wall-4160601920-1774956840151.jpg.jpg"
+               },
+               {
+                 url: "https://res.cloudinary.com/ddxqljriw/image/upload/v1774956847/real-estate/images/pexels-apartment-1851201-1774956843153.jpg.jpg"
+               }
+             ]
+           }
+         }
+       })
+
+Argument `price`: Invalid value provided. Expected Float, provided String.
+2026-03-31 17:34:06:346 error: POST /api/v1/properties - 400 - 16885ms
+2026-03-31 17:37:27:3727 http: POST /api/v1/properties - 201 - 21256ms
+2026-03-31 17:37:51:3751 http: GET /api/auth/get-session - 200 - 2858ms
+2026-03-31 17:37:51:3751 http: GET /api/v1/properties/featured?limit=10 - 200 - 3158ms
+2026-03-31 17:37:58:3758 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 875ms
+2026-03-31 17:37:59:3759 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 583ms
+2026-03-31 17:38:08:388 http: GET /api/v1/payments/settings - 200 - 883ms
+2026-03-31 17:38:11:3811 http: GET /api/v1/properties/266a03e9-1dae-43ac-854a-4df82df9cbbd - 200 - 2823ms
+2026-03-31 17:38:12:3812 http: GET /api/v1/payments/settings - 200 - 839ms
+2026-03-31 17:38:15:3815 http: GET /api/v1/properties/266a03e9-1dae-43ac-854a-4df82df9cbbd - 200 - 2743ms
+2026-03-31 17:38:37:3837 http: GET /api/v1/payments/settings - 200 - 3027ms
+2026-03-31 17:39:00:390 http: GET /api/v1/properties/featured?limit=10 - 200 - 5241ms
+2026-03-31 17:39:01:391 http: GET /api/v1/properties/featured?limit=10 - 200 - 839ms
+2026-03-31 17:40:23:4023 http: GET /api/auth/get-session - 200 - 2823ms
+2026-03-31 17:40:24:4024 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:40:26:4026 http: GET /api/auth/get-session - 200 - 2742ms
+2026-03-31 17:40:27:4027 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:40:27:4027 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:40:28:4028 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:40:28:4028 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:40:29:4029 http: GET /api/auth/get-session - 200 - 571ms
+2026-03-31 17:40:29:4029 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:40:29:4029 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:40:29:4029 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:40:37:4037 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:40:37:4037 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:40:37:4037 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:40:38:4038 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:40:38:4038 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:40:38:4038 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:41:02:412 http: GET /api/auth/get-session - 200 - 2746ms
+2026-03-31 17:41:02:412 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 17:41:25:4125 http: GET /api/auth/get-session - 200 - 2924ms
+2026-03-31 17:42:28:4228 http: GET /api/auth/get-session - 200 - 2861ms
+2026-03-31 17:42:52:4252 http: GET /api/auth/get-session - 200 - 2833ms
+2026-03-31 17:42:53:4253 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 17:42:54:4254 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 17:42:55:4255 http: GET /api/auth/get-session - 200 - 2831ms
+2026-03-31 17:42:56:4256 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 17:42:56:4256 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 17:42:57:4257 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 17:42:57:4257 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 17:43:19:4319 http: GET /api/auth/get-session - 200 - 2848ms
+2026-03-31 17:43:21:4321 http: GET /api/auth/get-session - 200 - 611ms
+2026-03-31 17:43:22:4322 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 17:43:24:4324 http: GET /api/auth/get-session - 200 - 2849ms
+2026-03-31 17:43:25:4325 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 17:43:28:4328 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 17:43:35:4335 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 17:43:37:4337 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 17:43:40:4340 http: GET /api/v1/properties/featured?limit=10 - 200 - 3154ms
+2026-03-31 17:43:47:4347 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 17:43:48:4348 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 17:43:49:4349 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 17:43:51:4351 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 17:46:31:4631 http: GET /api/auth/get-session - 200 - 2823ms
+2026-03-31 17:46:32:4632 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:47:25:4725 http: GET /api/auth/get-session - 200 - 2878ms
+2026-03-31 17:47:26:4726 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:47:28:4728 http: GET /api/auth/get-session - 200 - 2752ms
+2026-03-31 17:47:29:4729 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:47:30:4730 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:30:4730 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:47:31:4731 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:47:32:4732 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:32:4732 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:47:33:4733 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:47:34:4734 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:47:34:4734 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:47:35:4735 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:36:4736 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 17:47:37:4737 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 17:47:37:4737 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:47:38:4738 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 17:47:39:4739 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:47:40:4740 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:47:40:4740 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:47:41:4741 http: GET /api/auth/get-session - 200 - 573ms
+2026-03-31 17:47:42:4742 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:47:43:4743 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:47:44:4744 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:47:44:4744 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:47:45:4745 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:47:46:4746 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 17:47:47:4747 http: GET /api/auth/get-session - 200 - 570ms
+2026-03-31 17:47:47:4747 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:48:4748 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:47:49:4749 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:50:4750 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 17:47:50:4750 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:47:51:4751 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:47:52:4752 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:53:4753 http: GET /api/auth/get-session - 200 - 575ms
+2026-03-31 17:47:53:4753 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:47:54:4754 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:47:55:4755 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:47:55:4755 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:56:4756 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:47:57:4757 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:57:4757 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:47:58:4758 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:47:59:4759 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:47:59:4759 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:48:00:480 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:01:481 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:01:481 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:48:02:482 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:48:03:483 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:48:03:483 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:48:04:484 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:48:05:485 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:48:05:485 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:48:06:486 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 17:48:06:486 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:48:07:487 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:48:08:488 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:08:488 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:09:489 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:48:10:4810 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:10:4810 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:48:11:4811 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:48:12:4812 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 17:48:12:4812 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 17:48:13:4813 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 17:48:13:4813 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:48:14:4814 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 17:48:14:4814 http: GET /api/v1/properties - 200 - 5513ms

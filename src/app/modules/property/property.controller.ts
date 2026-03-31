@@ -8,6 +8,13 @@ import { PropertyService } from "./property.service";
 const createProperty = catchAsync(async (req: Request, res: Response) => {
   const payload = {
     ...req.body,
+    // Convert string values to proper types
+    price: Number(req.body.price),
+    bedrooms: Number(req.body.bedrooms),
+    bathrooms: Number(req.body.bathrooms),
+    area: Number(req.body.area),
+    isPremium: req.body.isPremium === "true" || req.body.isPremium === true,
+    isFeatured: req.body.isFeatured === "true" || req.body.isFeatured === true,
     thumbnail:
       req.files && !Array.isArray(req.files) && req.files.thumbnail
         ? (req.files.thumbnail as Express.Multer.File[])[0].path
@@ -146,6 +153,18 @@ const getAllFeaturedProperties = catchAsync(
   },
 );
 
+// get owner properties
+const getOwnerProperties = catchAsync(async (req: Request, res: Response) => {
+  const ownerId = req.user?.id as string;
+  const result = await PropertyService.getOwnerProperties(ownerId);
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Owner properties retrieved successfully",
+    data: result,
+  });
+});
+
 export const PropertyController = {
   createProperty,
   getAllProperties,
@@ -155,4 +174,5 @@ export const PropertyController = {
   deleteProperty,
   isFeaturedProperty,
   getAllFeaturedProperties,
+  getOwnerProperties,
 };

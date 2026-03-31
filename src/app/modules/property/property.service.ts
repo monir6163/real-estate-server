@@ -205,6 +205,18 @@ const getAllFeaturedProperties = async (query: IQueryParams) => {
   return result;
 };
 
+const getOwnerProperties = async (agentId: string) => {
+  const result = await prisma.property.findMany({
+    where: { agentId },
+    include: {
+      agent: true,
+      propertyImages: true,
+      reviews: true,
+    },
+  });
+  return result;
+};
+
 export const PropertyService = {
   createProperty,
   getAllProperties,
@@ -214,4 +226,5 @@ export const PropertyService = {
   deleteProperty,
   isFeaturedProperty,
   getAllFeaturedProperties,
+  getOwnerProperties,
 };

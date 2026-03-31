@@ -14,6 +14,12 @@ router.get("/", PropertyController.getAllProperties);
 
 router.get("/:id", PropertyController.getSingleProperty);
 
+router.get(
+  "/agent/properties",
+  checkAuth(Role.AGENT),
+  PropertyController.getOwnerProperties,
+);
+
 router.post(
   "/",
   checkAuth(Role.AGENT),
