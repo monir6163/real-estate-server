@@ -136,10 +136,46 @@ export class QueryBuilder<
         return;
       }
 
+      // Extract base field name for bracket notation (e.g., price[gte] -> price)
+      let baseFieldName = key;
+      if (key.includes("[")) {
+        baseFieldName = key.split("[")[0];
+      }
+
       const isAllowedField =
         !filterableFields ||
         filterableFields.length === 0 ||
-        filterableFields.includes(key);
+        filterableFields.includes(baseFieldName);
+
+      // Handle bracket notation for range filters (e.g., price[gte], price[lte])
+      if (key.includes("[") && key.includes("]")) {
+        if (!isAllowedField) {
+          return;
+        }
+
+        // Extract operator from bracket notation
+        const match = key.match(/(\w+)\[(\w+)\]/);
+        if (match) {
+          const [, fieldName, operator] = match;
+
+          if (!queryWhere[fieldName]) {
+            queryWhere[fieldName] = {};
+            countQueryWhere[fieldName] = {};
+          }
+
+          const parsedValue = this.parseFilterValue(value);
+          const queryField = queryWhere[fieldName] as Record<string, unknown>;
+          const countField = countQueryWhere[fieldName] as Record<
+            string,
+            unknown
+          >;
+
+          queryField[operator] = parsedValue;
+          countField[operator] = parsedValue;
+        }
+        return;
+      }
+
       if (key.includes(".")) {
         const parts = key.split(".");
 
@@ -231,6 +267,22 @@ export class QueryBuilder<
         countQueryWhere[key] = this.parseRangeFilter(
           value as Record<string, string | number>,
         );
+        return;
+      }
+
+      // String fields that should use case-insensitive partial matching
+      const stringFilterFields = ["location"];
+      if (
+        stringFilterFields.includes(key) &&
+        typeof value === "string" &&
+        value.trim()
+      ) {
+        const stringFilter: PrismaStringFilter = {
+          contains: value.trim(),
+          mode: "insensitive" as const,
+        };
+        queryWhere[key] = stringFilter;
+        countQueryWhere[key] = stringFilter;
         return;
       }
 

@@ -131,6 +131,21 @@ const isFeaturedProperty = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getAllFeaturedProperties = catchAsync(
+  async (req: Request, res: Response) => {
+    const result = await PropertyService.getAllFeaturedProperties(
+      req.query as IQueryParams,
+    );
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: "Featured properties retrieved successfully",
+      data: result.data,
+      meta: result.meta,
+    });
+  },
+);
+
 export const PropertyController = {
   createProperty,
   getAllProperties,
@@ -139,4 +154,5 @@ export const PropertyController = {
   updatePropertyStatus,
   deleteProperty,
   isFeaturedProperty,
+  getAllFeaturedProperties,
 };

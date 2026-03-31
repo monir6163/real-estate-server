@@ -525,3 +525,759 @@ Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options ar
 2026-03-29 15:46:41:4641 http: PATCH /api/v1/properties/status/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 3788ms
 2026-03-29 15:52:11:5211 error: [Error Handler] Access Forbidden! You don't have permission.
 2026-03-29 15:52:11:5211 error: PATCH /api/v1/properties/featured/fb216d4c-3827-4025-974e-5623232ceee1 - 403 - 3762ms
+2026-03-30 13:39:47:3947 http: GET /api/auth/get-session - 200 - 56ms
+2026-03-30 13:39:53:3953 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5428ms
+2026-03-30 13:40:26:4026 http: GET /api/auth/get-session - 200 - 23ms
+2026-03-30 13:40:30:4030 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2924ms
+2026-03-30 13:40:50:4050 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-30 13:41:00:410 http: GET /api/v1/properties?page=1&limit=12&search=d&sortBy=createdAt&sortOrder=desc - 200 - 2981ms
+2026-03-30 13:41:03:413 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2885ms
+2026-03-30 13:41:05:415 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 602ms
+2026-03-30 13:41:09:419 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 589ms
+2026-03-30 13:41:12:4112 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 595ms
+2026-03-30 13:41:29:4129 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5186ms
+2026-03-30 13:42:01:421 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2850ms
+2026-03-30 13:42:07:427 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-30 13:42:08:428 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 566ms
+2026-03-30 13:42:55:4255 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-30 13:43:02:432 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-30 13:43:11:4311 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5251ms
+2026-03-30 13:43:17:4317 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 596ms
+2026-03-30 13:43:21:4321 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 594ms
+2026-03-30 13:44:49:4449 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-30 13:49:28:4928 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-30 13:49:58:4958 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 5975ms
+2026-03-30 13:49:58:4958 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 616ms
+2026-03-30 13:51:38:5138 error: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee12 - 404 - 2604ms
+2026-03-30 13:51:48:5148 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 2757ms
+2026-03-30 13:54:54:5454 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-30 13:54:59:5459 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 5170ms
+2026-03-30 13:54:59:5459 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-30 13:56:01:561 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-30 13:56:12:5612 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-30 13:56:17:5617 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 5289ms
+2026-03-30 13:56:38:5638 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-30 13:56:40:5640 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-30 13:56:41:5641 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2908ms
+2026-03-30 13:56:43:5643 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2903ms
+2026-03-30 13:56:45:5645 http: GET /api/auth/get-session - 200 - 11ms
+2026-03-30 13:56:46:5646 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 599ms
+2026-03-30 13:56:52:5652 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 599ms
+2026-03-30 13:56:53:5653 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 599ms
+2026-03-30 13:57:53:5753 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-30 17:29:20:2920 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-30 17:29:48:2948 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-30 17:33:02:332 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-30 17:33:26:3326 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2908ms
+2026-03-30 17:33:28:3328 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2888ms
+2026-03-30 17:33:36:3336 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-30 17:33:39:3339 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2889ms
+2026-03-30 17:35:17:3517 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-30 17:35:34:3534 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-30 17:35:58:3558 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-30 17:36:47:3647 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-30 17:36:54:3654 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2818ms
+2026-03-30 17:36:56:3656 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 2754ms
+2026-03-31 07:16:57:1657 http: GET /api/auth/get-session - 200 - 53ms
+2026-03-31 07:17:34:1734 error: POST /api/auth/sign-in/email - 401 - 5057ms
+2026-03-31 07:17:42:1742 error: POST /api/auth/sign-in/email - 401 - 1234ms
+2026-03-31 07:17:47:1747 error: POST /api/auth/sign-in/email - 401 - 1203ms
+2026-03-31 07:17:52:1752 http: POST /api/auth/sign-in/email - 200 - 1551ms
+2026-03-31 07:17:53:1753 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 07:18:30:1830 http: GET /api/auth/get-session - 200 - 2993ms
+2026-03-31 07:18:31:1831 http: GET /api/auth/get-session - 200 - 636ms
+2026-03-31 07:18:52:1852 http: GET /api/auth/get-session - 200 - 18ms
+2026-03-31 07:20:11:2011 http: GET /api/auth/get-session - 200 - 22ms
+2026-03-31 07:20:25:2025 http: POST /api/auth/sign-in/email - 200 - 4105ms
+2026-03-31 07:20:26:2026 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 07:20:35:2035 http: GET /api/auth/get-session - 200 - 675ms
+2026-03-31 07:20:55:2055 http: GET /api/auth/get-session - 200 - 3085ms
+2026-03-31 07:21:30:2130 http: GET /api/auth/get-session - 200 - 3018ms
+2026-03-31 07:21:36:2136 http: GET /api/auth/get-session - 200 - 571ms
+2026-03-31 07:22:12:2212 http: GET /api/auth/get-session - 200 - 2933ms
+2026-03-31 07:22:16:2216 http: POST /api/auth/sign-out - 200 - 694ms
+2026-03-31 07:22:16:2216 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-31 07:23:17:2317 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 07:23:35:2335 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 07:23:47:2347 http: POST /api/auth/sign-in/email - 200 - 4336ms
+2026-03-31 07:23:48:2348 http: GET /api/auth/get-session - 200 - 698ms
+2026-03-31 07:24:03:243 http: GET /api/auth/get-session - 200 - 3189ms
+2026-03-31 07:24:29:2429 http: GET /api/auth/get-session - 200 - 3254ms
+2026-03-31 07:24:32:2432 http: GET /api/auth/get-session - 200 - 763ms
+2026-03-31 07:27:23:2723 http: GET /api/auth/get-session - 200 - 2931ms
+2026-03-31 07:27:24:2724 http: GET /api/auth/get-session - 200 - 682ms
+2026-03-31 07:27:24:2724 http: GET /api/auth/get-session - 200 - 3159ms
+2026-03-31 07:27:27:2727 http: GET /api/auth/get-session - 200 - 779ms
+2026-03-31 07:28:33:2833 http: GET /api/auth/get-session - 200 - 3007ms
+2026-03-31 07:28:34:2834 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 07:28:36:2836 http: GET /api/auth/get-session - 200 - 2940ms
+2026-03-31 07:28:37:2837 http: GET /api/auth/get-session - 200 - 635ms
+2026-03-31 07:28:58:2858 http: GET /api/auth/get-session - 200 - 3079ms
+2026-03-31 07:28:59:2859 http: GET /api/auth/get-session - 200 - 638ms
+2026-03-31 07:29:21:2921 http: GET /api/auth/get-session - 200 - 3082ms
+2026-03-31 07:29:22:2922 http: GET /api/auth/get-session - 200 - 629ms
+2026-03-31 07:29:27:2927 http: GET /api/auth/get-session - 200 - 620ms
+2026-03-31 07:29:28:2928 http: GET /api/auth/get-session - 200 - 646ms
+2026-03-31 07:29:32:2932 http: GET /api/auth/get-session - 200 - 619ms
+2026-03-31 07:29:33:2933 http: GET /api/auth/get-session - 200 - 1525ms
+2026-03-31 07:30:03:303 http: POST /api/auth/sign-out - 200 - 3154ms
+2026-03-31 07:30:04:304 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 07:30:04:304 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 07:30:19:3019 http: POST /api/v1/auth/login - 200 - 4823ms
+2026-03-31 07:31:01:311 error: [Error Handler] 
+Invalid `prisma.property.create()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:20:40
+
+  17 
+  18 const createProperty = async (payload: IProperty) => {
+  19   const { images, thumbnail, ...propertyData } = payload;
+→ 20   const result = await prisma.property.create({
+         data: {
+           title: "Modern Luxury Apartment 2",
+           description: "A beautiful apartment in the city center with all modern facilities.",
+           price: 86000,
+           location: "Dhaka",
+           address: "Banani, Road 12",
+           bedrooms: 5,
+           bathrooms: 2,
+           area: 1450,
+           type: "APARTMENT",
+           listingType: "SALE",
+           agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6",
+           propertyImages: {
+             create: []
+           },
+       +   thumbnail: String
+         }
+       })
+
+Argument `thumbnail` is missing.
+2026-03-31 07:31:01:311 error: POST /api/v1/properties - 400 - 3228ms
+2026-03-31 07:31:59:3159 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 07:32:16:3216 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 07:33:21:3321 http: POST /api/v1/properties - 201 - 18870ms
+2026-03-31 07:33:29:3329 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 07:33:34:3334 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3031ms
+2026-03-31 07:33:35:3335 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 565ms
+2026-03-31 07:34:00:340 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 5360ms
+2026-03-31 07:34:01:341 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 584ms
+2026-03-31 07:38:35:3835 http: POST /api/v1/properties - 201 - 16889ms
+2026-03-31 07:38:44:3844 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 07:38:56:3856 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5644ms
+2026-03-31 07:38:57:3857 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 563ms
+2026-03-31 07:39:15:3915 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5294ms
+2026-03-31 07:39:16:3916 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 564ms
+2026-03-31 07:41:09:419 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3296ms
+2026-03-31 07:41:10:4110 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 07:41:10:4110 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3345ms
+2026-03-31 07:41:12:4112 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 942ms
+2026-03-31 07:41:38:4138 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3287ms
+2026-03-31 07:41:38:4138 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 589ms
+2026-03-31 07:41:44:4144 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 587ms
+2026-03-31 07:42:01:421 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3354ms
+2026-03-31 07:42:08:428 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3345ms
+2026-03-31 07:43:17:4317 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 07:45:51:4551 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-31 07:47:54:4754 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 07:47:58:4758 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 07:48:14:4814 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 07:48:19:4819 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 4508ms
+2026-03-31 07:48:31:4831 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 07:48:52:4852 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc - 200 - 5747ms
+2026-03-31 07:48:58:4858 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 1122ms
+2026-03-31 07:49:21:4921 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&bedrooms=5 - 200 - 3302ms
+2026-03-31 07:49:29:4929 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3326ms
+2026-03-31 07:49:30:4930 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&bathrooms=5 - 200 - 601ms
+2026-03-31 07:49:34:4934 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 640ms
+2026-03-31 07:49:45:4945 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Blte%5D=5 - 200 - 3780ms
+2026-03-31 07:49:46:4946 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Blte%5D=50 - 200 - 658ms
+2026-03-31 07:49:46:4946 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Blte%5D=500 - 200 - 650ms
+2026-03-31 07:49:47:4947 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Blte%5D=5000 - 200 - 1019ms
+2026-03-31 07:49:49:4949 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Blte%5D=50000 - 200 - 1107ms
+2026-03-31 07:49:52:4952 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=3&price%5Blte%5D=50000 - 200 - 1099ms
+2026-03-31 07:49:53:4953 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=30&price%5Blte%5D=50000 - 200 - 883ms
+2026-03-31 07:49:54:4954 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=300&price%5Blte%5D=50000 - 200 - 1055ms
+2026-03-31 07:49:55:4955 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=3000&price%5Blte%5D=50000 - 200 - 1014ms
+2026-03-31 07:49:56:4956 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=30000&price%5Blte%5D=50000 - 200 - 1041ms
+2026-03-31 07:50:14:5014 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3643ms
+2026-03-31 07:50:22:5022 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=d - 200 - 3163ms
+2026-03-31 07:50:22:5022 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dh - 200 - 624ms
+2026-03-31 07:50:23:5023 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dha - 200 - 626ms
+2026-03-31 07:50:24:5024 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dhak - 200 - 613ms
+2026-03-31 07:50:24:5024 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dhaka - 200 - 769ms
+2026-03-31 07:50:27:5027 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 767ms
+2026-03-31 07:50:43:5043 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=D - 200 - 3337ms
+2026-03-31 07:50:46:5046 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=Dh - 200 - 3269ms
+2026-03-31 07:50:47:5047 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=Dha - 200 - 667ms
+2026-03-31 07:50:48:5048 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=Dhak - 200 - 652ms
+2026-03-31 07:50:48:5048 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=Dhaka - 200 - 720ms
+2026-03-31 07:51:04:514 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3465ms
+2026-03-31 07:51:39:5139 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5691ms
+2026-03-31 07:51:40:5140 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 613ms
+2026-03-31 07:51:41:5141 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 687ms
+2026-03-31 07:51:41:5141 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 647ms
+2026-03-31 07:52:09:529 http: GET /api/v1/properties?page=1&limit=12&sortBy=price&sortOrder=desc - 200 - 3537ms
+2026-03-31 07:52:15:5215 http: GET /api/v1/properties?page=1&limit=12&sortBy=title&sortOrder=desc - 200 - 936ms
+2026-03-31 07:54:38:5438 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 07:55:11:5511 http: GET /api/auth/get-session - 200 - 13ms
+2026-03-31 07:55:20:5520 http: GET /api/v1/properties?page=1&limit=12&sortBy=title&sortOrder=asc - 200 - 3375ms
+2026-03-31 07:55:34:5534 http: GET /api/v1/properties?page=1&limit=12&sortBy=title&sortOrder=desc - 200 - 3542ms
+2026-03-31 07:55:51:5551 http: GET /api/v1/properties?page=1&limit=12&sortBy=price&sortOrder=desc - 200 - 3297ms
+2026-03-31 07:56:04:564 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3393ms
+2026-03-31 07:56:11:5611 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc - 200 - 3892ms
+2026-03-31 07:56:20:5620 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 07:56:24:5624 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3428ms
+2026-03-31 07:56:34:5634 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc - 200 - 3286ms
+2026-03-31 07:56:44:5644 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=d - 200 - 2904ms
+2026-03-31 07:56:47:5647 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=dh - 200 - 2891ms
+2026-03-31 07:56:48:5648 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=dha - 200 - 660ms
+2026-03-31 07:56:49:5649 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=dhak - 200 - 665ms
+2026-03-31 07:56:49:5649 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=dhaka - 200 - 613ms
+2026-03-31 07:56:57:5657 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=haka - 200 - 652ms
+2026-03-31 07:56:57:5657 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=asc&location=Dhaka - 200 - 591ms
+2026-03-31 08:00:43:043 http: GET /api/v1/properties?location=Dhaka&limit=5 - 200 - 3179ms
+2026-03-31 08:01:22:122 http: GET /api/auth/get-session - 200 - 83ms
+2026-03-31 08:01:26:126 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3647ms
+2026-03-31 08:01:36:136 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=d - 200 - 662ms
+2026-03-31 08:01:36:136 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dh - 200 - 631ms
+2026-03-31 08:01:39:139 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dha - 200 - 3047ms
+2026-03-31 08:01:40:140 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dhak - 200 - 655ms
+2026-03-31 08:01:41:141 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&location=dhaka - 200 - 648ms
+2026-03-31 08:01:45:145 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:45:145 error: GET /api/v1/properties?page=1&limit=12&searchTerm=m&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 91ms
+2026-03-31 08:01:46:146 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:46:146 error: GET /api/v1/properties?page=1&limit=12&searchTerm=mo&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 21ms
+2026-03-31 08:01:47:147 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:47:147 error: GET /api/v1/properties?page=1&limit=12&searchTerm=mod&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 19ms
+2026-03-31 08:01:53:153 http: GET /api/auth/get-session - 200 - 14ms
+2026-03-31 08:01:57:157 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3464ms
+2026-03-31 08:02:07:27 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:02:07:27 error: GET /api/v1/properties?page=1&limit=12&searchTerm=l&sortBy=createdAt&sortOrder=desc - 400 - 11ms
+2026-03-31 08:02:09:29 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:02:09:29 error: GET /api/v1/properties?page=1&limit=12&searchTerm=lu&sortBy=createdAt&sortOrder=desc - 400 - 10ms
+2026-03-31 08:02:23:223 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5944ms
+2026-03-31 08:02:37:237 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8 - 200 - 3388ms
+2026-03-31 08:02:37:237 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80 - 200 - 587ms
+2026-03-31 08:02:41:241 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=800 - 200 - 3392ms
+2026-03-31 08:02:41:241 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8000 - 200 - 636ms
+2026-03-31 08:02:42:242 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000 - 200 - 602ms
+2026-03-31 08:02:48:248 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=8 - 200 - 987ms
+2026-03-31 08:02:48:248 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=86 - 200 - 586ms
+2026-03-31 08:02:49:249 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=860 - 200 - 953ms
+2026-03-31 08:02:50:250 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=8600 - 200 - 649ms
+2026-03-31 08:02:51:251 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=86000 - 200 - 979ms
+2026-03-31 08:02:52:252 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=860000 - 200 - 957ms
+2026-03-31 08:03:10:310 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=80000&price%5Blte%5D=86000 - 200 - 5919ms
+2026-03-31 08:03:21:321 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8000&price%5Blte%5D=86000 - 200 - 3336ms
+2026-03-31 08:03:22:322 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86000 - 200 - 648ms
+2026-03-31 08:03:36:336 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86000&bedrooms=5 - 200 - 2990ms
+2026-03-31 08:03:47:347 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86000&bedrooms=5&bathrooms=2 - 200 - 3196ms
+2026-03-31 08:04:01:41 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3441ms
+2026-03-31 08:05:13:513 http: GET /api/auth/get-session - 200 - 12ms
+2026-03-31 08:05:26:526 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:05:26:526 error: GET /api/v1/properties?searchTerm=Dhaka&limit=5&page=1 - 400 - 12ms
+2026-03-31 08:05:33:533 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:05:33:533 error: GET /api/v1/properties?searchTerm=Dhaka&limit=5&page=1 - 400 - 14ms
+2026-03-31 08:06:21:621 http: GET /api/v1/properties?searchTerm=Dhaka&limit=5&page=1 - 200 - 3166ms
+2026-03-31 08:06:57:657 http: GET /api/auth/get-session - 200 - 69ms
+2026-03-31 08:07:03:73 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 6217ms
+2026-03-31 08:07:07:77 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-31 08:07:15:715 http: GET /api/v1/properties?page=1&limit=12&searchTerm=d&sortBy=createdAt&sortOrder=desc - 200 - 3457ms
+2026-03-31 08:07:15:715 http: GET /api/v1/properties?page=1&limit=12&searchTerm=dh&sortBy=createdAt&sortOrder=desc - 200 - 631ms
+2026-03-31 08:07:19:719 http: GET /api/v1/properties?page=1&limit=12&searchTerm=dha&sortBy=createdAt&sortOrder=desc - 200 - 3792ms
+2026-03-31 08:07:21:721 http: GET /api/v1/properties?page=1&limit=12&searchTerm=dhak&sortBy=createdAt&sortOrder=desc - 200 - 1357ms
+2026-03-31 08:07:21:721 http: GET /api/v1/properties?page=1&limit=12&searchTerm=dhaka&sortBy=createdAt&sortOrder=desc - 200 - 731ms
+2026-03-31 08:07:22:722 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 663ms
+2026-03-31 08:07:23:723 http: GET /api/v1/properties?page=1&limit=12&searchTerm=m&sortBy=createdAt&sortOrder=desc - 200 - 654ms
+2026-03-31 08:07:24:724 http: GET /api/v1/properties?page=1&limit=12&searchTerm=mo&sortBy=createdAt&sortOrder=desc - 200 - 1182ms
+2026-03-31 08:07:25:725 http: GET /api/v1/properties?page=1&limit=12&searchTerm=mod&sortBy=createdAt&sortOrder=desc - 200 - 887ms
+2026-03-31 08:07:26:726 http: GET /api/v1/properties?page=1&limit=12&searchTerm=mode&sortBy=createdAt&sortOrder=desc - 200 - 731ms
+2026-03-31 08:07:27:727 http: GET /api/v1/properties?page=1&limit=12&searchTerm=moder&sortBy=createdAt&sortOrder=desc - 200 - 960ms
+2026-03-31 08:07:28:728 http: GET /api/v1/properties?page=1&limit=12&searchTerm=modern&sortBy=createdAt&sortOrder=desc - 200 - 743ms
+2026-03-31 08:07:31:731 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 972ms
+2026-03-31 08:08:56:856 http: GET /api/auth/get-session - 200 - 14ms
+2026-03-31 08:09:07:97 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8 - 200 - 3392ms
+2026-03-31 08:09:07:97 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85 - 200 - 680ms
+2026-03-31 08:09:11:911 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=850 - 200 - 3388ms
+2026-03-31 08:09:11:911 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8500 - 200 - 597ms
+2026-03-31 08:09:12:912 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000 - 200 - 890ms
+2026-03-31 08:09:13:913 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=8 - 200 - 651ms
+2026-03-31 08:09:14:914 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86 - 200 - 930ms
+2026-03-31 08:09:15:915 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=860 - 200 - 659ms
+2026-03-31 08:09:16:916 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=8600 - 200 - 926ms
+2026-03-31 08:09:16:916 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86000 - 200 - 602ms
+2026-03-31 08:10:38:1038 http: GET /api/v1/properties?price%5Bgte%5D=85000&price%5Blte%5D=86000&limit=10 - 200 - 5524ms
+2026-03-31 08:10:57:1057 http: GET /api/v1/properties?limit=100 - 200 - 5496ms
+2026-03-31 08:11:09:119 http: GET /api/v1/properties?limit=100 - 200 - 3315ms
+2026-03-31 08:12:17:1217 http: GET /api/v1/properties?price%5Bgte%5D=85000&price%5Blte%5D=86000&limit=10 - 200 - 5886ms
+2026-03-31 08:12:33:1233 http: GET /api/auth/get-session - 200 - 73ms
+2026-03-31 08:12:36:1236 http: GET /api/auth/get-session - 200 - 11ms
+2026-03-31 08:12:43:1243 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 6690ms
+2026-03-31 08:12:53:1253 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8 - 200 - 3752ms
+2026-03-31 08:12:55:1255 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85 - 200 - 1082ms
+2026-03-31 08:12:56:1256 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=850 - 200 - 957ms
+2026-03-31 08:12:57:1257 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=8500 - 200 - 1109ms
+2026-03-31 08:12:58:1258 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000 - 200 - 1117ms
+2026-03-31 08:12:59:1259 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=8 - 200 - 636ms
+2026-03-31 08:12:59:1259 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86 - 200 - 705ms
+2026-03-31 08:13:00:130 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=860 - 200 - 689ms
+2026-03-31 08:13:01:131 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=8600 - 200 - 608ms
+2026-03-31 08:13:01:131 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&price%5Bgte%5D=85000&price%5Blte%5D=86000 - 200 - 664ms
+2026-03-31 08:13:14:1314 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3583ms
+2026-03-31 08:13:18:1318 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&bathrooms=5 - 200 - 988ms
+2026-03-31 08:13:25:1325 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 1054ms
+2026-03-31 08:13:26:1326 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc&bathrooms=4 - 200 - 732ms
+2026-03-31 08:13:38:1338 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 08:14:30:1430 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 09:01:04:14 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 09:03:01:31 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 09:06:54:654 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 09:14:38:1438 http: GET /api/auth/get-session - 200 - 25ms
+2026-03-31 09:16:19:1619 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 10:05:37:537 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 10:06:15:615 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 11:08:14:814 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 11:08:37:837 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-31 13:12:01:121 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 13:14:17:1417 http: GET /api/auth/get-session - 200 - 40ms
+2026-03-31 13:17:29:1729 error: GET /api/v1/properties/featured?limit=10 - 404 - 2755ms
+2026-03-31 13:17:30:1730 error: GET /api/v1/properties/featured?limit=10 - 404 - 294ms
+2026-03-31 13:17:31:1731 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms
+2026-03-31 13:17:34:1734 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms
+2026-03-31 13:18:05:185 http: GET /api/auth/get-session - 200 - 62ms
+2026-03-31 13:18:20:1820 http: GET /api/auth/get-session - 200 - 74ms
+2026-03-31 13:18:26:1826 http: GET /api/v1/properties/featured?limit=10 - 200 - 5259ms
+2026-03-31 13:18:53:1853 http: GET /api/auth/get-session - 200 - 37ms
+2026-03-31 13:18:55:1855 http: GET /api/v1/properties/featured?limit=10 - 200 - 2880ms
+2026-03-31 13:19:19:1919 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 5084ms
+2026-03-31 13:19:19:1919 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 563ms
+2026-03-31 13:19:23:1923 http: GET /api/v1/properties/featured?limit=10 - 200 - 580ms
+2026-03-31 13:19:23:1923 http: GET /api/v1/properties/featured?limit=10 - 200 - 562ms
+2026-03-31 13:19:27:1927 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 565ms
+2026-03-31 13:19:28:1928 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 838ms
+2026-03-31 13:19:31:1931 http: GET /api/v1/properties/featured?limit=10 - 200 - 562ms
+2026-03-31 13:19:31:1931 http: GET /api/v1/properties/featured?limit=10 - 200 - 560ms
+2026-03-31 13:19:42:1942 http: GET /api/auth/get-session - 200 - 24ms
+2026-03-31 13:19:44:1944 http: GET /api/auth/get-session - 200 - 14ms
+2026-03-31 13:19:47:1947 http: GET /api/v1/properties/featured?limit=10 - 200 - 3048ms
+2026-03-31 13:20:45:2045 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 13:21:16:2116 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 13:21:49:2149 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 5493ms
+2026-03-31 13:21:49:2149 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 584ms
+2026-03-31 13:21:59:2159 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 13:22:03:223 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 13:22:18:2218 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 13:22:19:2219 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 13:22:26:2226 http: GET /api/v1/properties/featured?limit=10 - 200 - 5391ms
+2026-03-31 13:22:27:2227 http: GET /api/v1/properties/featured?limit=10 - 200 - 872ms

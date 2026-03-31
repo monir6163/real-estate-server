@@ -1,13 +1,6 @@
 import { Prisma } from "../../../generated/prisma/client";
 
-export const propertySearchableFields = [
-  "title",
-  "description",
-  "location",
-  "price",
-  "bedrooms",
-  "bathrooms",
-];
+export const propertySearchableFields = ["title", "description", "location"];
 
 export const propertyFilterableFields = [
   "price",

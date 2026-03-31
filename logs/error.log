@@ -440,3 +440,465 @@ Unknown argument `isisFeatured`. Did you mean `isFeatured`? Available options ar
 2026-03-29 15:45:52:4552 error: PATCH /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 404 - 65ms
 2026-03-29 15:52:11:5211 error: [Error Handler] Access Forbidden! You don't have permission.
 2026-03-29 15:52:11:5211 error: PATCH /api/v1/properties/featured/fb216d4c-3827-4025-974e-5623232ceee1 - 403 - 3762ms
+2026-03-30 13:51:38:5138 error: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee12 - 404 - 2604ms
+2026-03-31 07:17:34:1734 error: POST /api/auth/sign-in/email - 401 - 5057ms
+2026-03-31 07:17:42:1742 error: POST /api/auth/sign-in/email - 401 - 1234ms
+2026-03-31 07:17:47:1747 error: POST /api/auth/sign-in/email - 401 - 1203ms
+2026-03-31 07:31:01:311 error: [Error Handler] 
+Invalid `prisma.property.create()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:20:40
+
+  17 
+  18 const createProperty = async (payload: IProperty) => {
+  19   const { images, thumbnail, ...propertyData } = payload;
+→ 20   const result = await prisma.property.create({
+         data: {
+           title: "Modern Luxury Apartment 2",
+           description: "A beautiful apartment in the city center with all modern facilities.",
+           price: 86000,
+           location: "Dhaka",
+           address: "Banani, Road 12",
+           bedrooms: 5,
+           bathrooms: 2,
+           area: 1450,
+           type: "APARTMENT",
+           listingType: "SALE",
+           agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6",
+           propertyImages: {
+             create: []
+           },
+       +   thumbnail: String
+         }
+       })
+
+Argument `thumbnail` is missing.
+2026-03-31 07:31:01:311 error: POST /api/v1/properties - 400 - 3228ms
+2026-03-31 08:01:45:145 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "m",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:45:145 error: GET /api/v1/properties?page=1&limit=12&searchTerm=m&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 91ms
+2026-03-31 08:01:46:146 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "mo",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:46:146 error: GET /api/v1/properties?page=1&limit=12&searchTerm=mo&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 21ms
+2026-03-31 08:01:47:147 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "mod",
+                    mode: "insensitive"
+                  }
+                }
+              ],
+              location: {
+                contains: "dhaka",
+                mode: "insensitive"
+              }
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:01:47:147 error: GET /api/v1/properties?page=1&limit=12&searchTerm=mod&sortBy=createdAt&sortOrder=desc&location=dhaka - 400 - 19ms
+2026-03-31 08:02:07:27 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "l",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:02:07:27 error: GET /api/v1/properties?page=1&limit=12&searchTerm=l&sortBy=createdAt&sortOrder=desc - 400 - 11ms
+2026-03-31 08:02:09:29 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "lu",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:02:09:29 error: GET /api/v1/properties?page=1&limit=12&searchTerm=lu&sortBy=createdAt&sortOrder=desc - 400 - 10ms
+2026-03-31 08:05:26:526 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:05:26:526 error: GET /api/v1/properties?searchTerm=Dhaka&limit=5&page=1 - 400 - 12ms
+2026-03-31 08:05:33:533 error: [Error Handler] 
+Invalid `this.model.count()` invocation in
+F:\level-2-assignment\real-state-server\src\app\helper\Querybuilder.ts:416:18
+
+  413 
+  414 async execute(): Promise<IQueryResult<T>> {
+  415   const [total, data] = await Promise.all([
+→ 416     this.model.count({
+            select: {
+              _count: {
+                select: {
+                  _all: true
+                }
+              }
+            },
+            where: {
+              OR: [
+                {
+                  title: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  description: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  location: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  price: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bedrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                },
+                {
+                  bathrooms: {
+                    contains: "Dhaka",
+                    mode: "insensitive"
+                  }
+                }
+              ]
+            }
+          })
+
+Unknown argument `contains`. Available options are marked with ?.
+2026-03-31 08:05:33:533 error: GET /api/v1/properties?searchTerm=Dhaka&limit=5&page=1 - 400 - 14ms
+2026-03-31 13:17:29:1729 error: GET /api/v1/properties/featured?limit=10 - 404 - 2755ms
+2026-03-31 13:17:30:1730 error: GET /api/v1/properties/featured?limit=10 - 404 - 294ms
+2026-03-31 13:17:31:1731 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms
+2026-03-31 13:17:34:1734 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms

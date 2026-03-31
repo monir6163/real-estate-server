@@ -180,6 +180,31 @@ const isFeaturedProperty = async (id: string) => {
   return result;
 };
 
+const getAllFeaturedProperties = async (query: IQueryParams) => {
+  const queryBuilder = new QueryBuilder<
+    Property,
+    Prisma.PropertyWhereInput,
+    Prisma.PropertyInclude
+  >(prisma.property, query, {
+    searchableFields: propertySearchableFields,
+    filterableFields: propertyFilterableFields,
+  });
+  const result = await queryBuilder
+    .where({ isFeatured: true })
+    .search()
+    .filter()
+    .include({
+      agent: true,
+      propertyImages: true,
+    })
+    .dynamicInclude(propertyIncludeConfig)
+    .paginate()
+    .sort()
+    .fields()
+    .execute();
+  return result;
+};
+
 export const PropertyService = {
   createProperty,
   getAllProperties,
@@ -188,4 +213,5 @@ export const PropertyService = {
   updatePropertyStatus,
   deleteProperty,
   isFeaturedProperty,
+  getAllFeaturedProperties,
 };

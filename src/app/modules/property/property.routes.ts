@@ -8,6 +8,8 @@ import { PropertyValidation } from "./property.validation";
 
 const router = Router();
 
+router.get("/featured", PropertyController.getAllFeaturedProperties);
+
 router.get("/", PropertyController.getAllProperties);
 
 router.get("/:id", PropertyController.getSingleProperty);
