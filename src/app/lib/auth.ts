@@ -115,6 +115,10 @@ export const auth = betterAuth({
         required: true,
         defaultValue: UserStatus.ACTIVE,
       },
+      phone: {
+        type: "string",
+        required: false,
+      },
     },
   },
 });

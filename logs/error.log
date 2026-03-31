@@ -1026,3 +1026,118 @@ Unknown argument `contains`. Available options are marked with ?.
 2026-03-31 14:40:37:4037 error: [Error Handler] You are not allowed to pay for this booking.
 2026-03-31 14:40:37:4037 error: POST /api/v1/payments/checkout/booking/58765201-01a8-4939-a2e4-36ed01eec434 - 403 - 1120ms
 2026-03-31 14:53:16:5316 error: GET /favicon.ico - 404 - 1ms
+2026-03-31 15:56:09:569 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:56:09:569 error: GET /api/v1/payments/settings - 401 - 11ms
+2026-03-31 15:56:18:5618 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:56:18:5618 error: GET /api/v1/payments/settings - 401 - 5ms
+2026-03-31 15:57:01:571 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:57:01:571 error: GET /api/v1/payments/settings - 401 - 10ms
+2026-03-31 15:58:15:5815 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 15:58:15:5815 error: GET /api/v1/payments/settings - 403 - 2862ms
+2026-03-31 15:58:34:5834 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 15:58:34:5834 error: GET /api/v1/payments/settings - 403 - 2842ms
+2026-03-31 16:12:18:1218 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:24:41
+
+  21   userId: string,
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+→ 24   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:12:18:1218 error: PATCH /api/v1/users/profile/update - 400 - 713ms
+2026-03-31 16:13:52:1352 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:41
+
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+  24   console.log(userId, data);
+→ 25   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:13:52:1352 error: PATCH /api/v1/users/profile/update - 400 - 664ms
+2026-03-31 16:14:57:1457 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:41
+
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+  24   console.log(userId, data);
+→ 25   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:14:57:1457 error: PATCH /api/v1/users/profile/update - 400 - 685ms

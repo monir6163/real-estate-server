@@ -21,6 +21,7 @@ const updateProfile = async (
   userId: string,
   data: { name?: string; phone?: string; image?: string },
 ) => {
+  console.log(userId, data);
   const updatedUser = await prisma.user.update({
     where: { id: userId },
     data: {

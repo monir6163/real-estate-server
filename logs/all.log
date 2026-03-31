@@ -1753,3 +1753,290 @@ Unknown argument `contains`. Available options are marked with ?.
 2026-03-31 15:26:39:2639 http: GET /api/v1/bookings/my-bookings - 200 - 3409ms
 2026-03-31 15:26:40:2640 http: GET /api/auth/get-session - 200 - 578ms
 2026-03-31 15:26:41:2641 http: GET /api/v1/payments/my-payments - 200 - 1161ms
+2026-03-31 15:45:35:4535 http: GET /api/auth/get-session - 200 - 3765ms
+2026-03-31 15:45:36:4536 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 15:45:37:4537 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 15:45:41:4541 http: GET /api/v1/bookings/my-bookings - 200 - 3457ms
+2026-03-31 15:45:42:4542 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:45:43:4543 http: GET /api/v1/payments/my-payments - 200 - 1185ms
+2026-03-31 15:45:52:4552 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:45:53:4553 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:45:56:4556 http: GET /api/v1/bookings/my-bookings - 200 - 3403ms
+2026-03-31 15:45:57:4557 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 15:45:58:4558 http: GET /api/v1/bookings/my-bookings - 200 - 1160ms
+2026-03-31 15:46:07:467 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 15:46:08:468 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 15:46:11:4611 http: GET /api/v1/payments/my-payments - 200 - 3402ms
+2026-03-31 15:46:12:4612 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 15:46:13:4613 http: GET /api/v1/payments/my-payments - 200 - 1154ms
+2026-03-31 15:55:29:5529 http: GET /api/auth/get-session - 200 - 2893ms
+2026-03-31 15:55:29:5529 http: GET /api/auth/get-session - 200 - 2903ms
+2026-03-31 15:55:30:5530 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 15:55:30:5530 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 2768ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 2775ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 15:55:33:5533 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 15:55:36:5536 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 15:55:36:5536 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 15:55:36:5536 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 15:55:36:5536 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 15:56:02:562 http: GET /api/auth/get-session - 200 - 2775ms
+2026-03-31 15:56:02:562 http: GET /api/v1/properties/featured?limit=10 - 200 - 3074ms
+2026-03-31 15:56:03:563 http: GET /api/v1/properties/featured?limit=10 - 200 - 561ms
+2026-03-31 15:56:07:567 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 578ms
+2026-03-31 15:56:08:568 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 575ms
+2026-03-31 15:56:09:569 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:56:09:569 error: GET /api/v1/payments/settings - 401 - 11ms
+2026-03-31 15:56:11:5611 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 562ms
+2026-03-31 15:56:18:5618 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:56:18:5618 error: GET /api/v1/payments/settings - 401 - 5ms
+2026-03-31 15:56:54:5654 http: GET /api/auth/get-session - 200 - 2936ms
+2026-03-31 15:57:01:571 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 15:57:01:571 error: GET /api/v1/payments/settings - 401 - 10ms
+2026-03-31 15:57:01:571 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 15:57:05:575 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2897ms
+2026-03-31 15:58:03:583 http: GET /api/auth/get-session - 200 - 2938ms
+2026-03-31 15:58:12:5812 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 15:58:15:5815 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 15:58:15:5815 error: GET /api/v1/payments/settings - 403 - 2862ms
+2026-03-31 15:58:18:5818 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2858ms
+2026-03-31 15:58:34:5834 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 15:58:34:5834 error: GET /api/v1/payments/settings - 403 - 2842ms
+2026-03-31 15:59:35:5935 http: GET /api/auth/get-session - 200 - 3274ms
+2026-03-31 15:59:36:5936 http: GET /api/v1/payments/settings - 200 - 3078ms
+2026-03-31 15:59:39:5939 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2767ms
+2026-03-31 15:59:45:5945 http: GET /api/v1/payments/settings - 200 - 846ms
+2026-03-31 16:00:06:06 http: GET /api/v1/payments/settings - 200 - 3044ms
+2026-03-31 16:00:08:08 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 16:00:22:022 http: GET /api/auth/get-session - 200 - 2743ms
+2026-03-31 16:00:24:024 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 16:00:24:024 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 16:00:28:028 http: GET /api/v1/bookings/my-bookings - 200 - 3389ms
+2026-03-31 16:00:28:028 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 16:00:30:030 http: GET /api/v1/payments/my-payments - 200 - 1122ms
+2026-03-31 16:00:30:030 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 16:00:31:031 http: GET /api/v1/bookings/my-bookings - 200 - 1123ms
+2026-03-31 16:00:32:032 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 16:00:33:033 http: GET /api/v1/payments/my-payments - 200 - 1111ms
+2026-03-31 16:05:52:552 http: GET /api/auth/get-session - 200 - 3571ms
+2026-03-31 16:05:53:553 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 16:05:56:556 http: GET /api/auth/get-session - 200 - 2742ms
+2026-03-31 16:05:56:556 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 16:05:56:556 http: GET /api/auth/get-session - 200 - 554ms
+2026-03-31 16:05:57:557 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 16:05:57:557 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 16:05:58:558 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 16:05:58:558 http: GET /api/auth/get-session - 200 - 556ms
+2026-03-31 16:05:58:558 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 16:05:58:558 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 16:05:59:559 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 16:06:18:618 http: GET /api/auth/get-session - 200 - 2768ms
+2026-03-31 16:06:19:619 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 16:06:21:621 http: GET /api/auth/get-session - 200 - 2738ms
+2026-03-31 16:06:22:622 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 16:06:22:622 http: GET /api/auth/get-session - 200 - 556ms
+2026-03-31 16:06:23:623 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 16:06:23:623 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 16:06:23:623 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 16:06:24:624 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 16:06:24:624 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 16:06:25:625 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 16:07:18:718 http: GET /api/auth/get-session - 200 - 2945ms
+2026-03-31 16:07:20:720 http: GET /api/v1/auth/me - 200 - 1187ms
+2026-03-31 16:08:34:834 http: GET /api/auth/get-session - 200 - 2897ms
+2026-03-31 16:08:34:834 http: GET /api/auth/get-session - 200 - 2893ms
+2026-03-31 16:08:35:835 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 16:08:35:835 http: GET /api/v1/auth/me - 200 - 1166ms
+2026-03-31 16:08:37:837 http: GET /api/auth/get-session - 200 - 2832ms
+2026-03-31 16:08:37:837 http: GET /api/auth/get-session - 200 - 2831ms
+2026-03-31 16:08:37:837 http: GET /api/auth/get-session - 200 - 2851ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 16:08:38:838 http: GET /api/v1/auth/me - 200 - 1168ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 16:08:38:838 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 16:08:39:839 http: GET /api/v1/auth/me - 200 - 1166ms
+2026-03-31 16:08:39:839 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:08:39:839 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 16:08:40:840 http: GET /api/v1/auth/me - 200 - 1165ms
+2026-03-31 16:08:40:840 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 16:08:40:840 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 16:08:40:840 http: GET /api/v1/auth/me - 200 - 1172ms
+2026-03-31 16:08:40:840 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 16:08:41:841 http: GET /api/auth/get-session - 200 - 2796ms
+2026-03-31 16:08:41:841 http: GET /api/v1/auth/me - 200 - 1165ms
+2026-03-31 16:08:41:841 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 16:08:42:842 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 16:09:00:90 http: GET /api/auth/get-session - 200 - 2839ms
+2026-03-31 16:09:00:90 http: GET /api/auth/get-session - 200 - 3372ms
+2026-03-31 16:09:00:90 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:09:01:91 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:09:03:93 http: GET /api/auth/get-session - 200 - 2805ms
+2026-03-31 16:09:03:93 http: GET /api/auth/get-session - 200 - 2843ms
+2026-03-31 16:09:03:93 http: GET /api/v1/auth/me - 200 - 3400ms
+2026-03-31 16:09:03:93 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 16:09:03:93 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 16:09:04:94 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 16:09:04:94 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:09:04:94 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 16:09:04:94 http: GET /api/v1/auth/me - 200 - 1550ms
+2026-03-31 16:09:04:94 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 16:09:05:95 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:09:05:95 http: GET /api/v1/auth/me - 200 - 1154ms
+2026-03-31 16:09:05:95 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 16:09:05:95 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 16:09:06:96 http: GET /api/auth/get-session - 200 - 575ms
+2026-03-31 16:09:06:96 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 16:09:06:96 http: GET /api/auth/get-session - 200 - 2819ms
+2026-03-31 16:09:07:97 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 16:09:07:97 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 16:09:07:97 http: GET /api/v1/auth/me - 200 - 1161ms
+2026-03-31 16:09:08:98 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 16:09:08:98 http: GET /api/v1/auth/me - 200 - 1158ms
+2026-03-31 16:09:09:99 http: GET /api/v1/auth/me - 200 - 1169ms
+2026-03-31 16:11:34:1134 http: GET /api/auth/get-session - 200 - 2978ms
+2026-03-31 16:11:34:1134 http: GET /api/auth/get-session - 200 - 3123ms
+2026-03-31 16:11:34:1134 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 16:11:35:1135 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 16:11:38:1138 http: GET /api/v1/auth/me - 200 - 3534ms
+2026-03-31 16:11:38:1138 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 16:11:38:1138 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 16:11:39:1139 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 16:11:39:1139 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 16:11:40:1140 http: GET /api/v1/auth/me - 200 - 1201ms
+2026-03-31 16:11:42:1142 http: GET /api/auth/get-session - 200 - 2880ms
+2026-03-31 16:11:42:1142 http: GET /api/auth/get-session - 200 - 2900ms
+2026-03-31 16:11:42:1142 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 16:11:43:1143 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 16:11:43:1143 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 16:11:43:1143 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 16:11:43:1143 http: GET /api/v1/auth/me - 200 - 1197ms
+2026-03-31 16:11:43:1143 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 16:11:43:1143 http: GET /api/auth/get-session - 200 - 607ms
+2026-03-31 16:11:44:1144 http: GET /api/auth/get-session - 200 - 615ms
+2026-03-31 16:11:44:1144 http: GET /api/v1/auth/me - 200 - 1190ms
+2026-03-31 16:11:44:1144 http: GET /api/auth/get-session - 200 - 611ms
+2026-03-31 16:11:45:1145 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 16:11:45:1145 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 16:11:45:1145 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 16:11:46:1146 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 16:11:47:1147 http: GET /api/auth/get-session - 200 - 3928ms
+2026-03-31 16:11:48:1148 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 16:11:48:1148 http: GET /api/v1/auth/me - 200 - 1203ms
+2026-03-31 16:11:49:1149 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 16:11:49:1149 http: GET /api/v1/auth/me - 200 - 1187ms
+2026-03-31 16:11:50:1150 http: GET /api/v1/auth/me - 200 - 1208ms
+2026-03-31 16:12:17:1217 http: GET /api/auth/get-session - 200 - 3566ms
+2026-03-31 16:12:18:1218 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:24:41
+
+  21   userId: string,
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+→ 24   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:12:18:1218 error: PATCH /api/v1/users/profile/update - 400 - 713ms
+2026-03-31 16:13:51:1351 http: GET /api/auth/get-session - 200 - 2997ms
+2026-03-31 16:13:52:1352 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:41
+
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+  24   console.log(userId, data);
+→ 25   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:13:52:1352 error: PATCH /api/v1/users/profile/update - 400 - 664ms
+2026-03-31 16:14:56:1456 http: GET /api/auth/get-session - 200 - 2993ms
+2026-03-31 16:14:57:1457 error: [Error Handler] 
+Invalid `prisma.user.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\user\user.service.ts:25:41
+
+  22   data: { name?: string; phone?: string; image?: string },
+  23 ) => {
+  24   console.log(userId, data);
+→ 25   const updatedUser = await prisma.user.update({
+         where: {
+           id: "w2mLZPr29tyj3QmGpwiJJvdmHEUKzSQi"
+         },
+         data: {
+           name: "User",
+           phone: "01747706163",
+           ~~~~~
+       ?   id?: String | StringFieldUpdateOperationsInput,
+       ?   email?: String | StringFieldUpdateOperationsInput,
+       ?   emailVerified?: Boolean | BoolFieldUpdateOperationsInput,
+       ?   image?: String | NullableStringFieldUpdateOperationsInput | Null,
+       ?   role?: Role | EnumRoleFieldUpdateOperationsInput,
+       ?   status?: UserStatus | EnumUserStatusFieldUpdateOperationsInput,
+       ?   createdAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   updatedAt?: DateTime | DateTimeFieldUpdateOperationsInput,
+       ?   sessions?: SessionUpdateManyWithoutUserNestedInput,
+       ?   accounts?: AccountUpdateManyWithoutUserNestedInput,
+       ?   properties?: PropertyUpdateManyWithoutAgentNestedInput,
+       ?   reviews?: ReviewUpdateManyWithoutAgentNestedInput,
+       ?   favorites?: FavoriteUpdateManyWithoutAgentNestedInput,
+       ?   bookingRequests?: BookingRequestUpdateManyWithoutAgentNestedInput,
+       ?   payments?: PaymentUpdateManyWithoutAgentNestedInput
+         }
+       })
+
+Unknown argument `phone`. Did you mean `role`? Available options are marked with ?.
+2026-03-31 16:14:57:1457 error: PATCH /api/v1/users/profile/update - 400 - 685ms

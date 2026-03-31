@@ -29,7 +29,7 @@ router.get(
 
 router.get(
   "/settings",
-  checkAuth(Role.ADMIN),
+  checkAuth(Role.ADMIN, Role.AGENT, Role.USER),
   paymentController.getPaymentSettings,
 );
 
