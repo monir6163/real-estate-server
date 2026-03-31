@@ -2,6 +2,25 @@
 
 A robust Express.js backend server for a comprehensive real estate management platform. Built with TypeScript, Prisma ORM, and advanced features like authentication, payment processing, and file uploads.
 
+# Credentials for Testing
+
+- **Admin**
+  - Email:monirhossain@gmail.com
+  - Password:123456789
+
+- **Agent**
+  - Email:ultrasrealpro@gmail.com
+  - Password:12345678
+
+- **user**
+  - Email:monirdev1@gmail.com
+  - Password:12345678
+
+# Live Demo
+
+- **Frontend:** [https://real-estate-client-drab-three.vercel.app](https://real-estate-client-drab-three.vercel.app)
+- **Backend API:** [https://real-state-server-cyan.vercel.app](https://real-state-server-cyan.vercel.app)
+
 ## 🚀 Features
 
 ### Core Features
