@@ -902,3 +902,127 @@ Unknown argument `contains`. Available options are marked with ?.
 2026-03-31 13:17:30:1730 error: GET /api/v1/properties/featured?limit=10 - 404 - 294ms
 2026-03-31 13:17:31:1731 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms
 2026-03-31 13:17:34:1734 error: GET /api/v1/properties/featured?limit=10 - 404 - 293ms
+2026-03-31 13:32:47:3247 error: POST /api/auth/sign-in/email - 401 - 3559ms
+2026-03-31 14:06:00:60 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:06:00:60 error: GET /api/v1/bookings/my-bookings - 401 - 3ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 3ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 2ms
+2026-03-31 14:16:17:1617 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:19:1619 error: GET /api/v1/auth/get-session - 404 - 0ms
+2026-03-31 14:16:19:1619 error: GET /api/v1/auth/get-session - 404 - 0ms
+2026-03-31 14:22:42:2242 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:22:42:2242 error: POST /api/v1/bookings - 401 - 333ms
+2026-03-31 14:24:51:2451 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:24:51:2451 error: POST /api/v1/bookings - 401 - 3ms
+2026-03-31 14:25:13:2513 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:25:13:2513 error: POST /api/v1/bookings - 401 - 3ms
+2026-03-31 14:25:15:2515 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:25:15:2515 error: POST /api/v1/bookings - 401 - 2ms
+2026-03-31 14:27:45:2745 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "agentId"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received undefined"
+  }
+]
+2026-03-31 14:27:45:2745 error: POST /api/v1/bookings - 400 - 2762ms
+2026-03-31 14:28:14:2814 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "agentId"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received undefined"
+  }
+]
+2026-03-31 14:28:14:2814 error: POST /api/v1/bookings - 400 - 2758ms
+2026-03-31 14:32:22:3222 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:32:22:3222 error: POST /api/v1/bookings - 400 - 2881ms
+2026-03-31 14:33:43:3343 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:33:43:3343 error: POST /api/v1/bookings - 400 - 2947ms
+2026-03-31 14:34:20:3420 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:34:20:3420 error: POST /api/v1/bookings - 400 - 2888ms
+2026-03-31 14:35:08:358 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:35:08:358 error: POST /api/v1/bookings - 400 - 2868ms
+2026-03-31 14:36:35:3635 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:36:35:3635 error: POST /api/v1/payments/checkout/booking/f89acab6-3bae-45c1-b6ab-41d7b006021b - 401 - 8ms
+2026-03-31 14:37:42:3742 error: [Error Handler] A booking already exists for this agent and property.
+2026-03-31 14:37:42:3742 error: POST /api/v1/bookings - 409 - 3273ms
+2026-03-31 14:38:29:3829 error: [Error Handler] You are not allowed to pay for this booking.
+2026-03-31 14:38:29:3829 error: POST /api/v1/payments/checkout/booking/edee90ba-08af-4b7e-9484-ca9deda2eafc - 403 - 1211ms
+2026-03-31 14:40:01:401 error: [Error Handler] A booking already exists for this agent and property.
+2026-03-31 14:40:01:401 error: POST /api/v1/bookings - 409 - 866ms
+2026-03-31 14:40:37:4037 error: [Error Handler] You are not allowed to pay for this booking.
+2026-03-31 14:40:37:4037 error: POST /api/v1/payments/checkout/booking/58765201-01a8-4939-a2e4-36ed01eec434 - 403 - 1120ms
+2026-03-31 14:53:16:5316 error: GET /favicon.ico - 404 - 1ms

@@ -8,7 +8,7 @@ export const BookingValidation = {
       propertyId: z.string(),
       status: z.nativeEnum(RequestStatus).default(RequestStatus.PENDING),
       message: z.string().optional(),
-      visitDate: z.date(),
+      visitDate: z.string().pipe(z.coerce.date()),
     }),
   }),
   updateStatusSchema: z.object({

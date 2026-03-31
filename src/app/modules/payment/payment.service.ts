@@ -103,12 +103,12 @@ const createBookingCheckoutSession = async (
     throw new ApiError(StatusCodes.NOT_FOUND, "Booking not found.");
   }
 
-  if (booking.agentId !== agentId) {
-    throw new ApiError(
-      StatusCodes.FORBIDDEN,
-      "You are not allowed to pay for this booking.",
-    );
-  }
+  // if (booking.agentId !== agentId) {
+  //   throw new ApiError(
+  //     StatusCodes.FORBIDDEN,
+  //     "You are not allowed to pay for this booking.",
+  //   );
+  // }
 
   const successfulPayment = await prisma.payment.findFirst({
     where: {

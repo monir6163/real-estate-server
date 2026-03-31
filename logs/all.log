@@ -1281,3 +1281,475 @@ Unknown argument `contains`. Available options are marked with ?.
 2026-03-31 13:22:19:2219 http: GET /api/auth/get-session - 200 - 6ms
 2026-03-31 13:22:26:2226 http: GET /api/v1/properties/featured?limit=10 - 200 - 5391ms
 2026-03-31 13:22:27:2227 http: GET /api/v1/properties/featured?limit=10 - 200 - 872ms
+2026-03-31 13:23:12:2312 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 13:23:20:2320 http: GET /api/auth/get-session - 200 - 14ms
+2026-03-31 13:23:22:2322 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 13:23:27:2327 http: GET /api/v1/properties/featured?limit=10 - 200 - 5415ms
+2026-03-31 13:23:33:2333 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 13:23:34:2334 http: GET /api/v1/properties/featured?limit=10 - 200 - 868ms
+2026-03-31 13:23:37:2337 http: GET /api/auth/get-session - 200 - 5ms
+2026-03-31 13:23:38:2338 http: GET /api/v1/properties/featured?limit=10 - 200 - 868ms
+2026-03-31 13:23:42:2342 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 870ms
+2026-03-31 13:23:42:2342 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 580ms
+2026-03-31 13:23:52:2352 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2832ms
+2026-03-31 13:23:52:2352 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 575ms
+2026-03-31 13:23:58:2358 http: GET /api/v1/properties/featured?limit=10 - 200 - 580ms
+2026-03-31 13:23:59:2359 http: GET /api/v1/properties/featured?limit=10 - 200 - 580ms
+2026-03-31 13:27:50:2750 http: GET /api/auth/get-session - 200 - 10ms
+2026-03-31 13:31:27:3127 http: GET /api/auth/get-session - 200 - 31ms
+2026-03-31 13:31:32:3132 http: GET /api/v1/properties/featured?limit=10 - 200 - 4412ms
+2026-03-31 13:32:25:3225 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 13:32:28:3228 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 13:32:47:3247 error: POST /api/auth/sign-in/email - 401 - 3559ms
+2026-03-31 13:32:51:3251 http: POST /api/auth/sign-in/email - 200 - 1419ms
+2026-03-31 13:32:52:3252 http: GET /api/auth/get-session - 200 - 612ms
+2026-03-31 13:32:54:3254 http: GET /api/v1/properties/featured?limit=10 - 200 - 3217ms
+2026-03-31 13:32:55:3255 http: GET /api/v1/properties/featured?limit=10 - 200 - 601ms
+2026-03-31 13:32:58:3258 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 13:32:59:3259 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 13:33:36:3336 http: GET /api/auth/get-session - 200 - 2946ms
+2026-03-31 13:34:00:340 http: GET /api/auth/get-session - 200 - 2811ms
+2026-03-31 13:34:01:341 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 14:02:42:242 http: GET /api/auth/get-session - 200 - 3966ms
+2026-03-31 14:02:42:242 http: GET /api/v1/properties/featured?limit=10 - 200 - 3838ms
+2026-03-31 14:02:43:243 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 580ms
+2026-03-31 14:02:43:243 http: GET /api/v1/properties/featured?limit=10 - 200 - 3117ms
+2026-03-31 14:02:43:243 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 577ms
+2026-03-31 14:02:45:245 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 588ms
+2026-03-31 14:02:46:246 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 584ms
+2026-03-31 14:03:50:350 http: GET /api/auth/get-session - 200 - 2887ms
+2026-03-31 14:04:43:443 http: GET /api/auth/get-session - 200 - 2831ms
+2026-03-31 14:04:46:446 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 14:04:46:446 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 14:04:53:453 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 14:04:55:455 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 14:05:56:556 http: GET /api/auth/get-session - 200 - 2910ms
+2026-03-31 14:05:56:556 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 14:05:58:558 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 14:05:58:558 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 14:05:59:559 http: GET /api/auth/get-session - 200 - 2824ms
+2026-03-31 14:05:59:559 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 14:06:00:60 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 14:06:00:60 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:06:00:60 error: GET /api/v1/bookings/my-bookings - 401 - 3ms
+2026-03-31 14:06:08:68 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 14:06:08:68 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 14:06:24:624 http: GET /api/auth/get-session - 200 - 2834ms
+2026-03-31 14:06:49:649 http: GET /api/auth/get-session - 200 - 2853ms
+2026-03-31 14:06:50:650 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 14:07:28:728 http: GET /api/auth/get-session - 200 - 2885ms
+2026-03-31 14:07:29:729 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 14:08:35:835 http: GET /api/auth/get-session - 200 - 2920ms
+2026-03-31 14:08:36:836 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 14:08:45:845 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 14:08:47:847 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 14:10:10:1010 http: GET /api/auth/get-session - 200 - 2952ms
+2026-03-31 14:10:11:1011 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 14:10:14:1014 http: GET /api/auth/get-session - 200 - 2932ms
+2026-03-31 14:10:14:1014 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:10:14:1014 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:10:15:1015 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:10:15:1015 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:10:16:1016 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:10:16:1016 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:10:17:1017 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:10:17:1017 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:10:17:1017 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:10:17:1017 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:10:18:1018 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:10:18:1018 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:10:19:1019 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:10:19:1019 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:10:20:1020 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:10:29:1029 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:10:32:1032 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:10:33:1033 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:10:35:1035 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:10:36:1036 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:13:13:1313 http: GET /api/auth/get-session - 200 - 2970ms
+2026-03-31 14:13:14:1314 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 14:13:16:1316 http: GET /api/auth/get-session - 200 - 2924ms
+2026-03-31 14:13:17:1317 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:13:17:1317 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:13:18:1318 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:13:18:1318 http: GET /api/auth/get-session - 200 - 607ms
+2026-03-31 14:13:18:1318 http: GET /api/auth/get-session - 200 - 607ms
+2026-03-31 14:14:11:1411 http: GET /api/auth/get-session - 200 - 2923ms
+2026-03-31 14:14:11:1411 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:14:14:1414 http: GET /api/auth/get-session - 200 - 2972ms
+2026-03-31 14:14:14:1414 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:14:14:1414 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 14:14:15:1415 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:14:15:1415 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 14:14:16:1416 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:14:41:1441 http: GET /api/auth/get-session - 200 - 2920ms
+2026-03-31 14:14:42:1442 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:14:44:1444 http: GET /api/auth/get-session - 200 - 2900ms
+2026-03-31 14:14:45:1445 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:14:45:1445 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 14:14:46:1446 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:14:46:1446 http: GET /api/auth/get-session - 200 - 598ms
+2026-03-31 14:14:46:1446 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:14:52:1452 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:14:53:1453 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:14:53:1453 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:14:54:1454 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:14:54:1454 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 14:14:54:1454 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:14:54:1454 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:14:55:1455 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:15:09:159 http: GET /api/auth/get-session - 200 - 2891ms
+2026-03-31 14:15:09:159 http: GET /api/auth/get-session - 200 - 619ms
+2026-03-31 14:15:12:1512 http: GET /api/auth/get-session - 200 - 2955ms
+2026-03-31 14:15:13:1513 http: GET /api/v1/auth/me - 200 - 1215ms
+2026-03-31 14:15:33:1533 http: GET /api/auth/get-session - 200 - 2920ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 3ms
+2026-03-31 14:16:08:168 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:09:169 error: GET /api/v1/auth/get-session - 404 - 2ms
+2026-03-31 14:16:14:1614 http: GET /api/auth/get-session - 200 - 2836ms
+2026-03-31 14:16:17:1617 error: GET /api/v1/auth/get-session - 404 - 1ms
+2026-03-31 14:16:18:1618 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 14:16:19:1619 error: GET /api/v1/auth/get-session - 404 - 0ms
+2026-03-31 14:16:19:1619 error: GET /api/v1/auth/get-session - 404 - 0ms
+2026-03-31 14:16:24:1624 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 14:16:25:1625 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 14:16:26:1626 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 14:16:26:1626 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 14:16:27:1627 http: GET /api/auth/get-session - 200 - 2846ms
+2026-03-31 14:16:28:1628 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 14:16:28:1628 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 14:16:28:1628 http: GET /api/auth/get-session - 200 - 3825ms
+2026-03-31 14:16:28:1628 http: GET /api/auth/get-session - 200 - 2818ms
+2026-03-31 14:16:29:1629 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 14:16:29:1629 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 14:16:30:1630 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 14:16:30:1630 http: GET /api/auth/get-session - 200 - 2848ms
+2026-03-31 14:16:31:1631 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 14:16:31:1631 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 14:20:35:2035 http: GET /api/auth/get-session - 200 - 2948ms
+2026-03-31 14:20:36:2036 http: GET /api/auth/get-session - 200 - 598ms
+2026-03-31 14:20:45:2045 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 14:20:48:2048 http: GET /api/v1/properties/featured?limit=10 - 200 - 2955ms
+2026-03-31 14:20:49:2049 http: GET /api/v1/properties/featured?limit=10 - 200 - 900ms
+2026-03-31 14:20:52:2052 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 600ms
+2026-03-31 14:20:52:2052 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 603ms
+2026-03-31 14:22:39:2239 http: GET /api/auth/get-session - 200 - 3010ms
+2026-03-31 14:22:42:2242 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:22:42:2242 error: POST /api/v1/bookings - 401 - 333ms
+2026-03-31 14:22:59:2259 http: GET /api/auth/get-session - 200 - 2891ms
+2026-03-31 14:23:00:230 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 14:23:31:2331 http: GET /api/auth/get-session - 200 - 2933ms
+2026-03-31 14:23:32:2332 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:23:34:2334 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 14:23:35:2335 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:23:38:2338 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:23:39:2339 http: GET /api/v1/auth/me - 200 - 1202ms
+2026-03-31 14:23:42:2342 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:23:43:2343 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:23:45:2345 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 14:23:45:2345 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:23:48:2348 http: GET /api/v1/auth/me - 200 - 3400ms
+2026-03-31 14:24:32:2432 http: GET /api/auth/get-session - 200 - 2752ms
+2026-03-31 14:24:33:2433 http: GET /api/v1/properties/featured?limit=10 - 200 - 3030ms
+2026-03-31 14:24:33:2433 http: GET /api/v1/properties/featured?limit=10 - 200 - 559ms
+2026-03-31 14:24:39:2439 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 559ms
+2026-03-31 14:24:40:2440 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 561ms
+2026-03-31 14:24:51:2451 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:24:51:2451 error: POST /api/v1/bookings - 401 - 3ms
+2026-03-31 14:25:13:2513 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:25:13:2513 error: POST /api/v1/bookings - 401 - 3ms
+2026-03-31 14:25:15:2515 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:25:15:2515 error: POST /api/v1/bookings - 401 - 2ms
+2026-03-31 14:27:43:2743 http: GET /api/auth/get-session - 200 - 2796ms
+2026-03-31 14:27:45:2745 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "agentId"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received undefined"
+  }
+]
+2026-03-31 14:27:45:2745 error: POST /api/v1/bookings - 400 - 2762ms
+2026-03-31 14:28:14:2814 error: [Error Handler] [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "agentId"
+    ],
+    "message": "Invalid input: expected string, received undefined"
+  },
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received undefined"
+  }
+]
+2026-03-31 14:28:14:2814 error: POST /api/v1/bookings - 400 - 2758ms
+2026-03-31 14:30:20:3020 http: GET /api/auth/get-session - 200 - 3079ms
+2026-03-31 14:31:58:3158 http: GET /api/auth/get-session - 200 - 2912ms
+2026-03-31 14:32:01:321 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 14:32:06:326 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5124ms
+2026-03-31 14:32:22:3222 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:32:22:3222 error: POST /api/v1/bookings - 400 - 2881ms
+2026-03-31 14:33:41:3341 http: GET /api/auth/get-session - 200 - 3045ms
+2026-03-31 14:33:43:3343 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:33:43:3343 error: POST /api/v1/bookings - 400 - 2947ms
+2026-03-31 14:33:52:3352 http: GET /api/auth/get-session - 200 - 616ms
+2026-03-31 14:33:55:3355 http: GET /api/auth/get-session - 200 - 620ms
+2026-03-31 14:34:00:340 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5185ms
+2026-03-31 14:34:20:3420 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:34:20:3420 error: POST /api/v1/bookings - 400 - 2888ms
+2026-03-31 14:35:06:356 http: GET /api/auth/get-session - 200 - 3071ms
+2026-03-31 14:35:08:358 error: [Error Handler] [
+  {
+    "expected": "date",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "visitDate"
+    ],
+    "message": "Invalid input: expected date, received string"
+  }
+]
+2026-03-31 14:35:08:358 error: POST /api/v1/bookings - 400 - 2868ms
+2026-03-31 14:36:32:3632 http: GET /api/auth/get-session - 200 - 2969ms
+2026-03-31 14:36:35:3635 http: POST /api/v1/bookings - 201 - 3549ms
+2026-03-31 14:36:35:3635 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-03-31 14:36:35:3635 error: POST /api/v1/payments/checkout/booking/f89acab6-3bae-45c1-b6ab-41d7b006021b - 401 - 8ms
+2026-03-31 14:37:40:3740 http: GET /api/auth/get-session - 200 - 2931ms
+2026-03-31 14:37:42:3742 error: [Error Handler] A booking already exists for this agent and property.
+2026-03-31 14:37:42:3742 error: POST /api/v1/bookings - 409 - 3273ms
+2026-03-31 14:38:14:3814 http: GET /api/auth/get-session - 200 - 2922ms
+2026-03-31 14:38:17:3817 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5296ms
+2026-03-31 14:38:28:3828 http: POST /api/v1/bookings - 201 - 1209ms
+2026-03-31 14:38:29:3829 error: [Error Handler] You are not allowed to pay for this booking.
+2026-03-31 14:38:29:3829 error: POST /api/v1/payments/checkout/booking/edee90ba-08af-4b7e-9484-ca9deda2eafc - 403 - 1211ms
+2026-03-31 14:39:49:3949 http: GET /api/auth/get-session - 200 - 3059ms
+2026-03-31 14:39:52:3952 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5039ms
+2026-03-31 14:40:01:401 error: [Error Handler] A booking already exists for this agent and property.
+2026-03-31 14:40:01:401 error: POST /api/v1/bookings - 409 - 866ms
+2026-03-31 14:40:17:4017 http: GET /api/v1/properties/featured?limit=10 - 200 - 5279ms
+2026-03-31 14:40:18:4018 http: GET /api/v1/properties/featured?limit=10 - 200 - 564ms
+2026-03-31 14:40:19:4019 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 562ms
+2026-03-31 14:40:20:4020 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 567ms
+2026-03-31 14:40:36:4036 http: POST /api/v1/bookings - 201 - 3338ms
+2026-03-31 14:40:37:4037 error: [Error Handler] You are not allowed to pay for this booking.
+2026-03-31 14:40:37:4037 error: POST /api/v1/payments/checkout/booking/58765201-01a8-4939-a2e4-36ed01eec434 - 403 - 1120ms
+2026-03-31 14:42:17:4217 http: GET /api/auth/get-session - 200 - 2862ms
+2026-03-31 14:42:19:4219 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 5124ms
+2026-03-31 14:42:29:4229 http: POST /api/v1/bookings - 201 - 1197ms
+2026-03-31 14:42:32:4232 http: POST /api/v1/payments/checkout/booking/33abfce9-6190-46d8-a408-281cde3602c1 - 200 - 3613ms
+2026-03-31 14:43:24:4324 http: GET /api/auth/get-session - 200 - 3000ms
+2026-03-31 14:43:28:4328 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:43:29:4329 http: GET /api/auth/get-session - 200 - 616ms
+2026-03-31 14:43:37:4337 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 14:43:37:4337 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:43:43:4343 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 14:43:43:4343 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 14:43:50:4350 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:43:52:4352 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 14:43:53:4353 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 14:43:56:4356 http: GET /api/v1/bookings/my-bookings - 200 - 3530ms
+2026-03-31 14:44:02:442 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 14:44:54:4454 http: GET /api/auth/get-session - 200 - 2800ms
+2026-03-31 14:44:54:4454 http: GET /api/v1/properties/featured?limit=10 - 200 - 3042ms
+2026-03-31 14:44:55:4455 http: GET /api/v1/properties/featured?limit=10 - 200 - 559ms
+2026-03-31 14:44:57:4457 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 561ms
+2026-03-31 14:44:57:4457 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 564ms
+2026-03-31 14:45:21:4521 http: POST /api/v1/bookings - 201 - 3315ms
+2026-03-31 14:45:24:4524 http: POST /api/v1/payments/checkout/booking/1fd8882e-2dd9-4778-b22d-4d2fd2032a56 - 200 - 2699ms
+2026-03-31 14:46:57:4657 http: GET /api/auth/get-session - 200 - 2802ms
+2026-03-31 14:47:14:4714 http: GET /api/auth/get-session - 200 - 2759ms
+2026-03-31 14:47:16:4716 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 4938ms
+2026-03-31 14:47:22:4722 http: POST /api/v1/bookings - 201 - 1125ms
+2026-03-31 14:47:25:4725 http: POST /api/v1/payments/checkout/booking/a5b3c15c-4fcc-4554-a943-f7fbc8fd95d2 - 200 - 2640ms
+2026-03-31 14:48:33:4833 http: GET /api/auth/get-session - 200 - 3443ms
+2026-03-31 14:48:46:4846 http: GET /api/auth/get-session - 200 - 2872ms
+2026-03-31 14:48:50:4850 http: POST /api/v1/bookings - 201 - 3555ms
+2026-03-31 14:48:53:4853 http: POST /api/v1/payments/checkout/booking/04696ee1-19d1-4b9b-8910-e8c79e126bb9 - 200 - 2955ms
+2026-03-31 14:50:25:5025 http: GET /api/auth/get-session - 200 - 2795ms
+2026-03-31 14:50:26:5026 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 14:50:59:5059 http: GET /api/auth/get-session - 200 - 2760ms
+2026-03-31 14:50:59:5059 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 14:51:02:512 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 14:51:05:515 http: GET /api/v1/bookings/my-bookings - 200 - 3320ms
+2026-03-31 14:53:06:536 http: GET /api/auth/get-session - 200 - 2792ms
+2026-03-31 14:53:09:539 http: GET /api/v1/properties/featured?limit=10 - 200 - 5246ms
+2026-03-31 14:53:16:5316 http: GET /api/v1/bookings/my-bookings - 200 - 1130ms
+2026-03-31 14:53:16:5316 error: GET /favicon.ico - 404 - 1ms
+2026-03-31 14:57:28:5728 http: GET /api/auth/get-session - 200 - 2801ms
+2026-03-31 14:57:28:5728 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 14:58:05:585 http: GET /api/auth/get-session - 200 - 2748ms
+2026-03-31 14:58:05:585 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 14:58:08:588 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 14:58:10:5810 http: GET /api/auth/get-session - 200 - 2757ms
+2026-03-31 14:58:11:5811 http: GET /api/v1/properties/featured?limit=10 - 200 - 2750ms
+2026-03-31 14:58:11:5811 http: GET /api/v1/bookings/my-bookings - 200 - 3309ms
+2026-03-31 14:58:11:5811 http: GET /api/v1/properties/featured?limit=10 - 200 - 557ms
+2026-03-31 14:58:16:5816 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 557ms
+2026-03-31 14:58:16:5816 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 564ms
+2026-03-31 14:58:27:5827 http: GET /api/v1/auth/me - 200 - 1118ms
+2026-03-31 14:58:28:5828 http: POST /api/v1/bookings - 201 - 1120ms
+2026-03-31 14:58:31:5831 http: POST /api/v1/payments/checkout/booking/7a22e028-9699-4f31-96b6-2cdc75aec2c4 - 200 - 2791ms
+2026-03-31 14:59:05:595 http: GET /api/auth/get-session - 200 - 2986ms
+2026-03-31 14:59:06:596 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 14:59:22:5922 http: GET /api/v1/bookings/my-bookings - 200 - 5788ms
+2026-03-31 14:59:37:5937 http: GET /api/auth/get-session - 200 - 2872ms
+2026-03-31 14:59:38:5938 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 15:00:15:015 http: GET /api/auth/get-session - 200 - 3004ms
+2026-03-31 15:00:16:016 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 15:00:17:017 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 15:00:21:021 http: GET /api/v1/bookings/my-bookings - 200 - 3541ms
+2026-03-31 15:03:03:33 http: GET /api/auth/get-session - 200 - 2917ms
+2026-03-31 15:03:08:38 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 15:03:09:39 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 15:03:13:313 http: GET /api/v1/payments/my-payments - 200 - 3444ms
+2026-03-31 15:05:09:59 http: GET /api/auth/get-session - 200 - 3541ms
+2026-03-31 15:05:10:510 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 15:05:12:512 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:05:13:513 http: GET /api/auth/get-session - 200 - 2851ms
+2026-03-31 15:05:13:513 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 15:05:13:513 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:05:14:514 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:05:14:514 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:05:15:515 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:05:15:515 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 15:05:15:515 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 15:05:19:519 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:05:20:520 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 15:05:22:522 http: GET /api/v1/bookings/my-bookings - 200 - 1523ms
+2026-03-31 15:05:22:522 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:05:24:524 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:05:24:524 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:05:26:526 http: GET /api/v1/payments/my-payments - 200 - 1162ms
+2026-03-31 15:05:26:526 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:05:26:526 http: GET /api/v1/bookings/my-bookings - 200 - 4137ms
+2026-03-31 15:05:27:527 http: GET /api/v1/payments/my-payments - 200 - 1166ms
+2026-03-31 15:05:29:529 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 15:05:30:530 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:05:31:531 http: GET /api/v1/bookings/my-bookings - 200 - 1164ms
+2026-03-31 15:05:31:531 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:05:33:533 http: GET /api/v1/bookings/my-bookings - 200 - 1162ms
+2026-03-31 15:05:35:535 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:08:16:816 http: GET /api/auth/get-session - 200 - 2912ms
+2026-03-31 15:08:16:816 http: GET /api/auth/get-session - 200 - 2918ms
+2026-03-31 15:08:16:816 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 15:08:17:817 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 15:08:17:817 http: GET /api/auth/get-session - 200 - 598ms
+2026-03-31 15:08:18:818 http: GET /api/v1/bookings/my-bookings - 200 - 1184ms
+2026-03-31 15:08:19:819 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 15:08:20:820 http: GET /api/v1/payments/my-payments - 200 - 1183ms
+2026-03-31 15:08:21:821 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 15:08:22:822 http: GET /api/v1/bookings/my-bookings - 200 - 1179ms
+2026-03-31 15:08:23:823 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 15:08:24:824 http: GET /api/v1/payments/my-payments - 200 - 1184ms
+2026-03-31 15:09:58:958 http: GET /api/auth/get-session - 200 - 2925ms
+2026-03-31 15:09:58:958 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:10:02:102 http: GET /api/v1/payments/my-payments - 200 - 3415ms
+2026-03-31 15:10:02:102 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:10:04:104 http: GET /api/v1/payments/my-payments - 200 - 1156ms
+2026-03-31 15:10:20:1020 http: GET /api/auth/get-session - 200 - 2842ms
+2026-03-31 15:10:21:1021 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:10:25:1025 http: GET /api/v1/bookings/my-bookings - 200 - 3426ms
+2026-03-31 15:10:25:1025 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 15:10:26:1026 http: GET /api/v1/payments/my-payments - 200 - 1163ms
+2026-03-31 15:10:27:1027 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 15:10:28:1028 http: GET /api/v1/bookings/my-bookings - 200 - 1164ms
+2026-03-31 15:10:29:1029 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 15:10:30:1030 http: GET /api/v1/payments/my-payments - 200 - 1167ms
+2026-03-31 15:12:08:128 http: GET /api/auth/get-session - 200 - 2903ms
+2026-03-31 15:12:09:129 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 15:12:10:1210 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 15:12:14:1214 http: GET /api/v1/bookings/my-bookings - 200 - 3398ms
+2026-03-31 15:12:14:1214 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 15:12:15:1215 http: GET /api/v1/payments/my-payments - 200 - 1162ms
+2026-03-31 15:12:56:1256 http: GET /api/auth/get-session - 200 - 2858ms
+2026-03-31 15:12:57:1257 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:13:00:130 http: GET /api/v1/bookings/my-bookings - 200 - 3422ms
+2026-03-31 15:13:01:131 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:13:02:132 http: GET /api/v1/bookings/my-bookings - 200 - 1167ms
+2026-03-31 15:13:09:139 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 15:13:12:1312 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2919ms
+2026-03-31 15:13:30:1330 http: GET /api/auth/get-session - 200 - 2846ms
+2026-03-31 15:13:30:1330 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 15:13:31:1331 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 15:13:34:1334 http: GET /api/auth/get-session - 200 - 2853ms
+2026-03-31 15:13:35:1335 http: GET /api/v1/bookings/my-bookings - 200 - 3443ms
+2026-03-31 15:13:35:1335 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:13:35:1335 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 15:13:36:1336 http: GET /api/v1/auth/me - 200 - 1174ms
+2026-03-31 15:13:36:1336 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:13:37:1337 http: GET /api/v1/payments/my-payments - 200 - 1162ms
+2026-03-31 15:13:37:1337 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 15:13:37:1337 http: GET /api/v1/bookings/my-bookings - 200 - 1159ms
+2026-03-31 15:13:38:1338 http: GET /api/v1/payments/my-payments - 200 - 1165ms
+2026-03-31 15:14:11:1411 http: GET /api/auth/get-session - 200 - 2821ms
+2026-03-31 15:14:11:1411 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 15:14:13:1413 http: GET /api/auth/get-session - 200 - 2801ms
+2026-03-31 15:14:15:1415 http: GET /api/v1/bookings/my-bookings - 200 - 1132ms
+2026-03-31 15:14:15:1415 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 15:14:16:1416 http: GET /api/v1/payments/my-payments - 200 - 1163ms
+2026-03-31 15:14:17:1417 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:14:18:1418 http: GET /api/v1/bookings/my-bookings - 200 - 1159ms
+2026-03-31 15:14:19:1419 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 15:14:20:1420 http: GET /api/v1/payments/my-payments - 200 - 1157ms
+2026-03-31 15:26:34:2634 http: GET /api/auth/get-session - 200 - 2968ms
+2026-03-31 15:26:34:2634 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 15:26:36:2636 http: GET /api/auth/get-session - 200 - 577ms
+2026-03-31 15:26:39:2639 http: GET /api/v1/bookings/my-bookings - 200 - 3409ms
+2026-03-31 15:26:40:2640 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 15:26:41:2641 http: GET /api/v1/payments/my-payments - 200 - 1161ms
