@@ -14,6 +14,9 @@ router.post(
   bookingController.createBooking,
 );
 
+// get all bookings for admin
+router.get("/admin", checkAuth(Role.ADMIN), bookingController.getAllBookings);
+
 router.get(
   "/my-bookings",
   checkAuth(Role.USER),

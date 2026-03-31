@@ -54,9 +54,20 @@ const updateBookingStatus = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getAllBookings = catchAsync(async (req: Request, res: Response) => {
+  const bookings = await bookingService.getAllBookings();
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "All bookings retrieved successfully",
+    data: bookings,
+  });
+});
+
 export const bookingController = {
   createBooking,
   getMyBookings,
   getBookingById,
   updateBookingStatus,
+  getAllBookings,
 };

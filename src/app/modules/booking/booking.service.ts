@@ -1,5 +1,9 @@
 import { StatusCodes } from "http-status-codes";
-import { RequestStatus } from "../../../generated/prisma/enums";
+import {
+  PaymentStatus,
+  PropertyStatus,
+  RequestStatus,
+} from "../../../generated/prisma/enums";
 import ApiError from "../../errors/ApiError";
 import { prisma } from "../../lib/prisma";
 import { IBooking } from "./booking.interface";
@@ -40,6 +44,14 @@ const getMyBookings = async (agentId: string) => {
     include: {
       property: true,
       payment: true,
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+          phone: true,
+        },
+      },
     },
   });
   return bookings;
@@ -93,12 +105,63 @@ const updateBookingStatus = async (
       status,
     },
   });
+  // also update Property status if booking is approved
+  if (status === RequestStatus.APPROVED) {
+    await prisma.property.update({
+      where: {
+        id: booking.propertyId,
+      },
+      data: {
+        status: PropertyStatus.RENTED,
+      },
+    });
+    // also update all other pending bookings for the same property to rejected
+    await prisma.bookingRequest.updateMany({
+      where: {
+        propertyId: booking.propertyId,
+        status: RequestStatus.PENDING,
+      },
+      data: {
+        status: RequestStatus.REJECTED,
+      },
+    });
+
+    // also payment status to completed for the approved booking
+    await prisma.payment.updateMany({
+      where: {
+        bookingId: bookingId,
+        status: "PENDING",
+      },
+      data: {
+        status: PaymentStatus.SUCCESS,
+      },
+    });
+  }
   return updatedBooking;
+};
+
+const getAllBookings = async () => {
+  const bookings = await prisma.bookingRequest.findMany({
+    include: {
+      property: true,
+      payment: true,
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+          phone: true,
+        },
+      },
+    },
+  });
+  return bookings;
 };
 
 export const bookingService = {
   createBooking,
   getMyBookings,
   getBookingById,
+  getAllBookings,
   updateBookingStatus,
 };
