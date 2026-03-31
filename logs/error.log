@@ -1571,3 +1571,33 @@ Argument `price`: Invalid value provided. Expected Float or FloatFieldUpdateOper
 2026-03-31 20:56:43:5643 error: GET /api/v1/reviews/user - 404 - 2555ms
 2026-03-31 20:56:48:5648 error: [Error Handler] Review not found.
 2026-03-31 20:56:48:5648 error: GET /api/v1/reviews/user - 404 - 289ms
+2026-03-31 20:59:34:5934 error: [Error Handler] Review not found.
+2026-03-31 20:59:34:5934 error: GET /api/v1/reviews/agent - 404 - 319ms
+2026-03-31 21:00:29:029 error: [Error Handler] Review not found.
+2026-03-31 21:00:29:029 error: GET /api/v1/reviews/agent - 404 - 314ms
+2026-03-31 21:00:33:033 error: [Error Handler] Review not found.
+2026-03-31 21:00:33:033 error: GET /api/v1/reviews/agent - 404 - 300ms
+2026-03-31 21:00:33:033 error: [Error Handler] Review not found.
+2026-03-31 21:00:33:033 error: GET /api/v1/reviews/agent - 404 - 284ms
+2026-03-31 21:02:53:253 error: [Error Handler] Review not found.
+2026-03-31 21:02:53:253 error: GET /api/v1/reviews/agent - 404 - 279ms
+2026-03-31 21:02:56:256 error: [Error Handler] Review not found.
+2026-03-31 21:02:56:256 error: GET /api/v1/reviews/agent - 404 - 280ms
+2026-03-31 21:06:50:650 error: [Error Handler] Review not found.
+2026-03-31 21:06:50:650 error: GET /api/v1/reviews/agent - 404 - 313ms
+2026-03-31 21:06:58:658 error: [Error Handler] Review not found.
+2026-03-31 21:06:58:658 error: GET /api/v1/reviews/agent - 404 - 308ms
+2026-03-31 21:10:49:1049 error: [Error Handler] Review not found.
+2026-03-31 21:10:49:1049 error: GET /api/v1/reviews/agent - 404 - 300ms
+2026-03-31 21:10:52:1052 error: [Error Handler] Review not found.
+2026-03-31 21:10:52:1052 error: GET /api/v1/reviews/agent - 404 - 291ms
+2026-03-31 21:10:57:1057 error: [Error Handler] Review not found.
+2026-03-31 21:10:57:1057 error: GET /api/v1/reviews/agent - 404 - 294ms
+2026-03-31 21:11:28:1128 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 21:11:28:1128 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 403 - 585ms
+2026-03-31 21:11:29:1129 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 21:11:29:1129 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 403 - 582ms
+2026-03-31 21:13:15:1315 error: [Error Handler] Review not found.
+2026-03-31 21:13:15:1315 error: GET /api/v1/reviews/agent - 404 - 298ms
+2026-03-31 21:13:19:1319 error: [Error Handler] Review not found.
+2026-03-31 21:13:19:1319 error: GET /api/v1/reviews/agent - 404 - 292ms

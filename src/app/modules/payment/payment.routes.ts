@@ -35,7 +35,7 @@ router.get(
 
 router.patch(
   "/settings",
-  checkAuth(Role.ADMIN),
+  checkAuth(Role.AGENT),
   validateRequest(PaymentValidation.updateSettingsSchema),
   paymentController.updatePaymentSettings,
 );
