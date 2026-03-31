@@ -123,10 +123,64 @@ const deleteReview = async (id: string, agentId: string) => {
   });
 };
 
+// get reviews for a specific property
+const getReviewsByPropertyId = async (propertyId: string) => {
+  const reviews = await prisma.review.findMany({
+    where: { propertyId },
+    include: {
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+        },
+      },
+    },
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
+  return reviews;
+};
+
+// get review for user and property
+const getReviewByAgentAndProperty = async (
+  agentId: string,
+  propertyId: string,
+) => {
+  const review = await prisma.review.findFirst({
+    where: { agentId, propertyId },
+    include: {
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+        },
+      },
+      property: {
+        select: {
+          id: true,
+          title: true,
+          thumbnail: true,
+        },
+      },
+    },
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
+  return review;
+};
+
 export const reviewService = {
   createReview,
   getAllReviews,
   getReviewById,
   updateReview,
   deleteReview,
+  getReviewsByPropertyId,
+  getReviewByAgentAndProperty,
 };

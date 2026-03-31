@@ -61,4 +61,10 @@ router.delete(
   PropertyController.deleteProperty,
 );
 
+router.get(
+  "/agent/bookings",
+  checkAuth(Role.AGENT),
+  PropertyController.ownerBookings,
+);
+
 export const PropertyRoutes = router;

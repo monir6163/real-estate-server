@@ -27,4 +27,24 @@ router.patch(
 
 router.delete("/:id", checkAuth(Role.USER), reviewController.deleteReview);
 
+router.get(
+  "/property/:propertyId",
+  checkAuth(Role.AGENT),
+  reviewController.getReviewsByPropertyId,
+);
+
+router.get(
+  "/agent",
+  checkAuth(Role.AGENT),
+  reviewController.getReviewsByAgentId,
+);
+
+router.get("/user", checkAuth(Role.USER), reviewController.getReviewsByUserId);
+
+router.get(
+  "/my-reviews/:propertyId",
+  checkAuth(Role.USER),
+  reviewController.getReviewByAgentAndProperty,
+);
+
 export const ReviewRoutes = router;

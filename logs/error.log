@@ -1349,3 +1349,225 @@ F:\level-2-assignment\real-state-server\src\app\modules\property\property.servic
 
 Argument `price`: Invalid value provided. Expected Float, provided String.
 2026-03-31 17:34:06:346 error: POST /api/v1/properties - 400 - 16885ms
+2026-03-31 17:55:59:5559 error: POST /api/auth/sign-up/email - 422 - 2972ms
+2026-03-31 17:56:20:5620 error: POST /api/auth/sign-up/email - 422 - 2803ms
+2026-03-31 18:52:42:5242 error: GET /api/v1/properties/undefined - 404 - 667ms
+2026-03-31 18:54:20:5420 error: GET /api/v1/properties/undefined - 404 - 297ms
+2026-03-31 18:55:54:5554 error: GET /api/v1/properties/undefined - 404 - 316ms
+2026-03-31 18:56:25:5625 error: GET /api/v1/properties/undefined - 404 - 311ms
+2026-03-31 18:58:27:5827 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "f7ced2db-d697-400f-89a5-75d544369553",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Dolore cillum dolore",
+         description: "In et non veritatis ",
+         location: "Facere dolores vitae",
+         address: "Eaque vero nostrum a",
+         type: "LAND",
+         listingType: "SALE",
+         status: "RENTED",
+         price: "727",
+                ~~~~~
+         bedrooms: "30",
+         bathrooms: "43",
+         area: "81",
+         isPremium: "true",
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         }
+       }
+     })
+
+Argument `price`: Invalid value provided. Expected Float or FloatFieldUpdateOperationsInput, provided String.
+2026-03-31 18:58:27:5827 error: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 969ms
+2026-03-31 18:58:43:5843 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "f7ced2db-d697-400f-89a5-75d544369553",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Dolore cillum dolore",
+         description: "In et non veritatis ",
+         location: "Facere dolores vitae",
+         address: "Eaque vero nostrum a",
+         type: "LAND",
+         listingType: "SALE",
+         status: "RENTED",
+         price: "727",
+                ~~~~~
+         bedrooms: "30",
+         bathrooms: "43",
+         area: "81",
+         isPremium: "true",
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         }
+       }
+     })
+
+Argument `price`: Invalid value provided. Expected Float or FloatFieldUpdateOperationsInput, provided String.
+2026-03-31 18:58:43:5843 error: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 906ms
+2026-03-31 19:26:35:2635 error: [Error Handler] Cannot delete a property that is currently rented
+2026-03-31 19:26:35:2635 error: DELETE /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 884ms
+2026-03-31 19:27:12:2712 error: [Error Handler] Property not found
+2026-03-31 19:27:12:2712 error: DELETE /api/v1/properties/266a03e9-1dae-43ac-854a-4df82df9cbbd - 404 - 861ms
+2026-03-31 19:39:19:3919 error: [Error Handler] Review not found.
+2026-03-31 19:39:19:3919 error: GET /api/v1/reviews/agent - 404 - 2651ms
+2026-03-31 19:39:23:3923 error: [Error Handler] Review not found.
+2026-03-31 19:39:23:3923 error: GET /api/v1/reviews/agent - 404 - 304ms
+2026-03-31 19:39:37:3937 error: [Error Handler] Review not found.
+2026-03-31 19:39:37:3937 error: GET /api/v1/reviews/agent - 404 - 2580ms
+2026-03-31 19:41:37:4137 error: [Error Handler] Review not found.
+2026-03-31 19:41:37:4137 error: GET /api/v1/reviews/agent - 404 - 2537ms
+2026-03-31 19:41:41:4141 error: [Error Handler] Review not found.
+2026-03-31 19:41:41:4141 error: GET /api/v1/reviews/agent - 404 - 291ms
+2026-03-31 19:43:13:4313 error: [Error Handler] Review not found.
+2026-03-31 19:43:13:4313 error: GET /api/v1/reviews/agent - 404 - 2584ms
+2026-03-31 19:44:32:4432 error: [Error Handler] Review not found.
+2026-03-31 19:44:32:4432 error: GET /api/v1/reviews/agent - 404 - 2647ms
+2026-03-31 19:47:50:4750 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 19:47:50:4750 error: POST /api/v1/reviews - 403 - 645ms
+2026-03-31 19:50:55:5055 error: [Error Handler] Review not found.
+2026-03-31 19:50:55:5055 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 19:51:26:5126 error: [Error Handler] Review not found.
+2026-03-31 19:51:26:5126 error: GET /api/v1/reviews/agent - 404 - 2591ms
+2026-03-31 20:05:42:542 error: [Error Handler] Review not found.
+2026-03-31 20:05:42:542 error: GET /api/v1/reviews/agent - 404 - 309ms
+2026-03-31 20:05:58:558 error: [Error Handler] Review not found.
+2026-03-31 20:05:58:558 error: GET /api/v1/reviews/agent - 404 - 2483ms
+2026-03-31 20:07:33:733 error: [Error Handler] Review not found.
+2026-03-31 20:07:33:733 error: GET /api/v1/reviews/agent - 404 - 2913ms
+2026-03-31 20:07:34:734 error: [Error Handler] Review not found.
+2026-03-31 20:07:34:734 error: GET /api/v1/reviews/agent - 404 - 296ms
+2026-03-31 20:07:53:753 error: [Error Handler] Review not found.
+2026-03-31 20:07:53:753 error: GET /api/v1/reviews/agent - 404 - 2568ms
+2026-03-31 20:07:59:759 error: GET /favicon.ico - 404 - 3ms
+2026-03-31 20:09:18:918 error: [Error Handler] Review not found.
+2026-03-31 20:09:18:918 error: GET /api/v1/reviews/agent - 404 - 281ms
+2026-03-31 20:15:16:1516 error: [Error Handler] Review not found.
+2026-03-31 20:15:16:1516 error: GET /api/v1/reviews/agent - 404 - 5865ms
+2026-03-31 20:16:20:1620 error: [Error Handler] Review not found.
+2026-03-31 20:16:20:1620 error: GET /api/v1/reviews/agent - 404 - 2589ms
+2026-03-31 20:16:22:1622 error: [Error Handler] Review not found.
+2026-03-31 20:16:22:1622 error: GET /api/v1/reviews/user - 404 - 309ms
+2026-03-31 20:16:22:1622 error: [Error Handler] Review not found.
+2026-03-31 20:16:22:1622 error: GET /api/v1/reviews/user - 404 - 295ms
+2026-03-31 20:16:49:1649 error: [Error Handler] Review not found.
+2026-03-31 20:16:49:1649 error: GET /api/v1/reviews/user - 404 - 2577ms
+2026-03-31 20:20:15:2015 error: [Error Handler] Review not found.
+2026-03-31 20:20:15:2015 error: GET /api/v1/reviews/agent - 404 - 5962ms
+2026-03-31 20:20:17:2017 error: [Error Handler] Review not found.
+2026-03-31 20:20:17:2017 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 20:20:38:2038 error: [Error Handler] Review not found.
+2026-03-31 20:20:38:2038 error: GET /api/v1/reviews/agent - 404 - 2482ms
+2026-03-31 20:20:39:2039 error: [Error Handler] Review not found.
+2026-03-31 20:20:39:2039 error: GET /api/v1/reviews/agent - 404 - 292ms
+2026-03-31 20:20:55:2055 error: [Error Handler] Review not found.
+2026-03-31 20:20:55:2055 error: GET /api/v1/reviews/agent - 404 - 2601ms
+2026-03-31 20:21:41:2141 error: [Error Handler] Review not found.
+2026-03-31 20:21:41:2141 error: GET /api/v1/reviews/agent - 404 - 293ms
+2026-03-31 20:22:44:2244 error: [Error Handler] Review not found.
+2026-03-31 20:22:44:2244 error: GET /api/v1/reviews/agent - 404 - 2464ms
+2026-03-31 20:22:45:2245 error: [Error Handler] Review not found.
+2026-03-31 20:22:45:2245 error: GET /api/v1/reviews/agent - 404 - 278ms
+2026-03-31 20:22:48:2248 error: [Error Handler] Review not found.
+2026-03-31 20:22:48:2248 error: GET /api/v1/reviews/agent - 404 - 277ms
+2026-03-31 20:22:49:2249 error: [Error Handler] Review not found.
+2026-03-31 20:22:49:2249 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 20:22:52:2252 error: [Error Handler] Review not found.
+2026-03-31 20:22:52:2252 error: GET /api/v1/reviews/agent - 404 - 278ms
+2026-03-31 20:23:28:2328 error: [Error Handler] Review not found.
+2026-03-31 20:23:28:2328 error: GET /api/v1/reviews/agent - 404 - 2632ms
+2026-03-31 20:23:29:2329 error: [Error Handler] Review not found.
+2026-03-31 20:23:29:2329 error: GET /api/v1/reviews/user - 404 - 280ms
+2026-03-31 20:23:30:2330 error: [Error Handler] Review not found.
+2026-03-31 20:23:30:2330 error: GET /api/v1/reviews/user - 404 - 278ms
+2026-03-31 20:24:04:244 error: [Error Handler] Review not found.
+2026-03-31 20:24:04:244 error: GET /api/v1/reviews/user - 404 - 2568ms
+2026-03-31 20:24:05:245 error: [Error Handler] Review not found.
+2026-03-31 20:24:05:245 error: GET /api/v1/reviews/user - 404 - 308ms
+2026-03-31 20:25:41:2541 error: [Error Handler] Review not found.
+2026-03-31 20:25:41:2541 error: GET /api/v1/reviews/user - 404 - 2496ms
+2026-03-31 20:27:00:270 error: [Error Handler] Review not found.
+2026-03-31 20:27:00:270 error: GET /api/v1/reviews/agent - 404 - 2581ms
+2026-03-31 20:27:01:271 error: [Error Handler] Review not found.
+2026-03-31 20:27:01:271 error: GET /api/v1/reviews/agent - 404 - 304ms
+2026-03-31 20:27:02:272 error: [Error Handler] Review not found.
+2026-03-31 20:27:02:272 error: GET /api/v1/reviews/agent - 404 - 2566ms
+2026-03-31 20:28:35:2835 error: [Error Handler] Review not found.
+2026-03-31 20:28:35:2835 error: GET /api/v1/reviews/agent - 404 - 2580ms
+2026-03-31 20:29:06:296 error: [Error Handler] Review not found.
+2026-03-31 20:29:06:296 error: GET /api/v1/reviews/agent - 404 - 2628ms
+2026-03-31 20:29:32:2932 error: [Error Handler] Review not found.
+2026-03-31 20:29:32:2932 error: GET /api/v1/reviews/agent - 404 - 2621ms
+2026-03-31 20:30:35:3035 error: [Error Handler] Review not found.
+2026-03-31 20:30:35:3035 error: GET /api/v1/reviews/agent - 404 - 2574ms
+2026-03-31 20:30:36:3036 error: [Error Handler] Review not found.
+2026-03-31 20:30:36:3036 error: GET /api/v1/reviews/agent - 404 - 298ms
+2026-03-31 20:30:36:3036 error: [Error Handler] Review not found.
+2026-03-31 20:30:36:3036 error: GET /api/v1/reviews/agent - 404 - 294ms
+2026-03-31 20:32:17:3217 error: [Error Handler] Review not found.
+2026-03-31 20:32:17:3217 error: GET /api/v1/reviews/agent - 404 - 284ms
+2026-03-31 20:33:14:3314 error: [Error Handler] Review not found.
+2026-03-31 20:33:14:3314 error: GET /api/v1/reviews/agent - 404 - 2576ms
+2026-03-31 20:33:19:3319 error: [Error Handler] Review not found.
+2026-03-31 20:33:19:3319 error: GET /api/v1/reviews/agent - 404 - 288ms
+2026-03-31 20:37:48:3748 error: [Error Handler] Review not found.
+2026-03-31 20:37:48:3748 error: GET /api/v1/reviews/my-reviews - 404 - 2695ms
+2026-03-31 20:37:49:3749 error: [Error Handler] Review not found.
+2026-03-31 20:37:49:3749 error: GET /api/v1/reviews/my-reviews - 404 - 308ms
+2026-03-31 20:37:50:3750 error: [Error Handler] Review not found.
+2026-03-31 20:37:50:3750 error: GET /api/v1/reviews/my-reviews - 404 - 309ms
+2026-03-31 20:38:03:383 error: [Error Handler] Review not found.
+2026-03-31 20:38:03:383 error: GET /api/v1/reviews/my-reviews - 404 - 2619ms
+2026-03-31 20:39:08:398 error: [Error Handler] Review not found.
+2026-03-31 20:39:08:398 error: GET /api/v1/reviews/my-reviews - 404 - 2493ms
+2026-03-31 20:39:45:3945 error: [Error Handler] Review not found.
+2026-03-31 20:39:45:3945 error: GET /api/v1/reviews/my-reviews - 404 - 2616ms
+2026-03-31 20:41:14:4114 error: [Error Handler] Review not found.
+2026-03-31 20:41:14:4114 error: GET /api/v1/reviews/my-reviews - 404 - 2494ms
+2026-03-31 20:41:22:4122 error: [Error Handler] Review not found.
+2026-03-31 20:41:22:4122 error: GET /api/v1/reviews/my-reviews - 404 - 282ms
+2026-03-31 20:41:24:4124 error: [Error Handler] Review not found.
+2026-03-31 20:41:24:4124 error: GET /api/v1/reviews/my-reviews - 404 - 283ms
+2026-03-31 20:42:31:4231 error: [Error Handler] Review not found.
+2026-03-31 20:42:31:4231 error: GET /api/v1/reviews/my-reviews - 404 - 2591ms
+2026-03-31 20:43:17:4317 error: [Error Handler] Review not found.
+2026-03-31 20:43:17:4317 error: GET /api/v1/reviews/my-reviews - 404 - 2651ms
+2026-03-31 20:45:22:4522 error: [Error Handler] Review not found.
+2026-03-31 20:45:22:4522 error: GET /api/v1/reviews/my-reviews - 404 - 2787ms
+2026-03-31 20:47:18:4718 error: [Error Handler] Review not found.
+2026-03-31 20:47:18:4718 error: GET /api/v1/reviews/my-reviews - 404 - 301ms
+2026-03-31 20:47:52:4752 error: [Error Handler] Review not found.
+2026-03-31 20:47:52:4752 error: GET /api/v1/reviews/my-reviews - 404 - 2629ms
+2026-03-31 20:49:11:4911 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 404 - 7ms
+2026-03-31 20:50:17:5017 error: [Error Handler] Review not found.
+2026-03-31 20:50:17:5017 error: GET /api/v1/reviews/my-reviews - 404 - 2835ms
+2026-03-31 20:56:01:561 error: [Error Handler] Review not found.
+2026-03-31 20:56:01:561 error: GET /api/v1/reviews/agent - 404 - 3815ms
+2026-03-31 20:56:06:566 error: [Error Handler] Review not found.
+2026-03-31 20:56:06:566 error: GET /api/v1/reviews/user - 404 - 913ms
+2026-03-31 20:56:25:5625 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 20:56:25:5625 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 403 - 32509ms
+2026-03-31 20:56:43:5643 error: [Error Handler] Review not found.
+2026-03-31 20:56:43:5643 error: GET /api/v1/reviews/user - 404 - 2555ms
+2026-03-31 20:56:48:5648 error: [Error Handler] Review not found.
+2026-03-31 20:56:48:5648 error: GET /api/v1/reviews/user - 404 - 289ms

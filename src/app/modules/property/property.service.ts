@@ -155,6 +155,22 @@ const deleteProperty = async (id: string, agentId: string) => {
       "You are not authorized to delete this property",
     );
   }
+
+  // jodi rent hoy tahole delete hobe na
+
+  if (existingProperty.status === PropertyStatus.RENTED) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Cannot delete a property that is currently rented",
+    );
+  }
+  if (existingProperty.status === PropertyStatus.SOLD) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Cannot delete a property that is currently sold",
+    );
+  }
+
   const result = await prisma.property.delete({
     where: {
       id: id,
@@ -208,10 +224,22 @@ const getAllFeaturedProperties = async (query: IQueryParams) => {
 const getOwnerProperties = async (agentId: string) => {
   const result = await prisma.property.findMany({
     where: { agentId },
+    orderBy: { createdAt: "desc" },
     include: {
       agent: true,
       propertyImages: true,
       reviews: true,
+    },
+  });
+  return result;
+};
+
+const ownerBookings = async (agentId: string) => {
+  const result = await prisma.bookingRequest.findMany({
+    where: { property: { agentId } },
+    orderBy: { createdAt: "desc" },
+    include: {
+      property: true,
     },
   });
   return result;
@@ -227,4 +255,5 @@ export const PropertyService = {
   isFeaturedProperty,
   getAllFeaturedProperties,
   getOwnerProperties,
+  ownerBookings,
 };

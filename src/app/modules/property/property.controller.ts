@@ -70,6 +70,18 @@ const updateProperty = catchAsync(async (req: Request, res: Response) => {
   const agentId = req.user?.id as string;
   const payload = {
     ...req.body,
+    // Convert string values to proper types
+    price: req.body.price ? Number(req.body.price) : undefined,
+    bedrooms: req.body.bedrooms ? Number(req.body.bedrooms) : undefined,
+    bathrooms: req.body.bathrooms ? Number(req.body.bathrooms) : undefined,
+    area: req.body.area ? Number(req.body.area) : undefined,
+    isPremium:
+      req.body.isPremium === "true" || req.body.isPremium === true
+        ? true
+        : req.body.isPremium === "false"
+          ? false
+          : undefined,
+    isFeatured: undefined, // isFeatured cannot be updated
     thumbnail:
       req.files && !Array.isArray(req.files) && req.files.thumbnail
         ? (req.files.thumbnail as Express.Multer.File[])[0].path
@@ -77,11 +89,13 @@ const updateProperty = catchAsync(async (req: Request, res: Response) => {
     images:
       req.files && !Array.isArray(req.files) && req.files.images
         ? (req.files.images as Express.Multer.File[]).map((file) => file.path)
-        : [],
+        : undefined,
   };
-  if (payload.isFeatured) {
-    delete payload.isFeatured;
-  }
+  // Remove undefined values
+  Object.keys(payload).forEach(
+    (key) => payload[key] === undefined && delete payload[key],
+  );
+
   const result = await PropertyService.updateProperty(
     id as string,
     agentId,
@@ -165,6 +179,17 @@ const getOwnerProperties = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const ownerBookings = catchAsync(async (req: Request, res: Response) => {
+  const ownerId = req.user?.id as string;
+  const result = await PropertyService.ownerBookings(ownerId);
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Owner bookings retrieved successfully",
+    data: result,
+  });
+});
+
 export const PropertyController = {
   createProperty,
   getAllProperties,
@@ -175,4 +200,5 @@ export const PropertyController = {
   isFeaturedProperty,
   getAllFeaturedProperties,
   getOwnerProperties,
+  ownerBookings,
 };

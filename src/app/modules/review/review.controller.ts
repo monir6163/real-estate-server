@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import catchAsync from "../../shared/catchAsync";
@@ -7,7 +8,7 @@ import { reviewService } from "./review.service";
 const createReview = catchAsync(async (req: Request, res: Response) => {
   const payload = {
     ...req.body,
-    agentId: req.user?.id,
+    agentId: req.user?.id as string,
   };
 
   const review = await reviewService.createReview(payload);
@@ -69,10 +70,80 @@ const deleteReview = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getReviewsByPropertyId = catchAsync(
+  async (req: Request, res: Response) => {
+    const propertyId = req.params.propertyId as string;
+    const reviews = await reviewService.getReviewsByPropertyId(propertyId);
+
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: "Reviews retrieved successfully",
+      data: reviews,
+    });
+  },
+);
+
+const getReviewByAgentAndProperty = catchAsync(
+  async (req: Request, res: Response) => {
+    const agentId = req.user?.id as string;
+    const propertyId = req.query.propertyId as string;
+    const review = await reviewService.getReviewByAgentAndProperty(
+      agentId,
+      propertyId,
+    );
+
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: "Review retrieved successfully",
+      data: review,
+    });
+  },
+);
+
+const getReviewsByAgentId = catchAsync(async (req: Request, res: Response) => {
+  const agentId = req.user?.id as string;
+  const reviews = await reviewService.getAllReviews();
+
+  // Filter reviews for properties owned by this agent
+  const filteredReviews = reviews.filter((review: any) => {
+    return review.agent?.id === agentId;
+  });
+
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Reviews retrieved successfully",
+    data: filteredReviews,
+  });
+});
+
+const getReviewsByUserId = catchAsync(async (req: Request, res: Response) => {
+  const userId = req.user?.id as string;
+  const reviews = await reviewService.getAllReviews();
+
+  // Filter reviews submitted by this user (stored as agentId in current schema)
+  const filteredReviews = reviews.filter((review: any) => {
+    return review.agentId === userId;
+  });
+
+  sendResponse(res, {
+    statusCode: StatusCodes.OK,
+    success: true,
+    message: "Reviews retrieved successfully",
+    data: filteredReviews,
+  });
+});
+
 export const reviewController = {
   createReview,
   getAllReviews,
   getReviewById,
   updateReview,
   deleteReview,
+  getReviewsByPropertyId,
+  getReviewByAgentAndProperty,
+  getReviewsByAgentId,
+  getReviewsByUserId,
 };

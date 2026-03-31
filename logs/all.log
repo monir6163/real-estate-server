@@ -2538,3 +2538,1027 @@ Argument `price`: Invalid value provided. Expected Float, provided String.
 2026-03-31 17:48:13:4813 http: GET /api/auth/get-session - 200 - 560ms
 2026-03-31 17:48:14:4814 http: GET /api/auth/get-session - 200 - 563ms
 2026-03-31 17:48:14:4814 http: GET /api/v1/properties - 200 - 5513ms
+2026-03-31 17:53:48:5348 http: GET /api/auth/get-session - 200 - 3608ms
+2026-03-31 17:53:48:5348 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:53:50:5350 http: GET /api/auth/get-session - 200 - 2778ms
+2026-03-31 17:53:51:5351 http: GET /api/auth/get-session - 200 - 573ms
+2026-03-31 17:53:52:5352 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 17:53:52:5352 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:53:53:5353 http: GET /api/auth/get-session - 200 - 575ms
+2026-03-31 17:53:53:5353 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:53:53:5353 http: GET /api/auth/get-session - 200 - 574ms
+2026-03-31 17:53:54:5354 http: GET /api/auth/get-session - 200 - 571ms
+2026-03-31 17:53:55:5355 http: GET /api/auth/get-session - 200 - 556ms
+2026-03-31 17:53:55:5355 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 17:53:55:5355 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 17:53:56:5356 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:53:56:5356 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 17:53:57:5357 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 17:53:57:5357 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 17:53:57:5357 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 17:54:43:5443 http: GET /api/auth/get-session - 200 - 2821ms
+2026-03-31 17:55:00:550 http: GET /api/v1/properties/agent/properties - 200 - 6038ms
+2026-03-31 17:55:21:5521 http: POST /api/auth/sign-out - 200 - 2852ms
+2026-03-31 17:55:23:5523 http: GET /api/auth/get-session - 200 - 6ms
+2026-03-31 17:55:23:5523 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 17:55:26:5526 http: GET /api/v1/properties/featured?limit=10 - 200 - 2885ms
+2026-03-31 17:55:26:5526 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 17:55:28:5528 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 17:55:29:5529 http: GET /api/v1/properties/featured?limit=10 - 200 - 3120ms
+2026-03-31 17:55:47:5547 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 17:55:59:5559 error: POST /api/auth/sign-up/email - 422 - 2972ms
+2026-03-31 17:56:20:5620 error: POST /api/auth/sign-up/email - 422 - 2803ms
+2026-03-31 17:57:52:5752 http: GET /api/auth/get-session - 200 - 8ms
+2026-03-31 17:58:07:587 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 17:58:10:5810 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 17:58:40:5840 http: POST /api/auth/sign-up/email - 200 - 8237ms
+2026-03-31 17:58:40:5840 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 17:59:29:5929 http: POST /api/v1/auth/verify-email - 200 - 5093ms
+2026-03-31 17:59:30:5930 http: GET /api/auth/get-session - 200 - 7ms
+2026-03-31 17:59:32:5932 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 17:59:44:5944 http: POST /api/auth/sign-in/email - 200 - 3653ms
+2026-03-31 17:59:45:5945 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 17:59:47:5947 http: GET /api/v1/properties/featured?limit=10 - 200 - 2756ms
+2026-03-31 17:59:47:5947 http: GET /api/v1/properties/featured?limit=10 - 200 - 560ms
+2026-03-31 18:00:04:04 http: GET /api/auth/get-session - 200 - 2784ms
+2026-03-31 18:00:10:010 http: POST /api/auth/sign-out - 200 - 579ms
+2026-03-31 18:00:10:010 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 18:00:15:015 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 18:00:21:021 http: POST /api/auth/sign-in/email - 200 - 1325ms
+2026-03-31 18:00:22:022 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 18:00:24:024 http: GET /api/v1/properties/featured?limit=10 - 200 - 2749ms
+2026-03-31 18:00:25:025 http: GET /api/v1/properties/featured?limit=10 - 200 - 833ms
+2026-03-31 18:00:34:034 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:00:34:034 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 18:00:35:035 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 18:00:40:040 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 18:00:43:043 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 18:00:46:046 http: GET /api/v1/properties/agent/properties - 200 - 3517ms
+2026-03-31 18:08:36:836 http: POST /api/auth/sign-out - 200 - 3939ms
+2026-03-31 18:08:36:836 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 18:08:39:839 http: GET /api/v1/properties/featured?limit=10 - 200 - 2756ms
+2026-03-31 18:08:41:841 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 18:08:42:842 http: GET /api/v1/properties/featured?limit=10 - 200 - 3128ms
+2026-03-31 18:08:52:852 http: POST /api/auth/sign-in/email - 200 - 1350ms
+2026-03-31 18:08:53:853 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:08:55:855 http: GET /api/v1/properties/featured?limit=10 - 200 - 3037ms
+2026-03-31 18:08:56:856 http: GET /api/v1/properties/featured?limit=10 - 200 - 564ms
+2026-03-31 18:08:59:859 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 18:09:00:90 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 18:09:00:90 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 18:21:04:214 http: GET /api/auth/get-session - 200 - 31ms
+2026-03-31 18:21:08:218 http: GET /api/auth/get-session - 200 - 9ms
+2026-03-31 18:21:22:2122 http: GET /api/auth/get-session - 200 - 11ms
+2026-03-31 18:26:21:2621 http: GET /api/auth/get-session - 200 - 3087ms
+2026-03-31 18:26:22:2622 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 18:26:25:2625 http: GET /api/auth/get-session - 200 - 2850ms
+2026-03-31 18:26:25:2625 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 18:26:25:2625 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:26:26:2626 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:26:27:2627 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 18:26:27:2627 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 18:26:28:2628 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 18:26:28:2628 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 18:26:29:2629 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 18:26:29:2629 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 18:26:31:2631 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:26:31:2631 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 18:26:33:2633 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 18:27:00:270 http: GET /api/auth/get-session - 200 - 2848ms
+2026-03-31 18:27:01:271 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:27:03:273 http: GET /api/auth/get-session - 200 - 2838ms
+2026-03-31 18:27:04:274 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:27:04:274 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 18:27:05:275 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 18:27:05:275 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:27:05:275 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 18:27:05:275 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:27:06:276 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 18:27:06:276 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:27:07:277 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 18:27:07:277 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:27:08:278 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 18:27:08:278 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 18:27:08:278 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 18:27:08:278 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:27:09:279 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 18:30:44:3044 http: GET /api/auth/get-session - 200 - 2878ms
+2026-03-31 18:30:45:3045 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 18:30:47:3047 http: GET /api/auth/get-session - 200 - 2852ms
+2026-03-31 18:30:48:3048 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 18:30:48:3048 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 18:30:49:3049 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:30:49:3049 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:30:49:3049 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 18:30:50:3050 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:32:44:3244 http: GET /api/auth/get-session - 200 - 2814ms
+2026-03-31 18:32:48:3248 http: GET /api/v1/properties/agent/properties - 200 - 3615ms
+2026-03-31 18:32:49:3249 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:33:14:3314 http: GET /api/auth/get-session - 200 - 2763ms
+2026-03-31 18:34:32:3432 http: GET /api/auth/get-session - 200 - 2916ms
+2026-03-31 18:34:53:3453 http: GET /api/auth/get-session - 200 - 2883ms
+2026-03-31 18:35:34:3534 http: GET /api/auth/get-session - 200 - 2816ms
+2026-03-31 18:35:35:3535 http: GET /api/auth/get-session - 200 - 2767ms
+2026-03-31 18:35:36:3536 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 18:36:05:365 http: GET /api/auth/get-session - 200 - 2750ms
+2026-03-31 18:36:20:3620 http: POST /api/v1/properties - 201 - 14502ms
+2026-03-31 18:36:27:3627 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 18:36:30:3630 http: GET /api/v1/properties/agent/properties - 200 - 3627ms
+2026-03-31 18:36:41:3641 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 18:36:43:3643 http: GET /api/v1/properties/featured?limit=10 - 200 - 3065ms
+2026-03-31 18:36:48:3648 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 850ms
+2026-03-31 18:36:49:3649 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 842ms
+2026-03-31 18:37:20:3720 http: GET /api/auth/get-session - 200 - 2767ms
+2026-03-31 18:37:27:3727 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 18:38:10:3810 http: GET /api/auth/get-session - 200 - 2920ms
+2026-03-31 18:39:48:3948 http: GET /api/auth/get-session - 200 - 2947ms
+2026-03-31 18:40:54:4054 http: GET /api/auth/get-session - 200 - 2800ms
+2026-03-31 18:40:54:4054 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3029ms
+2026-03-31 18:42:49:4249 http: GET /api/auth/get-session - 200 - 2791ms
+2026-03-31 18:42:52:4252 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:42:52:4252 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 18:42:53:4253 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:42:56:4256 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 18:43:02:432 http: GET /api/v1/properties/agent/properties - 200 - 3576ms
+2026-03-31 18:43:36:4336 http: GET /api/auth/get-session - 200 - 2738ms
+2026-03-31 18:43:39:4339 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 18:43:44:4344 http: GET /api/v1/properties/agent/properties - 200 - 5775ms
+2026-03-31 18:44:04:444 http: GET /api/auth/get-session - 200 - 2894ms
+2026-03-31 18:44:05:445 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 18:44:11:4411 http: GET /api/v1/properties/agent/properties - 200 - 6004ms
+2026-03-31 18:45:08:458 http: GET /api/auth/get-session - 200 - 2866ms
+2026-03-31 18:45:11:4511 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 18:45:15:4515 http: GET /api/v1/properties/agent/properties - 200 - 3690ms
+2026-03-31 18:45:53:4553 http: GET /api/auth/get-session - 200 - 2930ms
+2026-03-31 18:45:54:4554 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:45:55:4555 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:45:58:4558 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 18:46:01:461 http: GET /api/v1/properties/agent/properties - 200 - 3727ms
+2026-03-31 18:47:05:475 http: GET /api/auth/get-session - 200 - 2894ms
+2026-03-31 18:47:05:475 http: GET /api/auth/get-session - 200 - 2883ms
+2026-03-31 18:47:06:476 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:47:08:478 http: GET /api/auth/get-session - 200 - 2834ms
+2026-03-31 18:47:08:478 http: GET /api/auth/get-session - 200 - 2850ms
+2026-03-31 18:47:08:478 http: GET /api/auth/get-session - 200 - 2853ms
+2026-03-31 18:47:08:478 http: GET /api/v1/properties/agent/properties - 200 - 3410ms
+2026-03-31 18:47:09:479 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 18:47:09:479 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 18:47:10:4710 http: GET /api/v1/properties/agent/properties - 200 - 1724ms
+2026-03-31 18:47:11:4711 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 18:47:13:4713 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 18:47:14:4714 http: GET /api/v1/properties/agent/properties - 200 - 1733ms
+2026-03-31 18:47:32:4732 http: GET /api/auth/get-session - 200 - 2830ms
+2026-03-31 18:47:32:4732 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 18:47:37:4737 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 18:47:38:4738 http: GET /api/auth/get-session - 200 - 581ms
+2026-03-31 18:47:44:4744 http: GET /api/v1/properties/agent/properties - 200 - 5966ms
+2026-03-31 18:51:22:5122 http: GET /api/auth/get-session - 200 - 3079ms
+2026-03-31 18:51:23:5123 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 18:51:26:5126 http: GET /api/auth/get-session - 200 - 2887ms
+2026-03-31 18:51:26:5126 http: GET /api/auth/get-session - 200 - 694ms
+2026-03-31 18:51:28:5128 http: GET /api/v1/properties/agent/properties - 200 - 1870ms
+2026-03-31 18:51:29:5129 http: GET /api/v1/properties/agent/properties - 200 - 6583ms
+2026-03-31 18:52:02:522 http: GET /api/auth/get-session - 200 - 2979ms
+2026-03-31 18:52:03:523 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 18:52:06:526 http: GET /api/auth/get-session - 200 - 2901ms
+2026-03-31 18:52:06:526 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 18:52:08:528 http: GET /api/v1/properties/agent/properties - 200 - 1505ms
+2026-03-31 18:52:09:529 http: GET /api/v1/properties/agent/properties - 200 - 6344ms
+2026-03-31 18:52:09:529 http: GET /api/v1/properties/agent/properties - 200 - 3541ms
+2026-03-31 18:52:10:5210 http: GET /api/auth/get-session - 200 - 3395ms
+2026-03-31 18:52:10:5210 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 18:52:11:5211 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 18:52:12:5212 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 18:52:13:5213 http: GET /api/auth/get-session - 200 - 991ms
+2026-03-31 18:52:13:5213 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 18:52:14:5214 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 18:52:15:5215 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 18:52:16:5216 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 18:52:16:5216 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 18:52:17:5217 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 18:52:18:5218 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 18:52:18:5218 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 18:52:19:5219 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 18:52:20:5220 http: GET /api/auth/get-session - 200 - 981ms
+2026-03-31 18:52:22:5222 http: GET /api/auth/get-session - 200 - 972ms
+2026-03-31 18:52:23:5223 http: GET /api/auth/get-session - 200 - 1015ms
+2026-03-31 18:52:23:5223 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 18:52:24:5224 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 18:52:25:5225 http: GET /api/auth/get-session - 200 - 632ms
+2026-03-31 18:52:25:5225 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 18:52:26:5226 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 18:52:27:5227 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 18:52:27:5227 http: GET /api/auth/get-session - 200 - 606ms
+2026-03-31 18:52:28:5228 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 18:52:29:5229 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 18:52:30:5230 http: GET /api/auth/get-session - 200 - 973ms
+2026-03-31 18:52:30:5230 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 18:52:31:5231 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 18:52:32:5232 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 18:52:33:5233 http: GET /api/auth/get-session - 200 - 977ms
+2026-03-31 18:52:34:5234 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 18:52:35:5235 http: GET /api/auth/get-session - 200 - 966ms
+2026-03-31 18:52:37:5237 http: GET /api/auth/get-session - 200 - 967ms
+2026-03-31 18:52:42:5242 error: GET /api/v1/properties/undefined - 404 - 667ms
+2026-03-31 18:54:20:5420 http: GET /api/auth/get-session - 200 - 2936ms
+2026-03-31 18:54:20:5420 error: GET /api/v1/properties/undefined - 404 - 297ms
+2026-03-31 18:54:21:5421 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 18:55:54:5554 http: GET /api/auth/get-session - 200 - 3080ms
+2026-03-31 18:55:54:5554 error: GET /api/v1/properties/undefined - 404 - 316ms
+2026-03-31 18:55:57:5557 http: GET /api/auth/get-session - 200 - 2953ms
+2026-03-31 18:56:17:5617 http: GET /api/auth/get-session - 200 - 2882ms
+2026-03-31 18:56:21:5621 http: GET /api/v1/properties/agent/properties - 200 - 4028ms
+2026-03-31 18:56:24:5624 http: GET /api/auth/get-session - 200 - 615ms
+2026-03-31 18:56:25:5625 error: GET /api/v1/properties/undefined - 404 - 311ms
+2026-03-31 18:57:47:5747 http: GET /api/auth/get-session - 200 - 2944ms
+2026-03-31 18:57:47:5747 http: GET /api/auth/get-session - 200 - 2959ms
+2026-03-31 18:57:47:5747 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 18:57:50:5750 http: GET /api/auth/get-session - 200 - 2925ms
+2026-03-31 18:57:50:5750 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 3010ms
+2026-03-31 18:57:50:5750 http: GET /api/v1/properties/agent/properties - 200 - 3720ms
+2026-03-31 18:57:56:5756 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 18:57:56:5756 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 18:57:56:5756 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 18:57:57:5757 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 18:57:57:5757 http: GET /api/v1/properties/agent/properties - 200 - 1482ms
+2026-03-31 18:58:02:582 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 18:58:02:582 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 599ms
+2026-03-31 18:58:25:5825 http: GET /api/auth/get-session - 200 - 2871ms
+2026-03-31 18:58:27:5827 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "f7ced2db-d697-400f-89a5-75d544369553",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Dolore cillum dolore",
+         description: "In et non veritatis ",
+         location: "Facere dolores vitae",
+         address: "Eaque vero nostrum a",
+         type: "LAND",
+         listingType: "SALE",
+         status: "RENTED",
+         price: "727",
+                ~~~~~
+         bedrooms: "30",
+         bathrooms: "43",
+         area: "81",
+         isPremium: "true",
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         }
+       }
+     })
+
+Argument `price`: Invalid value provided. Expected Float or FloatFieldUpdateOperationsInput, provided String.
+2026-03-31 18:58:27:5827 error: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 969ms
+2026-03-31 18:58:42:5842 http: GET /api/auth/get-session - 200 - 3150ms
+2026-03-31 18:58:43:5843 error: [Error Handler] 
+Invalid `prisma.property.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\property\property.service.ts:96:40
+
+  93     "You are not authorized to update this property",
+  94   );
+  95 }
+→ 96 const result = await prisma.property.update({
+       where: {
+         id: "f7ced2db-d697-400f-89a5-75d544369553",
+         agentId: "2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6"
+       },
+       data: {
+         title: "Dolore cillum dolore",
+         description: "In et non veritatis ",
+         location: "Facere dolores vitae",
+         address: "Eaque vero nostrum a",
+         type: "LAND",
+         listingType: "SALE",
+         status: "RENTED",
+         price: "727",
+                ~~~~~
+         bedrooms: "30",
+         bathrooms: "43",
+         area: "81",
+         isPremium: "true",
+         thumbnail: undefined,
+         propertyImages: {
+           create: []
+         }
+       }
+     })
+
+Argument `price`: Invalid value provided. Expected Float or FloatFieldUpdateOperationsInput, provided String.
+2026-03-31 18:58:43:5843 error: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 906ms
+2026-03-31 19:00:44:044 http: GET /api/auth/get-session - 200 - 3097ms
+2026-03-31 19:00:47:047 http: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 2079ms
+2026-03-31 19:00:55:055 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 19:00:58:058 http: GET /api/v1/properties/agent/properties - 200 - 3736ms
+2026-03-31 19:02:46:246 http: GET /api/auth/get-session - 200 - 2930ms
+2026-03-31 19:02:47:247 http: GET /api/v1/payments/settings - 200 - 3204ms
+2026-03-31 19:02:49:249 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 2851ms
+2026-03-31 19:02:50:250 http: GET /api/v1/payments/settings - 200 - 875ms
+2026-03-31 19:02:51:251 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 580ms
+2026-03-31 19:03:07:37 http: GET /api/v1/payments/settings - 200 - 3119ms
+2026-03-31 19:03:14:314 http: GET /api/v1/properties/featured?limit=10 - 200 - 2909ms
+2026-03-31 19:03:17:317 http: GET /api/v1/properties/featured?limit=10 - 200 - 3134ms
+2026-03-31 19:03:51:351 http: GET /api/auth/get-session - 200 - 3021ms
+2026-03-31 19:03:53:353 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 19:03:53:353 http: GET /api/auth/get-session - 200 - 617ms
+2026-03-31 19:03:54:354 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 19:04:01:41 http: GET /api/auth/get-session - 200 - 612ms
+2026-03-31 19:04:01:41 http: GET /api/auth/get-session - 200 - 618ms
+2026-03-31 19:04:04:44 http: GET /api/auth/get-session - 200 - 982ms
+2026-03-31 19:04:06:46 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 19:04:11:411 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 19:04:11:411 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 19:04:36:436 http: GET /api/auth/get-session - 200 - 2896ms
+2026-03-31 19:04:39:439 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 19:04:42:442 http: GET /api/auth/get-session - 200 - 2871ms
+2026-03-31 19:04:42:442 http: GET /api/auth/get-session - 200 - 3409ms
+2026-03-31 19:04:43:443 http: GET /api/auth/get-session - 200 - 653ms
+2026-03-31 19:04:43:443 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 19:04:43:443 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 19:04:44:444 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 19:04:44:444 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 19:04:52:452 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 19:04:56:456 http: GET /api/v1/properties/agent/properties - 200 - 3505ms
+2026-03-31 19:05:10:510 http: GET /api/auth/get-session - 200 - 2831ms
+2026-03-31 19:05:13:513 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 2833ms
+2026-03-31 19:11:40:1140 http: GET /api/auth/get-session - 200 - 3508ms
+2026-03-31 19:11:42:1142 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 19:11:46:1146 http: GET /api/v1/properties/agent/properties - 200 - 3642ms
+2026-03-31 19:12:01:121 http: GET /api/auth/get-session - 200 - 2782ms
+2026-03-31 19:17:02:172 http: GET /api/auth/get-session - 200 - 2953ms
+2026-03-31 19:17:03:173 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 19:17:05:175 http: GET /api/auth/get-session - 200 - 2780ms
+2026-03-31 19:17:05:175 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 19:17:05:175 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 19:17:06:176 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 19:17:06:176 http: GET /api/auth/get-session - 200 - 575ms
+2026-03-31 19:17:07:177 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 19:17:07:177 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 19:17:07:177 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 19:17:55:1755 http: GET /api/auth/get-session - 200 - 2783ms
+2026-03-31 19:17:56:1756 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 19:17:59:1759 http: GET /api/v1/properties/agent/bookings - 200 - 3408ms
+2026-03-31 19:18:09:189 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 19:18:10:1810 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 19:18:12:1812 http: GET /api/auth/get-session - 200 - 2885ms
+2026-03-31 19:18:12:1812 http: GET /api/v1/properties/agent/bookings - 200 - 3468ms
+2026-03-31 19:18:13:1813 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 19:18:13:1813 http: GET /api/v1/properties/agent/bookings - 200 - 1131ms
+2026-03-31 19:18:15:1815 http: GET /api/auth/get-session - 200 - 2850ms
+2026-03-31 19:18:15:1815 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 19:18:16:1816 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 19:18:16:1816 http: GET /api/v1/properties/agent/bookings - 200 - 1124ms
+2026-03-31 19:18:16:1816 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 19:18:17:1817 http: GET /api/v1/properties/agent/bookings - 200 - 1158ms
+2026-03-31 19:18:17:1817 http: GET /api/auth/get-session - 200 - 574ms
+2026-03-31 19:18:17:1817 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 19:18:17:1817 http: GET /api/v1/properties/agent/bookings - 200 - 1125ms
+2026-03-31 19:18:17:1817 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 19:18:18:1818 http: GET /api/v1/properties/agent/bookings - 200 - 1157ms
+2026-03-31 19:18:24:1824 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 19:18:25:1825 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 19:18:25:1825 http: GET /api/v1/properties/agent/bookings - 200 - 1157ms
+2026-03-31 19:19:40:1940 http: GET /api/auth/get-session - 200 - 3017ms
+2026-03-31 19:19:40:1940 http: GET /api/auth/get-session - 200 - 607ms
+2026-03-31 19:19:43:1943 http: GET /api/v1/properties/agent/bookings - 200 - 3455ms
+2026-03-31 19:20:56:2056 http: GET /api/auth/get-session - 200 - 2940ms
+2026-03-31 19:21:00:210 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 19:21:00:210 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 19:21:01:211 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 19:21:02:212 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 19:21:02:212 http: GET /api/auth/get-session - 200 - 2865ms
+2026-03-31 19:21:08:218 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:21:10:2110 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:21:10:2110 http: GET /api/v1/properties/agent/bookings - 200 - 1198ms
+2026-03-31 19:23:17:2317 http: GET /api/auth/get-session - 200 - 3097ms
+2026-03-31 19:23:19:2319 http: GET /api/auth/get-session - 200 - 616ms
+2026-03-31 19:23:21:2321 http: GET /api/v1/properties/agent/bookings - 200 - 3494ms
+2026-03-31 19:23:38:2338 http: GET /api/auth/get-session - 200 - 3120ms
+2026-03-31 19:23:38:2338 http: GET /api/auth/get-session - 200 - 2966ms
+2026-03-31 19:23:39:2339 http: GET /api/auth/get-session - 200 - 620ms
+2026-03-31 19:23:39:2339 http: GET /api/v1/properties/agent/bookings - 200 - 1261ms
+2026-03-31 19:23:39:2339 http: GET /api/auth/get-session - 200 - 624ms
+2026-03-31 19:23:41:2341 http: GET /api/auth/get-session - 200 - 616ms
+2026-03-31 19:23:42:2342 http: GET /api/v1/properties/agent/bookings - 200 - 3533ms
+2026-03-31 19:23:43:2343 http: GET /api/auth/get-session - 200 - 616ms
+2026-03-31 19:23:43:2343 http: GET /api/v1/properties/agent/bookings - 200 - 1220ms
+2026-03-31 19:24:10:2410 http: GET /api/auth/get-session - 200 - 2884ms
+2026-03-31 19:24:12:2412 http: PATCH /api/v1/bookings/7a22e028-9699-4f31-96b6-2cdc75aec2c4/status - 200 - 1570ms
+2026-03-31 19:24:12:2412 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 19:24:13:2413 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 19:24:16:2416 http: GET /api/v1/properties/agent/bookings - 200 - 3473ms
+2026-03-31 19:24:29:2429 http: GET /api/auth/get-session - 200 - 2864ms
+2026-03-31 19:24:30:2430 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 19:24:33:2433 http: GET /api/v1/properties/agent/bookings - 200 - 3399ms
+2026-03-31 19:24:58:2458 http: GET /api/auth/get-session - 200 - 2826ms
+2026-03-31 19:24:59:2459 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 19:25:02:252 http: GET /api/v1/properties/agent/bookings - 200 - 3478ms
+2026-03-31 19:25:11:2511 http: GET /api/auth/get-session - 200 - 579ms
+2026-03-31 19:25:15:2515 http: GET /api/v1/properties/agent/properties - 200 - 3700ms
+2026-03-31 19:25:18:2518 http: GET /api/auth/get-session - 200 - 1005ms
+2026-03-31 19:25:20:2520 http: GET /api/v1/properties/agent/bookings - 200 - 1954ms
+2026-03-31 19:26:14:2614 http: GET /api/auth/get-session - 200 - 2878ms
+2026-03-31 19:26:18:2618 http: GET /api/v1/properties/agent/properties - 200 - 3692ms
+2026-03-31 19:26:34:2634 http: GET /api/auth/get-session - 200 - 2825ms
+2026-03-31 19:26:35:2635 error: [Error Handler] Cannot delete a property that is currently rented
+2026-03-31 19:26:35:2635 error: DELETE /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 400 - 884ms
+2026-03-31 19:26:50:2650 http: GET /api/auth/get-session - 200 - 2829ms
+2026-03-31 19:26:51:2651 http: DELETE /api/v1/properties/266a03e9-1dae-43ac-854a-4df82df9cbbd - 204 - 1167ms
+2026-03-31 19:27:11:2711 http: GET /api/auth/get-session - 200 - 2850ms
+2026-03-31 19:27:12:2712 error: [Error Handler] Property not found
+2026-03-31 19:27:12:2712 error: DELETE /api/v1/properties/266a03e9-1dae-43ac-854a-4df82df9cbbd - 404 - 861ms
+2026-03-31 19:27:19:2719 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 19:27:20:2720 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 19:27:25:2725 http: GET /api/v1/properties/agent/properties - 200 - 5781ms
+2026-03-31 19:27:41:2741 http: GET /api/auth/get-session - 200 - 2893ms
+2026-03-31 19:27:42:2742 http: DELETE /api/v1/properties/0baef86c-f29c-4519-86fd-58038cda461c - 204 - 1183ms
+2026-03-31 19:28:50:2850 http: GET /api/auth/get-session - 200 - 3006ms
+2026-03-31 19:28:51:2851 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 19:28:53:2853 http: GET /api/auth/get-session - 200 - 2931ms
+2026-03-31 19:28:54:2854 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 19:28:55:2855 http: GET /api/v1/properties/agent/properties - 200 - 1502ms
+2026-03-31 19:28:56:2856 http: GET /api/auth/get-session - 200 - 2876ms
+2026-03-31 19:28:56:2856 http: GET /api/v1/properties/agent/properties - 200 - 6118ms
+2026-03-31 19:28:57:2857 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:28:57:2857 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 19:28:57:2857 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 19:28:57:2857 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 19:28:58:2858 http: GET /api/v1/properties/agent/properties - 200 - 1486ms
+2026-03-31 19:28:58:2858 http: GET /api/v1/properties/agent/properties - 200 - 1186ms
+2026-03-31 19:28:58:2858 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 19:28:58:2858 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 19:28:59:2859 http: GET /api/v1/properties/agent/properties - 200 - 1212ms
+2026-03-31 19:28:59:2859 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 19:29:00:290 http: GET /api/v1/properties/agent/properties - 200 - 1493ms
+2026-03-31 19:29:20:2920 http: GET /api/auth/get-session - 200 - 2908ms
+2026-03-31 19:29:23:2923 http: GET /api/v1/properties/fb216d4c-3827-4025-974e-5623232ceee1 - 200 - 2951ms
+2026-03-31 19:29:29:2929 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 19:29:30:2930 http: GET /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 612ms
+2026-03-31 19:29:36:2936 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 19:29:38:2938 http: PUT /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 200 - 2157ms
+2026-03-31 19:29:42:2942 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 19:29:46:2946 http: GET /api/v1/properties/agent/properties - 200 - 3835ms
+2026-03-31 19:29:52:2952 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:29:53:2953 http: DELETE /api/v1/properties/f7ced2db-d697-400f-89a5-75d544369553 - 204 - 1187ms
+2026-03-31 19:29:54:2954 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 19:29:55:2955 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 19:29:58:2958 http: GET /api/v1/properties/agent/properties - 200 - 3371ms
+2026-03-31 19:30:05:305 http: GET /api/auth/get-session - 200 - 573ms
+2026-03-31 19:30:07:307 http: GET /api/v1/properties/agent/bookings - 200 - 1171ms
+2026-03-31 19:30:14:3014 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 19:30:14:3014 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 19:38:45:3845 http: GET /api/auth/get-session - 200 - 3892ms
+2026-03-31 19:38:50:3850 http: GET /api/auth/get-session - 200 - 623ms
+2026-03-31 19:38:52:3852 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 19:38:53:3853 http: GET /api/auth/get-session - 200 - 2900ms
+2026-03-31 19:38:55:3855 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 19:38:55:3855 http: GET /api/auth/get-session - 200 - 620ms
+2026-03-31 19:38:57:3857 http: GET /api/auth/get-session - 200 - 2903ms
+2026-03-31 19:38:58:3858 http: GET /api/auth/get-session - 200 - 2898ms
+2026-03-31 19:39:16:3916 http: GET /api/auth/get-session - 200 - 2918ms
+2026-03-31 19:39:17:3917 http: GET /api/auth/get-session - 200 - 600ms
+2026-03-31 19:39:19:3919 error: [Error Handler] Review not found.
+2026-03-31 19:39:19:3919 error: GET /api/v1/reviews/agent - 404 - 2651ms
+2026-03-31 19:39:22:3922 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 19:39:23:3923 error: [Error Handler] Review not found.
+2026-03-31 19:39:23:3923 error: GET /api/v1/reviews/agent - 404 - 304ms
+2026-03-31 19:39:24:3924 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 19:39:34:3934 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 19:39:35:3935 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 19:39:37:3937 error: [Error Handler] Review not found.
+2026-03-31 19:39:37:3937 error: GET /api/v1/reviews/agent - 404 - 2580ms
+2026-03-31 19:41:34:4134 http: GET /api/auth/get-session - 200 - 2877ms
+2026-03-31 19:41:35:4135 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 19:41:37:4137 error: [Error Handler] Review not found.
+2026-03-31 19:41:37:4137 error: GET /api/v1/reviews/agent - 404 - 2537ms
+2026-03-31 19:41:40:4140 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 19:41:41:4141 error: [Error Handler] Review not found.
+2026-03-31 19:41:41:4141 error: GET /api/v1/reviews/agent - 404 - 291ms
+2026-03-31 19:41:41:4141 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 19:43:10:4310 http: GET /api/auth/get-session - 200 - 2924ms
+2026-03-31 19:43:11:4311 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 19:43:13:4313 error: [Error Handler] Review not found.
+2026-03-31 19:43:13:4313 error: GET /api/v1/reviews/agent - 404 - 2584ms
+2026-03-31 19:43:43:4343 http: GET /api/auth/get-session - 200 - 2886ms
+2026-03-31 19:43:46:4346 http: GET /api/v1/properties/featured?limit=10 - 200 - 5630ms
+2026-03-31 19:44:00:440 http: GET /api/auth/get-session - 200 - 2894ms
+2026-03-31 19:44:02:442 http: GET /api/v1/payments/settings - 200 - 906ms
+2026-03-31 19:44:05:445 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2930ms
+2026-03-31 19:44:06:446 http: GET /api/v1/payments/settings - 200 - 912ms
+2026-03-31 19:44:07:447 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 600ms
+2026-03-31 19:44:30:4430 http: GET /api/auth/get-session - 200 - 3943ms
+2026-03-31 19:44:30:4430 http: GET /api/auth/get-session - 200 - 604ms
+2026-03-31 19:44:32:4432 http: GET /api/auth/get-session - 200 - 2876ms
+2026-03-31 19:44:32:4432 error: [Error Handler] Review not found.
+2026-03-31 19:44:32:4432 error: GET /api/v1/reviews/agent - 404 - 2647ms
+2026-03-31 19:44:46:4446 http: GET /api/auth/get-session - 200 - 2867ms
+2026-03-31 19:44:47:4447 http: GET /api/v1/payments/settings - 200 - 3176ms
+2026-03-31 19:44:50:4450 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2888ms
+2026-03-31 19:45:21:4521 http: GET /api/auth/get-session - 200 - 2880ms
+2026-03-31 19:45:22:4522 http: GET /api/v1/payments/settings - 200 - 3171ms
+2026-03-31 19:45:22:4522 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 603ms
+2026-03-31 19:46:23:4623 http: GET /api/auth/get-session - 200 - 2817ms
+2026-03-31 19:47:00:470 http: GET /api/auth/get-session - 200 - 2768ms
+2026-03-31 19:47:44:4744 http: GET /api/auth/get-session - 200 - 2991ms
+2026-03-31 19:47:50:4750 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 19:47:50:4750 error: POST /api/v1/reviews - 403 - 645ms
+2026-03-31 19:47:59:4759 http: POST /api/auth/sign-out - 200 - 912ms
+2026-03-31 19:47:59:4759 http: GET /api/auth/get-session - 200 - 3ms
+2026-03-31 19:48:03:483 http: GET /api/v1/properties/featured?limit=10 - 200 - 2922ms
+2026-03-31 19:48:06:486 http: GET /api/v1/properties/featured?limit=10 - 200 - 3240ms
+2026-03-31 19:48:15:4815 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 19:48:17:4817 http: GET /api/auth/get-session - 200 - 1ms
+2026-03-31 19:48:30:4830 http: POST /api/auth/sign-in/email - 200 - 3822ms
+2026-03-31 19:48:31:4831 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 19:48:33:4833 http: GET /api/v1/properties/featured?limit=10 - 200 - 3178ms
+2026-03-31 19:48:34:4834 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 886ms
+2026-03-31 19:48:35:4835 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 594ms
+2026-03-31 19:48:35:4835 http: GET /api/v1/properties/featured?limit=10 - 200 - 2909ms
+2026-03-31 19:48:37:4837 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 19:48:41:4841 http: GET /api/v1/payments/settings - 200 - 901ms
+2026-03-31 19:48:42:4842 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 597ms
+2026-03-31 19:48:43:4843 http: GET /api/v1/payments/settings - 200 - 903ms
+2026-03-31 19:48:43:4843 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 599ms
+2026-03-31 19:49:01:491 http: POST /api/v1/reviews - 201 - 3545ms
+2026-03-31 19:49:03:493 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:49:06:496 http: GET /api/v1/payments/settings - 200 - 3198ms
+2026-03-31 19:49:09:499 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2923ms
+2026-03-31 19:49:22:4922 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 3183ms
+2026-03-31 19:49:23:4923 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 592ms
+2026-03-31 19:49:25:4925 http: GET /api/v1/payments/settings - 200 - 902ms
+2026-03-31 19:49:28:4928 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2874ms
+2026-03-31 19:49:29:4929 http: GET /api/v1/payments/settings - 200 - 889ms
+2026-03-31 19:49:29:4929 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 588ms
+2026-03-31 19:49:35:4935 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 587ms
+2026-03-31 19:49:36:4936 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 588ms
+2026-03-31 19:49:38:4938 http: GET /api/v1/payments/settings - 200 - 888ms
+2026-03-31 19:49:39:4939 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 587ms
+2026-03-31 19:49:40:4940 http: GET /api/v1/payments/settings - 200 - 888ms
+2026-03-31 19:49:41:4941 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 597ms
+2026-03-31 19:49:49:4949 http: GET /api/v1/properties/featured?limit=10 - 200 - 590ms
+2026-03-31 19:49:50:4950 http: GET /api/v1/properties/featured?limit=10 - 200 - 882ms
+2026-03-31 19:49:51:4951 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 19:49:52:4952 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:49:53:4953 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 19:49:55:4955 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:49:56:4956 http: GET /api/v1/bookings/my-bookings - 200 - 1213ms
+2026-03-31 19:49:57:4957 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 19:49:58:4958 http: GET /api/v1/payments/my-payments - 200 - 1178ms
+2026-03-31 19:50:02:502 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 19:50:04:504 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:50:05:505 http: GET /api/auth/get-session - 200 - 609ms
+2026-03-31 19:50:07:507 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 19:50:07:507 http: GET /api/v1/auth/me - 200 - 1185ms
+2026-03-31 19:50:07:507 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 19:50:08:508 http: GET /api/v1/bookings/my-bookings - 200 - 3437ms
+2026-03-31 19:50:08:508 http: GET /api/v1/bookings/my-bookings - 200 - 1181ms
+2026-03-31 19:50:12:5012 http: GET /api/auth/get-session - 200 - 590ms
+2026-03-31 19:50:13:5013 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 19:50:14:5014 http: GET /api/v1/bookings/my-bookings - 200 - 1181ms
+2026-03-31 19:50:15:5015 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 19:50:16:5016 http: GET /api/v1/payments/my-payments - 200 - 1181ms
+2026-03-31 19:50:17:5017 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 19:50:18:5018 http: GET /api/v1/bookings/my-bookings - 200 - 1179ms
+2026-03-31 19:50:18:5018 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 19:50:20:5020 http: GET /api/v1/payments/my-payments - 200 - 1174ms
+2026-03-31 19:50:20:5020 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 19:50:26:5026 http: POST /api/auth/sign-out - 200 - 590ms
+2026-03-31 19:50:26:5026 http: GET /api/auth/get-session - 200 - 4ms
+2026-03-31 19:50:31:5031 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 19:50:44:5044 http: POST /api/auth/sign-in/email - 200 - 3546ms
+2026-03-31 19:50:45:5045 http: GET /api/auth/get-session - 200 - 570ms
+2026-03-31 19:50:47:5047 http: GET /api/v1/properties/featured?limit=10 - 200 - 3029ms
+2026-03-31 19:50:48:5048 http: GET /api/v1/properties/featured?limit=10 - 200 - 573ms
+2026-03-31 19:50:51:5051 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 19:50:51:5051 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 19:50:52:5052 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 19:50:54:5054 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 19:50:55:5055 error: [Error Handler] Review not found.
+2026-03-31 19:50:55:5055 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 19:51:03:513 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 19:51:05:515 http: GET /api/v1/properties/featured?limit=10 - 200 - 3014ms
+2026-03-31 19:51:07:517 http: GET /api/v1/payments/settings - 200 - 835ms
+2026-03-31 19:51:08:518 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 552ms
+2026-03-31 19:51:09:519 http: GET /api/v1/payments/settings - 200 - 842ms
+2026-03-31 19:51:09:519 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 562ms
+2026-03-31 19:51:19:5119 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 19:51:23:5123 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 19:51:24:5124 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 19:51:26:5126 error: [Error Handler] Review not found.
+2026-03-31 19:51:26:5126 error: GET /api/v1/reviews/agent - 404 - 2591ms
+2026-03-31 19:52:12:5212 http: GET /api/auth/get-session - 200 - 2843ms
+2026-03-31 19:55:55:5555 http: GET /api/auth/get-session - 200 - 3094ms
+2026-03-31 19:55:55:5555 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 19:56:18:5618 http: GET /api/auth/get-session - 200 - 4044ms
+2026-03-31 19:56:19:5619 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 19:56:22:5622 http: GET /api/v1/reviews/agent/AGENT - 200 - 3743ms
+2026-03-31 19:56:39:5639 http: GET /api/auth/get-session - 200 - 2864ms
+2026-03-31 19:56:39:5639 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 19:56:42:5642 http: GET /api/v1/reviews/agent/AGENT - 200 - 3716ms
+2026-03-31 20:00:16:016 http: GET /api/auth/get-session - 200 - 3113ms
+2026-03-31 20:00:17:017 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 20:00:19:019 http: GET /api/auth/get-session - 200 - 2847ms
+2026-03-31 20:00:20:020 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 20:00:20:020 http: GET /api/v1/reviews/agent/AGENT - 200 - 3740ms
+2026-03-31 20:00:21:021 http: GET /api/v1/reviews/agent/AGENT - 200 - 1452ms
+2026-03-31 20:00:22:022 http: GET /api/auth/get-session - 200 - 2824ms
+2026-03-31 20:00:23:023 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 20:00:23:023 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 20:00:23:023 http: GET /api/v1/reviews/agent/AGENT - 200 - 1449ms
+2026-03-31 20:00:24:024 http: GET /api/v1/reviews/agent/AGENT - 200 - 1449ms
+2026-03-31 20:02:14:214 http: GET /api/auth/get-session - 200 - 3287ms
+2026-03-31 20:02:15:215 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 20:02:18:218 http: GET /api/v1/reviews/agent/AGENT - 200 - 3785ms
+2026-03-31 20:02:20:220 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 20:02:21:221 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 20:02:22:222 http: GET /api/v1/reviews/agent/AGENT - 200 - 1479ms
+2026-03-31 20:04:36:436 http: GET /api/auth/get-session - 200 - 3004ms
+2026-03-31 20:04:37:437 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:04:40:440 http: GET /api/v1/reviews/property/PROPERTY_ID - 200 - 3327ms
+2026-03-31 20:05:33:533 http: GET /api/auth/get-session - 200 - 2768ms
+2026-03-31 20:05:34:534 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 20:05:37:537 http: GET /api/v1/reviews/property/PROPERTY_ID - 200 - 3360ms
+2026-03-31 20:05:41:541 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 20:05:42:542 error: [Error Handler] Review not found.
+2026-03-31 20:05:42:542 error: GET /api/v1/reviews/agent - 404 - 309ms
+2026-03-31 20:05:42:542 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:05:44:544 http: GET /api/auth/get-session - 200 - 570ms
+2026-03-31 20:05:53:553 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 20:05:55:555 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 20:05:56:556 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:05:58:558 error: [Error Handler] Review not found.
+2026-03-31 20:05:58:558 error: GET /api/v1/reviews/agent - 404 - 2483ms
+2026-03-31 20:07:30:730 http: GET /api/auth/get-session - 200 - 2933ms
+2026-03-31 20:07:31:731 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 20:07:33:733 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 20:07:33:733 error: [Error Handler] Review not found.
+2026-03-31 20:07:33:733 error: GET /api/v1/reviews/agent - 404 - 2913ms
+2026-03-31 20:07:34:734 error: [Error Handler] Review not found.
+2026-03-31 20:07:34:734 error: GET /api/v1/reviews/agent - 404 - 296ms
+2026-03-31 20:07:34:734 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 20:07:50:750 http: GET /api/auth/get-session - 200 - 2814ms
+2026-03-31 20:07:51:751 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 20:07:53:753 error: [Error Handler] Review not found.
+2026-03-31 20:07:53:753 error: GET /api/v1/reviews/agent - 404 - 2568ms
+2026-03-31 20:07:59:759 http: GET / - 200 - 1ms
+2026-03-31 20:07:59:759 error: GET /favicon.ico - 404 - 3ms
+2026-03-31 20:08:07:87 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 20:08:08:88 http: GET /api/auth/get-session - 200 - 2ms
+2026-03-31 20:08:13:813 http: GET /api/v1/properties/featured?limit=10 - 200 - 5368ms
+2026-03-31 20:08:24:824 http: POST /api/auth/sign-in/email - 200 - 1384ms
+2026-03-31 20:08:24:824 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 20:08:27:827 http: GET /api/v1/properties/featured?limit=10 - 200 - 3108ms
+2026-03-31 20:08:30:830 http: GET /api/v1/properties/featured?limit=10 - 200 - 2874ms
+2026-03-31 20:08:30:830 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 20:08:31:831 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 20:08:32:832 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 20:08:33:833 http: GET /api/v1/bookings/my-bookings - 200 - 1456ms
+2026-03-31 20:08:34:834 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 20:08:36:836 http: GET /api/v1/payments/my-payments - 200 - 1736ms
+2026-03-31 20:08:36:836 http: GET /api/auth/get-session - 200 - 583ms
+2026-03-31 20:08:37:837 http: GET /api/v1/bookings/my-bookings - 200 - 1163ms
+2026-03-31 20:08:38:838 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 20:08:40:840 http: GET /api/v1/payments/my-payments - 200 - 1446ms
+2026-03-31 20:09:05:95 http: GET /api/auth/get-session - 200 - 2806ms
+2026-03-31 20:09:05:95 http: GET /api/auth/get-session - 200 - 2826ms
+2026-03-31 20:09:06:96 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 20:09:07:97 http: GET /api/auth/get-session - 200 - 622ms
+2026-03-31 20:09:07:97 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 20:09:08:98 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 20:09:09:99 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 20:09:09:99 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:09:09:99 http: GET /api/auth/get-session - 200 - 2751ms
+2026-03-31 20:09:10:910 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:09:10:910 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:09:12:912 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:09:12:912 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 20:09:13:913 http: GET /api/auth/get-session - 200 - 560ms
+2026-03-31 20:09:14:914 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 20:09:14:914 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 20:09:15:915 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 20:09:15:915 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 20:09:16:916 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 20:09:16:916 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 20:09:17:917 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 20:09:17:917 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 20:09:18:918 error: [Error Handler] Review not found.
+2026-03-31 20:09:18:918 error: GET /api/v1/reviews/agent - 404 - 281ms
+2026-03-31 20:09:18:918 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 20:09:19:919 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 20:09:19:919 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 20:09:19:919 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:12:05:125 http: GET /api/auth/get-session - 200 - 635ms
+2026-03-31 20:12:06:126 http: GET /api/v1/properties/featured?limit=10 - 200 - 5537ms
+2026-03-31 20:12:08:128 http: GET /api/v1/properties/featured?limit=10 - 200 - 3124ms
+2026-03-31 20:12:11:1211 http: GET /api/v1/payments/settings - 200 - 884ms
+2026-03-31 20:12:11:1211 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 590ms
+2026-03-31 20:12:13:1213 http: GET /api/v1/payments/settings - 200 - 1995ms
+2026-03-31 20:12:14:1214 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 590ms
+2026-03-31 20:12:31:1231 http: GET /api/v1/properties/featured?limit=10 - 200 - 5371ms
+2026-03-31 20:12:32:1232 http: GET /api/v1/properties/featured?limit=10 - 200 - 582ms
+2026-03-31 20:12:33:1233 http: GET /api/v1/payments/settings - 200 - 869ms
+2026-03-31 20:12:34:1234 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 580ms
+2026-03-31 20:12:35:1235 http: GET /api/v1/payments/settings - 200 - 883ms
+2026-03-31 20:12:35:1235 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 586ms
+2026-03-31 20:14:01:141 http: GET /api/auth/get-session - 200 - 2808ms
+2026-03-31 20:14:10:1410 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:14:13:1413 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 20:14:14:1414 http: GET /api/auth/get-session - 200 - 572ms
+2026-03-31 20:14:29:1429 http: GET /api/auth/get-session - 200 - 2763ms
+2026-03-31 20:14:35:1435 http: GET /api/v1/properties/featured?limit=10 - 200 - 2757ms
+2026-03-31 20:14:37:1437 http: GET /api/v1/payments/settings - 200 - 842ms
+2026-03-31 20:14:38:1438 http: GET /api/v1/properties/featured?limit=10 - 200 - 3029ms
+2026-03-31 20:14:39:1439 http: GET /api/v1/payments/settings - 200 - 839ms
+2026-03-31 20:14:39:1439 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 558ms
+2026-03-31 20:14:40:1440 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2747ms
+2026-03-31 20:14:58:1458 http: GET /api/auth/get-session - 200 - 2781ms
+2026-03-31 20:15:01:151 http: GET /api/auth/get-session - 200 - 2800ms
+2026-03-31 20:15:01:151 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 20:15:02:152 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:15:04:154 http: GET /api/v1/bookings/my-bookings - 200 - 1478ms
+2026-03-31 20:15:05:155 http: GET /api/auth/get-session - 200 - 1446ms
+2026-03-31 20:15:08:158 http: GET /api/v1/payments/my-payments - 200 - 2537ms
+2026-03-31 20:15:10:1510 http: GET /api/auth/get-session - 200 - 2373ms
+2026-03-31 20:15:10:1510 http: GET /api/auth/get-session - 200 - 1426ms
+2026-03-31 20:15:11:1511 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 20:15:13:1513 http: GET /api/v1/bookings/my-bookings - 200 - 2748ms
+2026-03-31 20:15:14:1514 http: GET /api/auth/get-session - 200 - 831ms
+2026-03-31 20:15:15:1515 http: GET /api/v1/payments/my-payments - 200 - 1476ms
+2026-03-31 20:15:16:1516 error: [Error Handler] Review not found.
+2026-03-31 20:15:16:1516 error: GET /api/v1/reviews/agent - 404 - 5865ms
+2026-03-31 20:16:17:1617 http: GET /api/auth/get-session - 200 - 2950ms
+2026-03-31 20:16:18:1618 http: GET /api/auth/get-session - 200 - 4046ms
+2026-03-31 20:16:18:1618 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 20:16:19:1619 http: GET /api/auth/get-session - 200 - 596ms
+2026-03-31 20:16:20:1620 error: [Error Handler] Review not found.
+2026-03-31 20:16:20:1620 error: GET /api/v1/reviews/agent - 404 - 2589ms
+2026-03-31 20:16:20:1620 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 20:16:21:1621 http: GET /api/auth/get-session - 200 - 2886ms
+2026-03-31 20:16:21:1621 http: GET /api/auth/get-session - 200 - 2952ms
+2026-03-31 20:16:22:1622 error: [Error Handler] Review not found.
+2026-03-31 20:16:22:1622 error: GET /api/v1/reviews/user - 404 - 309ms
+2026-03-31 20:16:22:1622 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 20:16:22:1622 http: GET /api/auth/get-session - 200 - 599ms
+2026-03-31 20:16:22:1622 error: [Error Handler] Review not found.
+2026-03-31 20:16:22:1622 error: GET /api/v1/reviews/user - 404 - 295ms
+2026-03-31 20:16:23:1623 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 20:16:32:1632 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 20:16:46:1646 http: GET /api/auth/get-session - 200 - 2868ms
+2026-03-31 20:16:47:1647 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 20:16:49:1649 error: [Error Handler] Review not found.
+2026-03-31 20:16:49:1649 error: GET /api/v1/reviews/user - 404 - 2577ms
+2026-03-31 20:16:53:1653 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 20:20:08:208 http: GET /api/auth/get-session - 200 - 5209ms
+2026-03-31 20:20:10:2010 http: GET /api/auth/get-session - 200 - 988ms
+2026-03-31 20:20:15:2015 error: [Error Handler] Review not found.
+2026-03-31 20:20:15:2015 error: GET /api/v1/reviews/agent - 404 - 5962ms
+2026-03-31 20:20:17:2017 http: GET /api/auth/get-session - 200 - 8205ms
+2026-03-31 20:20:17:2017 error: [Error Handler] Review not found.
+2026-03-31 20:20:17:2017 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 20:20:18:2018 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 20:20:35:2035 http: GET /api/auth/get-session - 200 - 2751ms
+2026-03-31 20:20:36:2036 http: GET /api/auth/get-session - 200 - 2778ms
+2026-03-31 20:20:36:2036 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:20:38:2038 error: [Error Handler] Review not found.
+2026-03-31 20:20:38:2038 error: GET /api/v1/reviews/agent - 404 - 2482ms
+2026-03-31 20:20:38:2038 http: GET /api/auth/get-session - 200 - 2775ms
+2026-03-31 20:20:39:2039 error: [Error Handler] Review not found.
+2026-03-31 20:20:39:2039 error: GET /api/v1/reviews/agent - 404 - 292ms
+2026-03-31 20:20:39:2039 http: GET /api/auth/get-session - 200 - 582ms
+2026-03-31 20:20:52:2052 http: GET /api/auth/get-session - 200 - 2749ms
+2026-03-31 20:20:53:2053 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:20:55:2055 error: [Error Handler] Review not found.
+2026-03-31 20:20:55:2055 error: GET /api/v1/reviews/agent - 404 - 2601ms
+2026-03-31 20:21:34:2134 http: GET /api/auth/get-session - 200 - 3331ms
+2026-03-31 20:21:35:2135 http: GET /api/auth/get-session - 200 - 2822ms
+2026-03-31 20:21:36:2136 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 20:21:37:2137 http: GET /api/auth/get-session - 200 - 578ms
+2026-03-31 20:21:39:2139 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 20:21:41:2141 http: GET /api/auth/get-session - 200 - 580ms
+2026-03-31 20:21:41:2141 error: [Error Handler] Review not found.
+2026-03-31 20:21:41:2141 error: GET /api/v1/reviews/agent - 404 - 293ms
+2026-03-31 20:21:41:2141 http: GET /api/auth/get-session - 200 - 570ms
+2026-03-31 20:21:43:2143 http: GET /api/v1/bookings/my-bookings - 200 - 3440ms
+2026-03-31 20:22:03:223 http: GET /api/auth/get-session - 200 - 2749ms
+2026-03-31 20:22:05:225 http: GET /api/auth/get-session - 200 - 576ms
+2026-03-31 20:22:08:228 http: GET /api/v1/payments/settings - 200 - 3035ms
+2026-03-31 20:22:11:2211 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2764ms
+2026-03-31 20:22:41:2241 http: GET /api/auth/get-session - 200 - 2820ms
+2026-03-31 20:22:42:2242 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:22:44:2244 error: [Error Handler] Review not found.
+2026-03-31 20:22:44:2244 error: GET /api/v1/reviews/agent - 404 - 2464ms
+2026-03-31 20:22:45:2245 http: GET /api/auth/get-session - 200 - 2771ms
+2026-03-31 20:22:45:2245 error: [Error Handler] Review not found.
+2026-03-31 20:22:45:2245 error: GET /api/v1/reviews/agent - 404 - 278ms
+2026-03-31 20:22:45:2245 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:22:47:2247 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:22:48:2248 error: [Error Handler] Review not found.
+2026-03-31 20:22:48:2248 error: GET /api/v1/reviews/agent - 404 - 277ms
+2026-03-31 20:22:48:2248 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 20:22:48:2248 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 20:22:49:2249 error: [Error Handler] Review not found.
+2026-03-31 20:22:49:2249 error: GET /api/v1/reviews/agent - 404 - 282ms
+2026-03-31 20:22:49:2249 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 20:22:52:2252 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 20:22:52:2252 error: [Error Handler] Review not found.
+2026-03-31 20:22:52:2252 error: GET /api/v1/reviews/agent - 404 - 278ms
+2026-03-31 20:22:53:2253 http: GET /api/auth/get-session - 200 - 565ms
+2026-03-31 20:23:25:2325 http: GET /api/auth/get-session - 200 - 2783ms
+2026-03-31 20:23:26:2326 http: GET /api/auth/get-session - 200 - 558ms
+2026-03-31 20:23:28:2328 error: [Error Handler] Review not found.
+2026-03-31 20:23:28:2328 error: GET /api/v1/reviews/agent - 404 - 2632ms
+2026-03-31 20:23:28:2328 http: GET /api/auth/get-session - 200 - 2903ms
+2026-03-31 20:23:29:2329 error: [Error Handler] Review not found.
+2026-03-31 20:23:29:2329 error: GET /api/v1/reviews/user - 404 - 280ms
+2026-03-31 20:23:29:2329 http: GET /api/auth/get-session - 200 - 567ms
+2026-03-31 20:23:29:2329 http: GET /api/auth/get-session - 200 - 556ms
+2026-03-31 20:23:30:2330 error: [Error Handler] Review not found.
+2026-03-31 20:23:30:2330 error: GET /api/v1/reviews/user - 404 - 278ms
+2026-03-31 20:23:30:2330 http: GET /api/auth/get-session - 200 - 602ms
+2026-03-31 20:24:01:241 http: GET /api/auth/get-session - 200 - 2943ms
+2026-03-31 20:24:02:242 http: GET /api/auth/get-session - 200 - 617ms
+2026-03-31 20:24:04:244 http: GET /api/auth/get-session - 200 - 2891ms
+2026-03-31 20:24:04:244 error: [Error Handler] Review not found.
+2026-03-31 20:24:04:244 error: GET /api/v1/reviews/user - 404 - 2568ms
+2026-03-31 20:24:05:245 error: [Error Handler] Review not found.
+2026-03-31 20:24:05:245 error: GET /api/v1/reviews/user - 404 - 308ms
+2026-03-31 20:24:06:246 http: GET /api/auth/get-session - 200 - 603ms
+2026-03-31 20:24:08:248 http: GET /api/auth/get-session - 200 - 667ms
+2026-03-31 20:24:22:2422 http: GET /api/auth/get-session - 200 - 584ms
+2026-03-31 20:24:24:2424 http: GET /api/v1/payments/settings - 200 - 3127ms
+2026-03-31 20:24:27:2427 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2852ms
+2026-03-31 20:25:37:2537 http: GET /api/auth/get-session - 200 - 2890ms
+2026-03-31 20:25:38:2538 http: GET /api/auth/get-session - 200 - 569ms
+2026-03-31 20:25:39:2539 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 20:25:41:2541 error: [Error Handler] Review not found.
+2026-03-31 20:25:41:2541 error: GET /api/v1/reviews/user - 404 - 2496ms
+2026-03-31 20:26:04:264 http: GET /api/auth/get-session - 200 - 2788ms
+2026-03-31 20:26:57:2657 http: GET /api/auth/get-session - 200 - 2954ms
+2026-03-31 20:26:58:2658 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 20:26:59:2659 http: GET /api/auth/get-session - 200 - 591ms
+2026-03-31 20:27:00:270 error: [Error Handler] Review not found.
+2026-03-31 20:27:00:270 error: GET /api/v1/reviews/agent - 404 - 2581ms
+2026-03-31 20:27:00:270 http: GET /api/auth/get-session - 200 - 598ms
+2026-03-31 20:27:00:270 http: GET /api/auth/get-session - 200 - 2917ms
+2026-03-31 20:27:01:271 error: [Error Handler] Review not found.
+2026-03-31 20:27:01:271 error: GET /api/v1/reviews/agent - 404 - 304ms
+2026-03-31 20:27:02:272 error: [Error Handler] Review not found.
+2026-03-31 20:27:02:272 error: GET /api/v1/reviews/agent - 404 - 2566ms
+2026-03-31 20:27:34:2734 http: GET /api/auth/get-session - 200 - 2867ms
+2026-03-31 20:27:35:2735 http: GET /api/auth/get-session - 200 - 592ms
+2026-03-31 20:27:41:2741 http: GET /api/auth/get-session - 200 - 598ms
+2026-03-31 20:27:43:2743 http: GET /api/auth/get-session - 200 - 601ms
+2026-03-31 20:27:50:2750 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 20:27:52:2752 http: GET /api/auth/get-session - 200 - 595ms
+2026-03-31 20:27:55:2755 http: GET /api/v1/payments/settings - 200 - 3201ms
+2026-03-31 20:27:58:2758 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 2964ms
+2026-03-31 20:28:32:2832 http: GET /api/auth/get-session - 200 - 2876ms
+2026-03-31 20:28:33:2833 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 20:28:35:2835 error: [Error Handler] Review not found.
+2026-03-31 20:28:35:2835 error: GET /api/v1/reviews/agent - 404 - 2580ms
+2026-03-31 20:29:03:293 http: GET /api/auth/get-session - 200 - 2968ms
+2026-03-31 20:29:04:294 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 20:29:06:296 error: [Error Handler] Review not found.
+2026-03-31 20:29:06:296 error: GET /api/v1/reviews/agent - 404 - 2628ms
+2026-03-31 20:29:28:2928 http: GET /api/auth/get-session - 200 - 2968ms
+2026-03-31 20:29:29:2929 http: GET /api/auth/get-session - 200 - 610ms
+2026-03-31 20:29:32:2932 error: [Error Handler] Review not found.
+2026-03-31 20:29:32:2932 error: GET /api/v1/reviews/agent - 404 - 2621ms
+2026-03-31 20:29:45:2945 http: GET /api/auth/get-session - 200 - 2892ms
+2026-03-31 20:30:32:3032 http: GET /api/auth/get-session - 200 - 2989ms
+2026-03-31 20:30:33:3033 http: GET /api/auth/get-session - 200 - 605ms
+2026-03-31 20:30:35:3035 error: [Error Handler] Review not found.
+2026-03-31 20:30:35:3035 error: GET /api/v1/reviews/agent - 404 - 2574ms
+2026-03-31 20:30:35:3035 http: GET /api/auth/get-session - 200 - 2882ms
+2026-03-31 20:30:35:3035 http: GET /api/auth/get-session - 200 - 2881ms
+2026-03-31 20:30:36:3036 error: [Error Handler] Review not found.
+2026-03-31 20:30:36:3036 error: GET /api/v1/reviews/agent - 404 - 298ms
+2026-03-31 20:30:36:3036 error: [Error Handler] Review not found.
+2026-03-31 20:30:36:3036 error: GET /api/v1/reviews/agent - 404 - 294ms
+2026-03-31 20:30:36:3036 http: GET /api/auth/get-session - 200 - 594ms
+2026-03-31 20:30:36:3036 http: GET /api/auth/get-session - 200 - 611ms
+2026-03-31 20:31:12:3112 http: GET /api/auth/get-session - 200 - 2951ms
+2026-03-31 20:32:07:327 http: GET /api/auth/get-session - 200 - 2998ms
+2026-03-31 20:32:07:327 http: GET /api/auth/get-session - 200 - 562ms
+2026-03-31 20:32:08:328 http: GET /api/auth/get-session - 200 - 597ms
+2026-03-31 20:32:11:3211 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:32:14:3214 http: GET /api/v1/bookings/my-bookings - 200 - 3331ms
+2026-03-31 20:32:14:3214 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:32:16:3216 http: GET /api/v1/payments/my-payments - 200 - 1126ms
+2026-03-31 20:32:17:3217 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 20:32:17:3217 error: [Error Handler] Review not found.
+2026-03-31 20:32:17:3217 error: GET /api/v1/reviews/agent - 404 - 284ms
+2026-03-31 20:32:18:3218 http: GET /api/auth/get-session - 200 - 568ms
+2026-03-31 20:33:11:3311 http: GET /api/auth/get-session - 200 - 2889ms
+2026-03-31 20:33:12:3312 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 20:33:14:3314 error: [Error Handler] Review not found.
+2026-03-31 20:33:14:3314 error: GET /api/v1/reviews/agent - 404 - 2576ms
+2026-03-31 20:33:19:3319 http: GET /api/auth/get-session - 200 - 586ms
+2026-03-31 20:33:19:3319 error: [Error Handler] Review not found.
+2026-03-31 20:33:19:3319 error: GET /api/v1/reviews/agent - 404 - 288ms
+2026-03-31 20:33:20:3320 http: GET /api/auth/get-session - 200 - 585ms
+2026-03-31 20:36:44:3644 http: GET /api/auth/get-session - 200 - 3016ms
+2026-03-31 20:37:45:3745 http: GET /api/auth/get-session - 200 - 3350ms
+2026-03-31 20:37:46:3746 http: GET /api/auth/get-session - 200 - 663ms
+2026-03-31 20:37:48:3748 error: [Error Handler] Review not found.
+2026-03-31 20:37:48:3748 error: GET /api/v1/reviews/my-reviews - 404 - 2695ms
+2026-03-31 20:37:49:3749 http: GET /api/auth/get-session - 200 - 3051ms
+2026-03-31 20:37:49:3749 error: [Error Handler] Review not found.
+2026-03-31 20:37:49:3749 error: GET /api/v1/reviews/my-reviews - 404 - 308ms
+2026-03-31 20:37:49:3749 http: GET /api/auth/get-session - 200 - 2941ms
+2026-03-31 20:37:49:3749 http: GET /api/auth/get-session - 200 - 614ms
+2026-03-31 20:37:50:3750 error: [Error Handler] Review not found.
+2026-03-31 20:37:50:3750 error: GET /api/v1/reviews/my-reviews - 404 - 309ms
+2026-03-31 20:37:50:3750 http: GET /api/auth/get-session - 200 - 608ms
+2026-03-31 20:38:00:380 http: GET /api/auth/get-session - 200 - 624ms
+2026-03-31 20:38:01:381 http: GET /api/auth/get-session - 200 - 627ms
+2026-03-31 20:38:03:383 error: [Error Handler] Review not found.
+2026-03-31 20:38:03:383 error: GET /api/v1/reviews/my-reviews - 404 - 2619ms
+2026-03-31 20:38:39:3839 http: POST /api/v1/auth/login - 200 - 3802ms
+2026-03-31 20:39:08:398 error: [Error Handler] Review not found.
+2026-03-31 20:39:08:398 error: GET /api/v1/reviews/my-reviews - 404 - 2493ms
+2026-03-31 20:39:45:3945 error: [Error Handler] Review not found.
+2026-03-31 20:39:45:3945 error: GET /api/v1/reviews/my-reviews - 404 - 2616ms
+2026-03-31 20:40:26:4026 http: GET /api/auth/get-session - 200 - 2759ms
+2026-03-31 20:40:26:4026 http: GET /api/v1/payments/settings - 200 - 3020ms
+2026-03-31 20:40:27:4027 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 577ms
+2026-03-31 20:40:33:4033 http: GET /api/auth/get-session - 200 - 621ms
+2026-03-31 20:40:36:4036 http: GET /api/v1/properties/featured?limit=10 - 200 - 3045ms
+2026-03-31 20:40:38:4038 http: GET /api/v1/payments/settings - 200 - 858ms
+2026-03-31 20:40:39:4039 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 561ms
+2026-03-31 20:40:40:4040 http: GET /api/v1/payments/settings - 200 - 838ms
+2026-03-31 20:40:40:4040 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 560ms
+2026-03-31 20:40:56:4056 http: POST /api/v1/reviews - 201 - 3340ms
+2026-03-31 20:40:57:4057 http: GET /api/auth/get-session - 200 - 566ms
+2026-03-31 20:41:00:410 http: GET /api/v1/payments/settings - 200 - 3038ms
+2026-03-31 20:41:03:413 http: GET /api/v1/properties/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 2780ms
+2026-03-31 20:41:12:4112 http: GET /api/auth/get-session - 200 - 561ms
+2026-03-31 20:41:13:4113 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 20:41:14:4114 error: [Error Handler] Review not found.
+2026-03-31 20:41:14:4114 error: GET /api/v1/reviews/my-reviews - 404 - 2494ms
+2026-03-31 20:41:22:4122 error: [Error Handler] Review not found.
+2026-03-31 20:41:22:4122 error: GET /api/v1/reviews/my-reviews - 404 - 282ms
+2026-03-31 20:41:24:4124 error: [Error Handler] Review not found.
+2026-03-31 20:41:24:4124 error: GET /api/v1/reviews/my-reviews - 404 - 283ms
+2026-03-31 20:42:31:4231 error: [Error Handler] Review not found.
+2026-03-31 20:42:31:4231 error: GET /api/v1/reviews/my-reviews - 404 - 2591ms
+2026-03-31 20:43:17:4317 error: [Error Handler] Review not found.
+2026-03-31 20:43:17:4317 error: GET /api/v1/reviews/my-reviews - 404 - 2651ms
+2026-03-31 20:45:22:4522 error: [Error Handler] Review not found.
+2026-03-31 20:45:22:4522 error: GET /api/v1/reviews/my-reviews - 404 - 2787ms
+2026-03-31 20:45:43:4543 http: GET /api/v1/reviews/ - 200 - 5090ms
+2026-03-31 20:47:09:479 http: GET /api/auth/get-session - 200 - 2952ms
+2026-03-31 20:47:18:4718 error: [Error Handler] Review not found.
+2026-03-31 20:47:18:4718 error: GET /api/v1/reviews/my-reviews - 404 - 301ms
+2026-03-31 20:47:52:4752 error: [Error Handler] Review not found.
+2026-03-31 20:47:52:4752 error: GET /api/v1/reviews/my-reviews - 404 - 2629ms
+2026-03-31 20:49:11:4911 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 404 - 7ms
+2026-03-31 20:49:34:4934 http: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 3361ms
+2026-03-31 20:50:17:5017 error: [Error Handler] Review not found.
+2026-03-31 20:50:17:5017 error: GET /api/v1/reviews/my-reviews - 404 - 2835ms
+2026-03-31 20:51:09:519 http: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5271ms
+2026-03-31 20:51:42:5142 http: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 5774ms
+2026-03-31 20:52:14:5214 http: GET /api/auth/get-session - 200 - 2842ms
+2026-03-31 20:52:15:5215 http: GET /api/auth/get-session - 200 - 564ms
+2026-03-31 20:52:17:5217 http: GET /api/auth/get-session - 200 - 2961ms
+2026-03-31 20:52:18:5218 http: GET /api/auth/get-session - 200 - 559ms
+2026-03-31 20:52:19:5219 http: GET /api/auth/get-session - 200 - 557ms
+2026-03-31 20:52:21:5221 http: GET /api/v1/reviews/my-reviews/undefined - 200 - 3354ms
+2026-03-31 20:52:21:5221 http: GET /api/auth/get-session - 200 - 2738ms
+2026-03-31 20:52:21:5221 http: GET /api/v1/reviews/my-reviews/undefined - 200 - 3301ms
+2026-03-31 20:52:21:5221 http: GET /api/auth/get-session - 200 - 563ms
+2026-03-31 20:52:22:5222 http: GET /api/v1/reviews/my-reviews/undefined - 200 - 1117ms
+2026-03-31 20:53:38:5338 http: GET /api/auth/get-session - 200 - 2783ms
+2026-03-31 20:55:03:553 http: GET /api/auth/get-session - 200 - 2994ms
+2026-03-31 20:55:41:5541 http: GET /api/auth/get-session - 200 - 4597ms
+2026-03-31 20:55:56:5556 http: GET /api/auth/get-session - 200 - 4098ms
+2026-03-31 20:55:59:5559 http: GET /api/auth/get-session - 200 - 1549ms
+2026-03-31 20:56:01:561 error: [Error Handler] Review not found.
+2026-03-31 20:56:01:561 error: GET /api/v1/reviews/agent - 404 - 3815ms
+2026-03-31 20:56:01:561 http: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 200 - 8399ms
+2026-03-31 20:56:04:564 http: GET /api/auth/get-session - 200 - 6780ms
+2026-03-31 20:56:06:566 http: GET /api/auth/get-session - 200 - 593ms
+2026-03-31 20:56:06:566 error: [Error Handler] Review not found.
+2026-03-31 20:56:06:566 error: GET /api/v1/reviews/user - 404 - 913ms
+2026-03-31 20:56:21:5621 http: GET /api/auth/get-session - 200 - 4892ms
+2026-03-31 20:56:25:5625 error: [Error Handler] Access Forbidden! You don't have permission.
+2026-03-31 20:56:25:5625 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 403 - 32509ms
+2026-03-31 20:56:26:5626 http: GET /api/auth/get-session - 200 - 876ms
+2026-03-31 20:56:40:5640 http: GET /api/auth/get-session - 200 - 2860ms
+2026-03-31 20:56:41:5641 http: GET /api/auth/get-session - 200 - 589ms
+2026-03-31 20:56:43:5643 error: [Error Handler] Review not found.
+2026-03-31 20:56:43:5643 error: GET /api/v1/reviews/user - 404 - 2555ms
+2026-03-31 20:56:44:5644 http: GET /api/auth/get-session - 200 - 588ms
+2026-03-31 20:56:47:5647 http: GET /api/auth/get-session - 200 - 587ms
+2026-03-31 20:56:48:5648 error: [Error Handler] Review not found.
+2026-03-31 20:56:48:5648 error: GET /api/v1/reviews/user - 404 - 289ms
+2026-03-31 20:56:48:5648 http: GET /api/auth/get-session - 200 - 586ms
