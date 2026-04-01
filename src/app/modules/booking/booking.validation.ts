@@ -16,4 +16,9 @@ export const BookingValidation = {
       status: z.nativeEnum(RequestStatus),
     }),
   }),
+  cancelDecisionSchema: z.object({
+    body: z.object({
+      decision: z.enum(["APPROVE", "REJECT"]),
+    }),
+  }),
 };

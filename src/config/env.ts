@@ -15,6 +15,7 @@ interface EnvConfig {
   STRIPE_CURRENCY: string;
   BOOKING_FEE_AMOUNT?: string;
   PREMIUM_LISTING_FEE_AMOUNT?: string;
+  BOOKING_CANCELLATION_WINDOW_HOURS?: string;
   EMAIL_HOST: string;
   EMAIL_PORT: string | number;
   EMAIL_USER: string;
@@ -72,6 +73,8 @@ const loadEnv = (): EnvConfig => {
     STRIPE_CURRENCY: process.env.STRIPE_CURRENCY as string,
     BOOKING_FEE_AMOUNT: process.env.BOOKING_FEE_AMOUNT,
     PREMIUM_LISTING_FEE_AMOUNT: process.env.PREMIUM_LISTING_FEE_AMOUNT,
+    BOOKING_CANCELLATION_WINDOW_HOURS:
+      process.env.BOOKING_CANCELLATION_WINDOW_HOURS,
     EMAIL_HOST: process.env.EMAIL_HOST as string,
     EMAIL_PORT: process.env.EMAIL_PORT as string | number,
     EMAIL_USER: process.env.EMAIL_USER as string,

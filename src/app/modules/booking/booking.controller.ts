@@ -69,13 +69,45 @@ const removeBookingAndPayment = catchAsync(
     const bookingId = req.params.id as string;
     const userId = req.user?.id as string;
 
-    await bookingService.removeBookingAndPayment(bookingId, userId);
+    const result = await bookingService.removeBookingAndPayment(
+      bookingId,
+      userId,
+    );
 
     sendResponse(res, {
       statusCode: StatusCodes.OK,
       success: true,
-      message: "Booking cancelled successfully",
-      data: null,
+      message:
+        result.action === "REQUESTED"
+          ? "Cancellation request submitted. Waiting for admin/provider approval."
+          : "Booking cancelled successfully",
+      data: result,
+    });
+  },
+);
+
+const resolveCancellationRequest = catchAsync(
+  async (req: Request, res: Response) => {
+    const bookingId = req.params.id as string;
+    const actorId = req.user?.id as string;
+    const actorRole = req.user?.role;
+    const { decision } = req.body as { decision: "APPROVE" | "REJECT" };
+
+    const result = await bookingService.resolveCancellationRequest(
+      bookingId,
+      decision,
+      actorId,
+      actorRole,
+    );
+
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message:
+        result.decision === "APPROVE"
+          ? "Cancellation approved and refund processed successfully"
+          : "Cancellation request rejected successfully",
+      data: result,
     });
   },
 );
@@ -87,4 +119,5 @@ export const bookingController = {
   updateBookingStatus,
   getAllBookings,
   removeBookingAndPayment,
+  resolveCancellationRequest,
 };

@@ -32,12 +32,15 @@ enum RequestStatus {
   PENDING
   APPROVED
   REJECTED
+  CANCELLATION_REQUESTED
+  CANCELLED
 }
 
 enum PaymentStatus {
   PENDING
   SUCCESS
   FAILED
+  REFUNDED
 }
 
 enum PaymentPurpose {

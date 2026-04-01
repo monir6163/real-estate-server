@@ -38,4 +38,11 @@ router.delete(
   bookingController.removeBookingAndPayment,
 );
 
+router.patch(
+  "/:id/cancel-decision",
+  checkAuth(Role.ADMIN, Role.AGENT),
+  validateRequest(BookingValidation.cancelDecisionSchema),
+  bookingController.resolveCancellationRequest,
+);
+
 export const BookingRoutes = router;

@@ -57,7 +57,9 @@ export type PropertyStatus = (typeof PropertyStatus)[keyof typeof PropertyStatus
 export const RequestStatus = {
   PENDING: 'PENDING',
   APPROVED: 'APPROVED',
-  REJECTED: 'REJECTED'
+  REJECTED: 'REJECTED',
+  CANCELLATION_REQUESTED: 'CANCELLATION_REQUESTED',
+  CANCELLED: 'CANCELLED'
 } as const
 
 export type RequestStatus = (typeof RequestStatus)[keyof typeof RequestStatus]
@@ -66,7 +68,8 @@ export type RequestStatus = (typeof RequestStatus)[keyof typeof RequestStatus]
 export const PaymentStatus = {
   PENDING: 'PENDING',
   SUCCESS: 'SUCCESS',
-  FAILED: 'FAILED'
+  FAILED: 'FAILED',
+  REFUNDED: 'REFUNDED'
 } as const
 
 export type PaymentStatus = (typeof PaymentStatus)[keyof typeof PaymentStatus]
