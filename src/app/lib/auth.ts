@@ -3,31 +3,55 @@ import { prismaAdapter } from "better-auth/adapters/prisma";
 import { APIError, createAuthMiddleware } from "better-auth/api";
 import { emailOTP } from "better-auth/plugins";
 import { StatusCodes } from "http-status-codes";
-import { envConfig } from "../../config/env";
 import { Role, UserStatus } from "../../generated/prisma/enums";
 import { sendEmail } from "./mailService";
 import { prisma } from "./prisma";
+
+const FRONTEND_URL = process.env.FRONTEND_URL!.replace(/\/+$/, "");
+const BACKEND_URL = process.env.BETTER_AUTH_URL!.replace(/\/+$/, "");
 
 export const auth = betterAuth({
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
-  baseURL: envConfig.BETTER_AUTH_URL!,
-  secret: envConfig.BETTER_AUTH_SECRET!,
-  trustedOrigins: [envConfig.FRONTEND_URL!],
+  baseURL: BACKEND_URL,
+  trustedOrigins: [FRONTEND_URL, BACKEND_URL],
   emailAndPassword: {
     enabled: true,
     autoSignIn: false,
     requireEmailVerification: true,
   },
 
-  // social providers can be enabled like this
+  advanced: {
+    cookies: {
+      state: {
+        attributes: {
+          sameSite: "none",
+          secure: true,
+          httpOnly: true,
+          partitioned: true,
+          path: "/",
+        },
+      },
+      session_token: {
+        attributes: {
+          sameSite: "none",
+          secure: true,
+          httpOnly: true,
+          partitioned: true,
+          path: "/",
+        },
+      },
+    },
+  },
+
   socialProviders: {
     google: {
       prompt: "select_account consent",
       accessType: "offline",
-      clientId: envConfig.GOOGLE_CLIENT_ID,
-      clientSecret: envConfig.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+      redirectURI: `${FRONTEND_URL}/api/auth/callback/google`,
     },
   },
   // email verification can be enabled like this

@@ -11,7 +11,7 @@
     "check:all": "pnpm run check && pnpm run build",
     "postinstall": "prisma generate",
     "start": "node api/server.mjs",
-    "admin:seed": "tsx src/script/seed.ts",
+    "admin:seed": "tsx src/app/script/seed.ts",
     "lint": "eslint . --ext .ts",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
