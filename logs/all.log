@@ -7218,3 +7218,648 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-01 15:52:05:525 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2828ms
 2026-04-01 15:52:06:526 http: GET /api/v1/properties/featured?limit=10 - 200 - 583ms
 2026-04-01 15:52:07:527 http: GET /api/v1/properties/featured?limit=10 - 200 - 582ms
+2026-04-01 15:57:20:5720 http: GET /api/auth/get-session - 200 - 53ms
+2026-04-01 16:06:39:639 http: GET /api/auth/get-session - 200 - 165ms
+2026-04-01 16:06:48:648 http: GET /api/auth/get-session - 200 - 31ms
+2026-04-01 16:06:49:649 http: GET /api/v1/reviews - 200 - 2660ms
+2026-04-01 16:06:50:650 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2957ms
+2026-04-01 16:06:50:650 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 3317ms
+2026-04-01 16:06:50:650 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 3003ms
+2026-04-01 16:06:51:651 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 4723ms
+2026-04-01 16:06:53:653 http: GET /api/auth/get-session - 200 - 11ms
+2026-04-01 16:06:55:655 http: GET /api/v1/properties/featured?limit=10 - 200 - 903ms
+2026-04-01 16:06:56:656 http: GET /api/auth/get-session - 200 - 8ms
+2026-04-01 16:07:08:78 http: POST /api/auth/sign-in/social - 200 - 2649ms
+2026-04-01 16:07:36:736 http: GET /api/auth/callback/google?state=x71s2ci1BO39IS_JuHBPpzZ2iRSKRxCr&iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E_ocDB1Oh60nsJx4NXQxx5uDMP5blAyxE5UB-Do6mV5oGlsG4CfRYn8h3U99rMuEQ&scope=email%20profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20openid&authuser=0&prompt=consent - 302 - 5740ms
+2026-04-01 16:07:39:739 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2843ms
+2026-04-01 16:07:39:739 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2857ms
+2026-04-01 16:07:39:739 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2855ms
+2026-04-01 16:07:39:739 http: GET /api/v1/reviews - 200 - 2883ms
+2026-04-01 16:07:39:739 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 3268ms
+2026-04-01 16:07:41:741 http: GET /api/auth/get-session - 200 - 623ms
+2026-04-01 16:07:41:741 http: GET /api/v1/properties/featured?limit=10 - 200 - 885ms
+2026-04-01 16:07:45:745 http: GET /api/auth/get-session - 200 - 593ms
+2026-04-01 16:07:47:747 http: GET /api/auth/get-session - 200 - 597ms
+2026-04-01 16:07:48:748 http: GET /api/auth/get-session - 200 - 596ms
+2026-04-01 16:07:49:749 http: GET /api/v1/properties - 200 - 591ms
+2026-04-01 16:07:50:750 http: GET /api/auth/get-session - 200 - 595ms
+2026-04-01 16:07:50:750 http: GET /api/v1/users - 200 - 886ms
+2026-04-01 16:07:51:751 http: GET /api/auth/get-session - 200 - 594ms
+2026-04-01 16:07:55:755 http: GET /api/v1/bookings/admin - 200 - 3411ms
+2026-04-01 16:07:55:755 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 16:07:56:756 http: GET /api/v1/properties - 200 - 588ms
+2026-04-01 16:07:56:756 http: GET /api/auth/get-session - 200 - 595ms
+2026-04-01 16:07:57:757 http: GET /api/v1/users - 200 - 887ms
+2026-04-01 16:07:58:758 http: GET /api/auth/get-session - 200 - 594ms
+2026-04-01 16:07:59:759 http: GET /api/v1/bookings/admin - 200 - 1441ms
+2026-04-01 16:09:59:959 http: POST /api/auth/sign-out - 200 - 2789ms
+2026-04-01 16:09:59:959 http: GET /api/auth/get-session - 200 - 4ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2548ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2548ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2550ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2549ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2976ms
+2026-04-01 16:10:02:102 http: GET /api/v1/reviews - 200 - 3037ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 3041ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 3053ms
+2026-04-01 16:10:02:102 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 3048ms
+2026-04-01 16:10:02:102 http: GET /api/v1/reviews - 200 - 3026ms
+2026-04-01 16:10:03:103 http: GET /api/v1/properties/featured?limit=10 - 200 - 559ms
+2026-04-01 16:10:03:103 http: GET /api/v1/properties/featured?limit=10 - 200 - 555ms
+2026-04-01 16:10:04:104 http: GET /api/auth/get-session - 200 - 3ms
+2026-04-01 16:10:06:106 http: GET /api/auth/get-session - 200 - 2ms
+2026-04-01 16:10:16:1016 http: GET /api/auth/get-session - 200 - 3ms
+2026-04-01 16:10:25:1025 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2750ms
+2026-04-01 16:10:25:1025 http: GET /api/v1/reviews - 200 - 2746ms
+2026-04-01 16:10:25:1025 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2767ms
+2026-04-01 16:10:25:1025 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2775ms
+2026-04-01 16:10:28:1028 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 4920ms
+2026-04-01 16:10:28:1028 http: GET /api/v1/properties/featured?limit=10 - 200 - 561ms
+2026-04-01 16:10:29:1029 http: GET /api/v1/properties/featured?limit=10 - 200 - 555ms
+2026-04-01 16:11:41:1141 http: GET /api/auth/get-session - 200 - 4ms
+2026-04-01 17:19:45:1945 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2953ms
+2026-04-01 17:19:45:1945 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2947ms
+2026-04-01 17:19:45:1945 http: GET /api/v1/reviews - 200 - 2941ms
+2026-04-01 17:19:45:1945 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2976ms
+2026-04-01 17:19:47:1947 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 5373ms
+2026-04-01 17:19:49:1949 http: GET /api/auth/get-session - 200 - 28ms
+2026-04-01 17:19:50:1950 http: GET /api/v1/properties/featured?limit=10 - 200 - 593ms
+2026-04-01 17:19:51:1951 http: GET /api/auth/get-session - 200 - 6ms
+2026-04-01 17:20:04:204 http: POST /api/auth/sign-in/email - 200 - 3665ms
+2026-04-01 17:20:07:207 http: GET /api/auth/get-session - 200 - 2827ms
+2026-04-01 17:20:07:207 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2843ms
+2026-04-01 17:20:07:207 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2838ms
+2026-04-01 17:20:07:207 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2844ms
+2026-04-01 17:20:07:207 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2854ms
+2026-04-01 17:20:07:207 http: GET /api/v1/reviews - 200 - 3120ms
+2026-04-01 17:20:08:208 http: GET /api/v1/properties/featured?limit=10 - 200 - 580ms
+2026-04-01 17:20:08:208 http: GET /api/v1/properties/featured?limit=10 - 200 - 578ms
+2026-04-01 17:20:10:2010 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:20:10:2010 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:20:13:2013 http: GET /api/auth/get-session - 200 - 589ms
+2026-04-01 17:20:14:2014 http: GET /api/auth/get-session - 200 - 597ms
+2026-04-01 17:20:15:2015 http: GET /api/v1/properties/agent/bookings - 200 - 1239ms
+2026-04-01 17:20:16:2016 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:20:17:2017 http: GET /api/v1/reviews/agent - 200 - 1165ms
+2026-04-01 17:20:17:2017 http: GET /api/auth/get-session - 200 - 578ms
+2026-04-01 17:20:17:2017 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:20:19:2019 http: GET /api/v1/properties/agent/bookings - 200 - 1164ms
+2026-04-01 17:20:19:2019 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:20:20:2020 http: GET /api/v1/reviews/agent - 200 - 1170ms
+2026-04-01 17:21:23:2123 http: GET /api/auth/get-session - 200 - 2914ms
+2026-04-01 17:21:28:2128 http: GET /api/v1/properties/agent/properties - 200 - 3490ms
+2026-04-01 17:21:34:2134 http: GET /api/auth/get-session - 200 - 601ms
+2026-04-01 17:21:36:2136 http: GET /api/v1/properties/9c9826b4-974a-4136-86e7-fc2629d6f55f - 200 - 601ms
+2026-04-01 17:25:42:2542 http: GET /api/auth/get-session - 200 - 2910ms
+2026-04-01 17:25:43:2543 http: GET /api/auth/get-session - 200 - 2877ms
+2026-04-01 17:25:46:2546 http: GET /api/v1/properties/agent/properties - 200 - 3912ms
+2026-04-01 17:26:34:2634 http: GET /api/auth/get-session - 200 - 2872ms
+2026-04-01 17:26:38:2638 http: GET /api/auth/get-session - 200 - 595ms
+2026-04-01 17:29:53:2953 http: GET /api/auth/get-session - 200 - 2833ms
+2026-04-01 17:29:54:2954 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:29:56:2956 http: GET /api/auth/get-session - 200 - 2749ms
+2026-04-01 17:29:57:2957 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:29:57:2957 http: GET /api/auth/get-session - 200 - 557ms
+2026-04-01 17:29:58:2958 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:29:58:2958 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:29:58:2958 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:29:58:2958 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:29:59:2959 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:29:59:2959 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:30:00:300 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:30:00:300 http: GET /api/auth/get-session - 200 - 567ms
+2026-04-01 17:30:00:300 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:30:00:300 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:30:01:301 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:30:01:301 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:30:02:302 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:30:02:302 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:30:02:302 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:30:22:3022 http: GET /api/auth/get-session - 200 - 2777ms
+2026-04-01 17:30:23:3023 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:30:26:3026 http: GET /api/auth/get-session - 200 - 2754ms
+2026-04-01 17:30:27:3027 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:30:27:3027 http: GET /api/auth/get-session - 200 - 573ms
+2026-04-01 17:30:27:3027 http: GET /api/auth/get-session - 200 - 574ms
+2026-04-01 17:30:27:3027 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:30:28:3028 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:30:28:3028 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:30:29:3029 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:30:29:3029 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:30:30:3030 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:30:30:3030 http: GET /api/auth/get-session - 200 - 569ms
+2026-04-01 17:30:31:3031 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:30:31:3031 http: GET /api/auth/get-session - 200 - 557ms
+2026-04-01 17:30:31:3031 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 17:30:31:3031 http: GET /api/auth/get-session - 200 - 567ms
+2026-04-01 17:30:32:3032 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:30:32:3032 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:30:33:3033 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:32:42:3242 http: GET /api/auth/get-session - 200 - 2904ms
+2026-04-01 17:32:43:3243 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:32:45:3245 http: GET /api/auth/get-session - 200 - 2861ms
+2026-04-01 17:32:46:3246 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:32:46:3246 http: GET /api/auth/get-session - 200 - 581ms
+2026-04-01 17:32:47:3247 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:32:47:3247 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:32:47:3247 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:32:51:3251 http: GET /api/auth/get-session - 200 - 589ms
+2026-04-01 17:32:51:3251 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:32:51:3251 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:32:52:3252 http: GET /api/auth/get-session - 200 - 597ms
+2026-04-01 17:32:52:3252 http: GET /api/auth/get-session - 200 - 592ms
+2026-04-01 17:32:53:3253 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:32:53:3253 http: GET /api/auth/get-session - 200 - 588ms
+2026-04-01 17:32:53:3253 http: GET /api/auth/get-session - 200 - 582ms
+2026-04-01 17:33:19:3319 http: GET /api/auth/get-session - 200 - 2914ms
+2026-04-01 17:33:20:3320 http: GET /api/auth/get-session - 200 - 591ms
+2026-04-01 17:33:22:3322 http: GET /api/auth/get-session - 200 - 2829ms
+2026-04-01 17:33:23:3323 http: GET /api/auth/get-session - 200 - 581ms
+2026-04-01 17:33:24:3324 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:33:24:3324 http: GET /api/auth/get-session - 200 - 579ms
+2026-04-01 17:33:24:3324 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:25:3325 http: GET /api/auth/get-session - 200 - 583ms
+2026-04-01 17:33:34:3334 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:33:35:3335 http: GET /api/auth/get-session - 200 - 599ms
+2026-04-01 17:33:38:3338 http: GET /api/auth/get-session - 200 - 2856ms
+2026-04-01 17:33:38:3338 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:38:3338 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:39:3339 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:33:39:3339 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:33:40:3340 http: GET /api/auth/get-session - 200 - 602ms
+2026-04-01 17:33:40:3340 http: GET /api/auth/get-session - 200 - 589ms
+2026-04-01 17:33:41:3341 http: GET /api/auth/get-session - 200 - 591ms
+2026-04-01 17:33:41:3341 http: GET /api/auth/get-session - 200 - 594ms
+2026-04-01 17:33:41:3341 http: GET /api/auth/get-session - 200 - 591ms
+2026-04-01 17:33:41:3341 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:42:3342 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:33:42:3342 http: GET /api/auth/get-session - 200 - 634ms
+2026-04-01 17:33:43:3343 http: GET /api/auth/get-session - 200 - 593ms
+2026-04-01 17:33:43:3343 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:33:44:3344 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:44:3344 http: GET /api/auth/get-session - 200 - 618ms
+2026-04-01 17:33:45:3345 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:45:3345 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:45:3345 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:45:3345 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:46:3346 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:46:3346 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:47:3347 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:33:47:3347 http: GET /api/auth/get-session - 200 - 599ms
+2026-04-01 17:33:48:3348 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:33:48:3348 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:33:48:3348 http: GET /api/auth/get-session - 200 - 583ms
+2026-04-01 17:33:48:3348 http: GET /api/auth/get-session - 200 - 592ms
+2026-04-01 17:33:49:3349 http: GET /api/auth/get-session - 200 - 583ms
+2026-04-01 17:33:59:3359 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:34:00:340 http: GET /api/auth/get-session - 200 - 588ms
+2026-04-01 17:34:02:342 http: GET /api/auth/get-session - 200 - 2876ms
+2026-04-01 17:34:03:343 http: GET /api/auth/get-session - 200 - 580ms
+2026-04-01 17:34:03:343 http: GET /api/auth/get-session - 200 - 582ms
+2026-04-01 17:34:04:344 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 17:34:04:344 http: GET /api/auth/get-session - 200 - 583ms
+2026-04-01 17:34:04:344 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:34:04:344 http: GET /api/auth/get-session - 200 - 592ms
+2026-04-01 17:34:05:345 http: GET /api/auth/get-session - 200 - 580ms
+2026-04-01 17:34:05:345 http: GET /api/auth/get-session - 200 - 579ms
+2026-04-01 17:34:06:346 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:34:06:346 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:34:06:346 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:34:06:346 http: GET /api/auth/get-session - 200 - 580ms
+2026-04-01 17:34:07:347 http: GET /api/auth/get-session - 200 - 581ms
+2026-04-01 17:34:07:347 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:34:08:348 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:34:08:348 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:34:08:348 http: GET /api/auth/get-session - 200 - 582ms
+2026-04-01 17:39:57:3957 http: GET /api/auth/get-session - 200 - 3508ms
+2026-04-01 17:39:58:3958 http: GET /api/auth/get-session - 200 - 571ms
+2026-04-01 17:40:01:401 http: GET /api/auth/get-session - 200 - 2777ms
+2026-04-01 17:40:05:405 http: GET /api/auth/get-session - 200 - 577ms
+2026-04-01 17:40:06:406 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:40:07:407 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:07:407 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:07:407 http: GET /api/auth/get-session - 200 - 572ms
+2026-04-01 17:40:08:408 http: GET /api/auth/get-session - 200 - 575ms
+2026-04-01 17:40:08:408 http: GET /api/auth/get-session - 200 - 574ms
+2026-04-01 17:40:08:408 http: GET /api/auth/get-session - 200 - 616ms
+2026-04-01 17:40:09:409 http: GET /api/auth/get-session - 200 - 582ms
+2026-04-01 17:40:09:409 http: GET /api/auth/get-session - 200 - 591ms
+2026-04-01 17:40:10:4010 http: GET /api/auth/get-session - 200 - 582ms
+2026-04-01 17:40:10:4010 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:40:11:4011 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:40:11:4011 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:40:12:4012 http: GET /api/auth/get-session - 200 - 572ms
+2026-04-01 17:40:12:4012 http: GET /api/auth/get-session - 200 - 574ms
+2026-04-01 17:40:13:4013 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:40:13:4013 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:40:13:4013 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:40:13:4013 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:40:14:4014 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 17:40:14:4014 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:40:15:4015 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:40:15:4015 http: GET /api/auth/get-session - 200 - 573ms
+2026-04-01 17:40:16:4016 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:40:16:4016 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:40:17:4017 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 17:40:17:4017 http: GET /api/auth/get-session - 200 - 584ms
+2026-04-01 17:40:18:4018 http: GET /api/auth/get-session - 200 - 629ms
+2026-04-01 17:40:18:4018 http: GET /api/auth/get-session - 200 - 572ms
+2026-04-01 17:40:19:4019 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:40:19:4019 http: GET /api/auth/get-session - 200 - 556ms
+2026-04-01 17:40:20:4020 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:40:20:4020 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:20:4020 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:40:20:4020 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 17:40:21:4021 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:40:21:4021 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:40:22:4022 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:40:22:4022 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:22:4022 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:23:4023 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:23:4023 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:40:24:4024 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:24:4024 http: GET /api/auth/get-session - 200 - 556ms
+2026-04-01 17:40:24:4024 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:24:4024 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:26:4026 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:26:4026 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:40:28:4028 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:40:28:4028 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:40:30:4030 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:40:32:4032 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:40:32:4032 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:34:4034 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:40:34:4034 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:35:4035 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:40:36:4036 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:40:36:4036 http: GET /api/auth/get-session - 200 - 558ms
+2026-04-01 17:40:36:4036 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 17:40:37:4037 http: GET /api/auth/get-session - 200 - 570ms
+2026-04-01 17:40:37:4037 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:40:37:4037 http: GET /api/auth/get-session - 200 - 567ms
+2026-04-01 17:40:38:4038 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 17:40:38:4038 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:40:42:4042 http: GET /api/auth/get-session - 200 - 569ms
+2026-04-01 17:41:11:4111 http: GET /api/auth/get-session - 200 - 2782ms
+2026-04-01 17:41:17:4117 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:41:17:4117 error: POST /api/v1/properties - 400 - 6119ms
+2026-04-01 17:41:57:4157 http: GET /api/auth/get-session - 200 - 2791ms
+2026-04-01 17:41:59:4159 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:42:01:421 http: GET /api/auth/get-session - 200 - 2744ms
+2026-04-01 17:42:02:422 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:42:02:422 http: GET /api/auth/get-session - 200 - 567ms
+2026-04-01 17:42:03:423 http: GET /api/auth/get-session - 200 - 568ms
+2026-04-01 17:42:03:423 http: GET /api/auth/get-session - 200 - 557ms
+2026-04-01 17:42:03:423 http: GET /api/auth/get-session - 200 - 558ms
+2026-04-01 17:42:03:423 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:42:04:424 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:42:04:424 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 17:42:06:426 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:42:06:426 http: GET /api/auth/get-session - 200 - 573ms
+2026-04-01 17:42:07:427 http: GET /api/auth/get-session - 200 - 566ms
+2026-04-01 17:42:07:427 http: GET /api/auth/get-session - 200 - 565ms
+2026-04-01 17:42:08:428 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:42:08:428 http: GET /api/auth/get-session - 200 - 564ms
+2026-04-01 17:42:08:428 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 17:42:08:428 http: GET /api/auth/get-session - 200 - 553ms
+2026-04-01 17:42:09:429 http: GET /api/auth/get-session - 200 - 560ms
+2026-04-01 17:42:53:4253 http: GET /api/auth/get-session - 200 - 2912ms
+2026-04-01 17:42:59:4259 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:42:59:4259 error: POST /api/v1/properties - 400 - 5835ms
+2026-04-01 17:44:08:448 http: GET /api/auth/get-session - 200 - 2878ms
+2026-04-01 17:44:14:4414 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:44:14:4414 error: POST /api/v1/properties - 400 - 6182ms
+2026-04-01 17:44:42:4442 http: GET /api/auth/get-session - 200 - 2836ms
+2026-04-01 17:44:48:4448 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:44:48:4448 error: POST /api/v1/properties - 400 - 5991ms
+2026-04-01 17:47:59:4759 http: GET /api/auth/get-session - 200 - 2908ms
+2026-04-01 17:48:02:482 http: GET /api/auth/get-session - 200 - 590ms
+2026-04-01 17:48:10:4810 http: GET /api/auth/get-session - 200 - 591ms
+2026-04-01 17:48:28:4828 http: GET /api/v1/auth/me - 200 - 3457ms
+2026-04-01 17:48:50:4850 http: GET /api/auth/get-session - 200 - 2954ms
+2026-04-01 17:48:52:4852 http: PATCH /api/v1/users/profile/update - 200 - 1572ms
+2026-04-01 17:48:53:4853 http: GET /api/auth/get-session - 200 - 587ms
+2026-04-01 17:48:55:4855 http: GET /api/auth/get-session - 200 - 578ms
+2026-04-01 17:48:57:4857 http: GET /api/v1/auth/me - 200 - 3411ms
+2026-04-01 17:49:02:492 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 17:52:10:5210 http: GET /api/auth/get-session - 200 - 3210ms
+2026-04-01 17:52:19:5219 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:52:19:5219 error: POST /api/v1/properties - 400 - 6169ms
+2026-04-01 17:55:51:5551 http: GET /api/auth/get-session - 200 - 2935ms
+2026-04-01 17:55:54:5554 http: GET /api/auth/get-session - 200 - 2917ms
+2026-04-01 17:55:54:5554 http: GET /api/auth/get-session - 200 - 2941ms
+2026-04-01 17:55:57:5557 http: GET /api/auth/get-session - 200 - 624ms
+2026-04-01 17:55:59:5559 http: GET /api/auth/get-session - 200 - 642ms
+2026-04-01 17:55:59:5559 http: GET /api/auth/get-session - 200 - 608ms
+2026-04-01 17:56:01:561 http: GET /api/v1/auth/me - 200 - 1196ms
+2026-04-01 17:56:04:564 http: GET /api/auth/get-session - 200 - 671ms
+2026-04-01 17:56:04:564 http: GET /api/auth/get-session - 200 - 658ms
+2026-04-01 17:57:09:579 http: GET /api/auth/get-session - 200 - 3018ms
+2026-04-01 17:57:16:5716 http: GET /api/auth/get-session - 200 - 601ms
+2026-04-01 18:06:37:637 http: GET /api/auth/get-session - 200 - 3013ms
+2026-04-01 18:06:42:642 http: GET /api/auth/get-session - 200 - 614ms
+2026-04-01 18:08:13:813 http: GET /api/auth/get-session - 200 - 2960ms
+2026-04-01 18:08:16:816 http: GET /api/auth/get-session - 200 - 648ms
+2026-04-01 18:09:24:924 http: GET /api/auth/get-session - 200 - 2907ms
+2026-04-01 18:09:24:924 http: GET /api/auth/get-session - 200 - 585ms
+2026-04-01 18:10:10:1010 http: GET /api/auth/get-session - 200 - 2847ms
+2026-04-01 18:10:11:1011 http: GET /api/auth/get-session - 200 - 586ms
+2026-04-01 18:11:10:1110 http: GET /api/auth/get-session - 200 - 2983ms
+2026-04-01 18:11:11:1111 http: GET /api/auth/get-session - 200 - 608ms
+2026-04-01 18:11:38:1138 http: GET /api/auth/get-session - 200 - 2913ms
+2026-04-01 18:11:38:1138 http: GET /api/auth/get-session - 200 - 602ms
+2026-04-01 18:13:15:1315 http: GET /api/auth/get-session - 200 - 2916ms
+2026-04-01 18:13:16:1316 http: GET /api/auth/get-session - 200 - 594ms
+2026-04-01 18:13:45:1345 http: GET /api/auth/get-session - 200 - 2868ms
+2026-04-01 18:13:47:1347 http: GET /api/auth/get-session - 200 - 597ms
+2026-04-01 18:14:04:144 http: GET /api/auth/get-session - 200 - 2909ms
+2026-04-01 18:14:10:1410 http: GET /api/v1/properties/agent/properties - 200 - 3571ms
+2026-04-01 18:14:13:1413 http: GET /api/auth/get-session - 200 - 593ms
+2026-04-01 18:14:15:1415 http: GET /api/v1/properties/61e87441-d7c3-4c6d-9616-f53a2046771c - 200 - 607ms
+2026-04-01 18:14:29:1429 http: GET /api/auth/get-session - 200 - 2846ms
+2026-04-01 18:14:31:1431 http: PUT /api/v1/properties/61e87441-d7c3-4c6d-9616-f53a2046771c - 200 - 2003ms
+2026-04-01 18:14:39:1439 http: GET /api/auth/get-session - 200 - 581ms
+2026-04-01 18:14:41:1441 http: PUT /api/v1/properties/61e87441-d7c3-4c6d-9616-f53a2046771c - 200 - 2012ms
+2026-04-01 18:14:43:1443 http: GET /api/auth/get-session - 200 - 601ms
+2026-04-01 18:14:47:1447 http: GET /api/v1/properties/agent/properties - 200 - 3318ms
+2026-04-01 18:14:50:1450 http: GET /api/auth/get-session - 200 - 559ms

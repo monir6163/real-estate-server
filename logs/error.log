@@ -1683,3 +1683,293 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-01 14:50:08:508 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 33ms
 2026-04-01 14:50:08:508 error: [Error Handler] Unauthorized! Please log in to access this resource.
 2026-04-01 14:50:08:508 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 13ms
+2026-04-01 17:41:17:4117 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:41:17:4117 error: POST /api/v1/properties - 400 - 6119ms
+2026-04-01 17:42:59:4259 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:42:59:4259 error: POST /api/v1/properties - 400 - 5835ms
+2026-04-01 17:44:14:4414 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:44:14:4414 error: POST /api/v1/properties - 400 - 6182ms
+2026-04-01 17:44:48:4448 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:44:48:4448 error: POST /api/v1/properties - 400 - 5991ms
+2026-04-01 17:52:19:5219 error: [Error Handler] [
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Title is required"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "description"
+    ],
+    "message": "Description is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "price"
+    ],
+    "message": "Price must be a positive number"
+  },
+  {
+    "origin": "string",
+    "code": "too_small",
+    "minimum": 1,
+    "inclusive": true,
+    "path": [
+      "body",
+      "location"
+    ],
+    "message": "Location is required"
+  },
+  {
+    "origin": "number",
+    "code": "too_small",
+    "minimum": 0,
+    "inclusive": false,
+    "path": [
+      "body",
+      "area"
+    ],
+    "message": "Area must be a positive number"
+  }
+]
+2026-04-01 17:52:19:5219 error: POST /api/v1/properties - 400 - 6169ms
