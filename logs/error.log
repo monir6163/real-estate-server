@@ -1668,3 +1668,13 @@ Invalid value for argument `status`. Expected UserStatus.
 2026-04-01 08:44:46:4446 error: GET /api/v1/reviews/agent - 404 - 293ms
 2026-04-01 08:44:49:4449 error: [Error Handler] Review not found.
 2026-04-01 08:44:49:4449 error: GET /api/v1/reviews/agent - 404 - 291ms
+2026-04-01 13:03:47:347 error: [Error Handler] 
+Invalid `prisma.bookingRequest.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\booking\booking.service.ts:320:31
+
+  317   );
+  318 }
+  319 
+→ 320 await prisma.bookingRequest.update(
+Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION_REQUESTED"
+2026-04-01 13:03:47:347 error: DELETE /api/v1/bookings/d87ae38d-f3d7-4312-a030-23842315058a - 400 - 1476ms

@@ -5486,3 +5486,40 @@ Invalid value for argument `status`. Expected UserStatus.
 2026-04-01 13:02:51:251 http: GET /api/v1/bookings/my-bookings - 200 - 4588ms
 2026-04-01 13:02:52:252 http: GET /api/auth/get-session - 200 - 618ms
 2026-04-01 13:02:53:253 http: GET /api/v1/bookings/my-bookings - 200 - 1214ms
+2026-04-01 13:03:45:345 http: GET /api/auth/get-session - 200 - 2976ms
+2026-04-01 13:03:47:347 error: [Error Handler] 
+Invalid `prisma.bookingRequest.update()` invocation in
+F:\level-2-assignment\real-state-server\src\app\modules\booking\booking.service.ts:320:31
+
+  317   );
+  318 }
+  319 
+→ 320 await prisma.bookingRequest.update(
+Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION_REQUESTED"
+2026-04-01 13:03:47:347 error: DELETE /api/v1/bookings/d87ae38d-f3d7-4312-a030-23842315058a - 400 - 1476ms
+2026-04-01 13:05:46:546 http: GET /api/auth/get-session - 200 - 2754ms
+2026-04-01 13:05:47:547 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 13:05:50:550 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 13:05:52:552 http: GET /api/auth/get-session - 200 - 559ms
+2026-04-01 13:05:55:555 http: GET /api/v1/properties/agent/bookings - 200 - 3399ms
+2026-04-01 13:05:56:556 http: GET /api/auth/get-session - 200 - 563ms
+2026-04-01 13:05:57:557 http: GET /api/v1/reviews/agent - 200 - 1123ms
+2026-04-01 13:06:03:63 http: GET /api/auth/get-session - 200 - 562ms
+2026-04-01 13:06:07:67 http: GET /api/v1/properties/agent/bookings - 200 - 3619ms
+2026-04-01 13:06:16:616 http: GET /api/auth/get-session - 200 - 647ms
+2026-04-01 13:06:18:618 http: DELETE /api/v1/bookings/d87ae38d-f3d7-4312-a030-23842315058a - 200 - 1499ms
+2026-04-01 13:06:18:618 http: GET /api/auth/get-session - 200 - 596ms
+2026-04-01 13:06:22:622 http: GET /api/v1/bookings/my-bookings - 200 - 3488ms
+2026-04-01 13:06:31:631 http: GET /api/auth/get-session - 200 - 604ms
+2026-04-01 13:06:32:632 http: GET /api/auth/get-session - 200 - 599ms
+2026-04-01 13:06:35:635 http: GET /api/v1/properties/agent/bookings - 200 - 3456ms
+2026-04-01 13:06:45:645 http: GET /api/auth/get-session - 200 - 592ms
+2026-04-01 13:06:46:646 http: GET /api/auth/get-session - 200 - 593ms
+2026-04-01 13:06:51:651 http: GET /api/v1/properties/agent/bookings - 200 - 5792ms
+2026-04-01 13:07:16:716 http: GET /api/auth/get-session - 200 - 2811ms
+2026-04-01 13:07:23:723 http: PATCH /api/v1/bookings/d87ae38d-f3d7-4312-a030-23842315058a/cancel-decision - 200 - 7108ms
+2026-04-01 13:07:23:723 http: GET /api/auth/get-session - 200 - 561ms
+2026-04-01 13:07:24:724 http: GET /api/auth/get-session - 200 - 571ms
+2026-04-01 13:07:27:727 http: GET /api/v1/properties/agent/bookings - 200 - 3303ms
+2026-04-01 13:07:44:744 http: GET /api/auth/get-session - 200 - 2739ms
+2026-04-01 13:07:48:748 http: GET /api/v1/properties/agent/properties - 200 - 3578ms
