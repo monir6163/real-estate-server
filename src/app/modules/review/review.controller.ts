@@ -104,18 +104,13 @@ const getReviewByAgentAndProperty = catchAsync(
 
 const getReviewsByAgentId = catchAsync(async (req: Request, res: Response) => {
   const agentId = req.user?.id as string;
-  const reviews = await reviewService.getAllReviews();
-
-  // Filter reviews for properties owned by this agent
-  const filteredReviews = reviews.filter((review: any) => {
-    return review.agent?.id === agentId;
-  });
+  const reviews = await reviewService.getReviewsByPropertyOwner(agentId);
 
   sendResponse(res, {
     statusCode: StatusCodes.OK,
     success: true,
     message: "Reviews retrieved successfully",
-    data: filteredReviews,
+    data: reviews,
   });
 });
 

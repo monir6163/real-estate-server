@@ -175,6 +175,37 @@ const getReviewByAgentAndProperty = async (
   return review;
 };
 
+const getReviewsByPropertyOwner = async (ownerId: string) => {
+  const reviews = await prisma.review.findMany({
+    where: {
+      property: {
+        agentId: ownerId,
+      },
+    },
+    include: {
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+        },
+      },
+      property: {
+        select: {
+          id: true,
+          title: true,
+          thumbnail: true,
+        },
+      },
+    },
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
+  return reviews;
+};
+
 export const reviewService = {
   createReview,
   getAllReviews,
@@ -183,4 +214,5 @@ export const reviewService = {
   deleteReview,
   getReviewsByPropertyId,
   getReviewByAgentAndProperty,
+  getReviewsByPropertyOwner,
 };

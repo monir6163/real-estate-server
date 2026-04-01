@@ -97,6 +97,18 @@ const updateBookingStatus = async (
   if (!booking) {
     throw new ApiError(StatusCodes.NOT_FOUND, "Booking not found.");
   }
+
+  if (
+    status === RequestStatus.APPROVED &&
+    booking.visitDate &&
+    booking.visitDate.getTime() > Date.now()
+  ) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "You can approve this booking only after the visit date has passed.",
+    );
+  }
+
   const updatedBooking = await prisma.bookingRequest.update({
     where: {
       id: bookingId,
@@ -140,6 +152,56 @@ const updateBookingStatus = async (
   return updatedBooking;
 };
 
+const removeBookingAndPayment = async (bookingId: string, userId: string) => {
+  const booking = await prisma.bookingRequest.findUnique({
+    where: {
+      id: bookingId,
+    },
+    include: {
+      payment: true,
+    },
+  });
+
+  if (!booking) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Booking not found.");
+  }
+
+  if (booking.agentId !== userId) {
+    throw new ApiError(
+      StatusCodes.FORBIDDEN,
+      "You are not authorized to cancel this booking.",
+    );
+  }
+
+  if (booking.status !== RequestStatus.PENDING) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Only pending bookings can be cancelled.",
+    );
+  }
+
+  if (booking.payment?.status === PaymentStatus.SUCCESS) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Paid bookings cannot be cancelled from this action.",
+    );
+  }
+
+  await prisma.$transaction(async (tx) => {
+    await tx.payment.deleteMany({
+      where: {
+        bookingId,
+      },
+    });
+
+    await tx.bookingRequest.delete({
+      where: {
+        id: bookingId,
+      },
+    });
+  });
+};
+
 const getAllBookings = async () => {
   const bookings = await prisma.bookingRequest.findMany({
     include: {
@@ -164,4 +226,5 @@ export const bookingService = {
   getBookingById,
   getAllBookings,
   updateBookingStatus,
+  removeBookingAndPayment,
 };

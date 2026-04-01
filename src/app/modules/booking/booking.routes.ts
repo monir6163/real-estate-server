@@ -32,4 +32,10 @@ router.patch(
   bookingController.updateBookingStatus,
 );
 
+router.delete(
+  "/:id",
+  checkAuth(Role.USER),
+  bookingController.removeBookingAndPayment,
+);
+
 export const BookingRoutes = router;

@@ -9,24 +9,6 @@ const router = Router();
 
 router.get("/", reviewController.getAllReviews);
 
-router.get("/:id", reviewController.getReviewById);
-
-router.post(
-  "/",
-  checkAuth(Role.USER),
-  validateRequest(ReviewValidation.createReviewSchema),
-  reviewController.createReview,
-);
-
-router.patch(
-  "/:id",
-  checkAuth(Role.USER),
-  validateRequest(ReviewValidation.updateReviewSchema),
-  reviewController.updateReview,
-);
-
-router.delete("/:id", checkAuth(Role.USER), reviewController.deleteReview);
-
 router.get(
   "/property/:propertyId",
   checkAuth(Role.AGENT),
@@ -46,5 +28,23 @@ router.get(
   checkAuth(Role.USER),
   reviewController.getReviewByAgentAndProperty,
 );
+
+router.get("/:id", reviewController.getReviewById);
+
+router.post(
+  "/",
+  checkAuth(Role.USER),
+  validateRequest(ReviewValidation.createReviewSchema),
+  reviewController.createReview,
+);
+
+router.patch(
+  "/:id",
+  checkAuth(Role.USER),
+  validateRequest(ReviewValidation.updateReviewSchema),
+  reviewController.updateReview,
+);
+
+router.delete("/:id", checkAuth(Role.USER), reviewController.deleteReview);
 
 export const ReviewRoutes = router;

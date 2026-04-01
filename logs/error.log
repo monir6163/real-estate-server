@@ -1638,3 +1638,33 @@ Invalid value for argument `status`. Expected UserStatus.
 2026-03-31 21:56:27:5627 error: GET /api/v1/bookings - 404 - 1ms
 2026-03-31 21:56:28:5628 error: GET /api/v1/bookings - 404 - 1ms
 2026-03-31 21:56:32:5632 error: GET /api/v1/bookings - 404 - 1ms
+2026-04-01 00:09:59:959 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 00:09:59:959 error: GET /api/v1/payments/settings - 401 - 16ms
+2026-04-01 00:10:09:109 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 00:10:09:109 error: GET /api/v1/payments/settings - 401 - 6ms
+2026-04-01 00:10:11:1011 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 00:10:11:1011 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 5ms
+2026-04-01 00:10:11:1011 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 00:10:11:1011 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 7ms
+2026-04-01 07:28:03:283 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 07:28:03:283 error: GET /api/v1/payments/settings - 401 - 19ms
+2026-04-01 07:28:12:2812 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 07:28:12:2812 error: GET /api/v1/payments/settings - 401 - 9ms
+2026-04-01 07:28:14:2814 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 07:28:14:2814 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 401 - 10ms
+2026-04-01 07:28:14:2814 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 07:28:14:2814 error: GET /api/v1/reviews/my-reviews/c893ae01-277a-4c98-ab94-76909f2bc382 - 401 - 10ms
+2026-04-01 07:38:51:3851 error: [Error Handler] payload.visitDate.toISOString is not a function
+2026-04-01 07:38:51:3851 error: POST /api/v1/payments/checkout/booking - 500 - 1586ms
+2026-04-01 08:20:19:2019 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 08:20:19:2019 error: GET /api/v1/payments/my-payments - 401 - 303ms
+2026-04-01 08:27:48:2748 error: [Error Handler] Review not found.
+2026-04-01 08:27:48:2748 error: GET /api/v1/reviews/agent - 404 - 284ms
+2026-04-01 08:42:14:4214 error: [Error Handler] Review not found.
+2026-04-01 08:42:14:4214 error: GET /api/v1/reviews/agent - 404 - 305ms
+2026-04-01 08:42:17:4217 error: [Error Handler] Review not found.
+2026-04-01 08:42:17:4217 error: GET /api/v1/reviews/agent - 404 - 304ms
+2026-04-01 08:44:46:4446 error: [Error Handler] Review not found.
+2026-04-01 08:44:46:4446 error: GET /api/v1/reviews/agent - 404 - 293ms
+2026-04-01 08:44:49:4449 error: [Error Handler] Review not found.
+2026-04-01 08:44:49:4449 error: GET /api/v1/reviews/agent - 404 - 291ms

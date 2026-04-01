@@ -9,10 +9,14 @@ import { paymentService } from "./payment.service";
 const createBookingCheckoutSession = catchAsync(
   async (req: Request, res: Response) => {
     const agentId = req.user?.id as string;
-    const bookingId = req.params.bookingId as string;
+    const payload = req.body as {
+      propertyId: string;
+      visitDate: string | Date;
+      message?: string;
+    };
     const result = await paymentService.createBookingCheckoutSession(
       agentId,
-      bookingId,
+      payload,
     );
 
     sendResponse(res, {
@@ -37,6 +41,20 @@ const createPremiumCheckoutSession = catchAsync(
       statusCode: StatusCodes.OK,
       success: true,
       message: "Premium checkout session created successfully",
+      data: result,
+    });
+  },
+);
+
+const confirmCheckoutSession = catchAsync(
+  async (req: Request, res: Response) => {
+    const sessionId = req.params.sessionId as string;
+    const result = await paymentService.confirmCheckoutSession(sessionId);
+
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: "Payment session confirmed successfully",
       data: result,
     });
   },
@@ -109,6 +127,7 @@ const handleStripeWebhook = async (req: Request, res: Response) => {
 export const paymentController = {
   createBookingCheckoutSession,
   createPremiumCheckoutSession,
+  confirmCheckoutSession,
   getMyPayments,
   getPaymentSettings,
   updatePaymentSettings,

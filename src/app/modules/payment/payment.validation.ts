@@ -2,14 +2,22 @@ import * as z from "zod";
 
 export const PaymentValidation = {
   bookingCheckoutSchema: z.object({
-    params: z.object({
-      bookingId: z.string().min(1, "Booking id is required"),
+    body: z.object({
+      propertyId: z.string().min(1, "Property id is required"),
+      visitDate: z.string().pipe(z.coerce.date()),
+      message: z.string().max(500).optional(),
     }),
   }),
 
   premiumCheckoutSchema: z.object({
     params: z.object({
       propertyId: z.string().min(1, "Property id is required"),
+    }),
+  }),
+
+  confirmCheckoutSchema: z.object({
+    params: z.object({
+      sessionId: z.string().min(1, "Session id is required"),
     }),
   }),
 

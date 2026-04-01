@@ -64,10 +64,27 @@ const getAllBookings = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const removeBookingAndPayment = catchAsync(
+  async (req: Request, res: Response) => {
+    const bookingId = req.params.id as string;
+    const userId = req.user?.id as string;
+
+    await bookingService.removeBookingAndPayment(bookingId, userId);
+
+    sendResponse(res, {
+      statusCode: StatusCodes.OK,
+      success: true,
+      message: "Booking cancelled successfully",
+      data: null,
+    });
+  },
+);
+
 export const bookingController = {
   createBooking,
   getMyBookings,
   getBookingById,
   updateBookingStatus,
   getAllBookings,
+  removeBookingAndPayment,
 };

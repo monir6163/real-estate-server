@@ -240,6 +240,14 @@ const ownerBookings = async (agentId: string) => {
     orderBy: { createdAt: "desc" },
     include: {
       property: true,
+      agent: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+          phone: true,
+        },
+      },
     },
   });
   return result;

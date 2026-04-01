@@ -8,7 +8,7 @@ import { PaymentValidation } from "./payment.validation";
 const router = Router();
 
 router.post(
-  "/checkout/booking/:bookingId",
+  "/checkout/booking",
   checkAuth(Role.USER),
   validateRequest(PaymentValidation.bookingCheckoutSchema),
   paymentController.createBookingCheckoutSession,
@@ -19,6 +19,13 @@ router.post(
   checkAuth(Role.AGENT),
   validateRequest(PaymentValidation.premiumCheckoutSchema),
   paymentController.createPremiumCheckoutSession,
+);
+
+router.post(
+  "/checkout/confirm/:sessionId",
+  checkAuth(Role.USER, Role.AGENT),
+  validateRequest(PaymentValidation.confirmCheckoutSchema),
+  paymentController.confirmCheckoutSession,
 );
 
 router.get(

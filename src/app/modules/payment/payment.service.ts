@@ -2,13 +2,53 @@ import { StatusCodes } from "http-status-codes";
 import Stripe from "stripe";
 import { envConfig } from "../../../config/env";
 import { Prisma } from "../../../generated/prisma/client";
-import { PaymentPurpose, PaymentStatus } from "../../../generated/prisma/enums";
+import {
+  PaymentPurpose,
+  PaymentStatus,
+  PropertyStatus,
+  RequestStatus,
+} from "../../../generated/prisma/enums";
 import ApiError from "../../errors/ApiError";
 import { prisma } from "../../lib/prisma";
 import { stripe } from "../../lib/stripe";
 
+const ZERO_DECIMAL_CURRENCIES = new Set([
+  "bif",
+  "clp",
+  "djf",
+  "gnf",
+  "jpy",
+  "kmf",
+  "krw",
+  "mga",
+  "pyg",
+  "rwf",
+  "ugx",
+  "vnd",
+  "vuv",
+  "xaf",
+  "xof",
+  "xpf",
+]);
+
 const toInputJson = (value: unknown): Prisma.InputJsonValue => {
   return JSON.parse(JSON.stringify(value)) as Prisma.InputJsonValue;
+};
+
+const toStripeMinorAmount = (amountMajor: number, currency: string) => {
+  if (ZERO_DECIMAL_CURRENCIES.has(currency.toLowerCase())) {
+    return Math.round(amountMajor);
+  }
+
+  return Math.round(amountMajor * 100);
+};
+
+const fromStripeMinorAmount = (amountMinor: number, currency: string) => {
+  if (ZERO_DECIMAL_CURRENCIES.has(currency.toLowerCase())) {
+    return amountMinor;
+  }
+
+  return amountMinor / 100;
 };
 
 const getFallbackBookingFeeAmount = () => {
@@ -19,6 +59,17 @@ const getFallbackBookingFeeAmount = () => {
 const getFallbackPremiumFeeAmount = () => {
   const amount = Number(envConfig.PREMIUM_LISTING_FEE_AMOUNT ?? "1000");
   return Number.isFinite(amount) && amount > 0 ? amount : 1000;
+};
+
+const normalizeVisitDate = (visitDate: string | Date) => {
+  const parsedDate =
+    visitDate instanceof Date ? visitDate : new Date(String(visitDate));
+
+  if (Number.isNaN(parsedDate.getTime())) {
+    throw new ApiError(StatusCodes.BAD_REQUEST, "Invalid visit date.");
+  }
+
+  return parsedDate;
 };
 
 const getOrCreatePaymentSettings = async () => {
@@ -92,33 +143,42 @@ const updatePaymentSettings = async (payload: {
 
 const createBookingCheckoutSession = async (
   agentId: string,
-  bookingId: string,
+  payload: {
+    propertyId: string;
+    visitDate: string | Date;
+    message?: string;
+  },
 ) => {
-  const booking = await prisma.bookingRequest.findUnique({
-    where: { id: bookingId },
-    include: { property: true },
+  const visitDate = normalizeVisitDate(payload.visitDate);
+
+  const property = await prisma.property.findUnique({
+    where: { id: payload.propertyId },
   });
 
-  if (!booking) {
-    throw new ApiError(StatusCodes.NOT_FOUND, "Booking not found.");
+  if (!property) {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Property not found.");
   }
 
-  // if (booking.agentId !== agentId) {
-  //   throw new ApiError(
-  //     StatusCodes.FORBIDDEN,
-  //     "You are not allowed to pay for this booking.",
-  //   );
-  // }
+  if (property.status !== PropertyStatus.AVAILABLE) {
+    throw new ApiError(
+      StatusCodes.CONFLICT,
+      "This property is not available for booking.",
+    );
+  }
 
-  const successfulPayment = await prisma.payment.findFirst({
+  const existingBooking = await prisma.bookingRequest.findUnique({
     where: {
-      bookingId,
-      purpose: PaymentPurpose.BOOKING_FEE,
-      status: PaymentStatus.SUCCESS,
+      agentId_propertyId: {
+        agentId,
+        propertyId: payload.propertyId,
+      },
+    },
+    include: {
+      payment: true,
     },
   });
 
-  if (successfulPayment) {
+  if (existingBooking?.payment?.status === PaymentStatus.SUCCESS) {
     throw new ApiError(
       StatusCodes.CONFLICT,
       "Booking payment has already been completed.",
@@ -126,52 +186,40 @@ const createBookingCheckoutSession = async (
   }
 
   const settings = await getOrCreatePaymentSettings();
-  const amount = settings.bookingFeeAmount;
   const currency = settings.currency.toLowerCase();
+  const amountMajor = Number(property.price);
+  const amount = toStripeMinorAmount(amountMajor, currency);
+
+  if (!Number.isFinite(amountMajor) || amountMajor <= 0) {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Property price must be a positive amount.",
+    );
+  }
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
     payment_method_types: ["card"],
     success_url: `${envConfig.FRONTEND_URL.replace(/\/$/, "")}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${envConfig.FRONTEND_URL.replace(/\/$/, "")}/payment/cancel?bookingId=${booking.id}`,
+    cancel_url: `${envConfig.FRONTEND_URL.replace(/\/$/, "")}/payment/cancel?propertyId=${property.id}`,
     line_items: [
       {
         quantity: 1,
         price_data: {
           currency,
           product_data: {
-            name: `Booking fee for ${booking.property.title}`,
+            name: `Payment for ${property.title}`,
           },
-          unit_amount: Math.round(amount * 100),
+          unit_amount: amount,
         },
       },
     ],
     metadata: {
       purpose: PaymentPurpose.BOOKING_FEE,
-      bookingId: booking.id,
-      propertyId: booking.propertyId,
+      propertyId: payload.propertyId,
       agentId,
-    },
-  });
-
-  await prisma.payment.upsert({
-    where: { bookingId: booking.id },
-    update: {
-      amount,
-      purpose: PaymentPurpose.BOOKING_FEE,
-      status: PaymentStatus.PENDING,
-      transactionId: session.id,
-      gatewayResponse: toInputJson(session),
-    },
-    create: {
-      agentId,
-      propertyId: booking.propertyId,
-      bookingId: booking.id,
-      amount,
-      purpose: PaymentPurpose.BOOKING_FEE,
-      status: PaymentStatus.PENDING,
-      transactionId: session.id,
-      gatewayResponse: toInputJson(session),
+      visitDate: visitDate.toISOString(),
+      message: (payload.message ?? "").slice(0, 500),
     },
   });
 
@@ -208,7 +256,7 @@ const createPremiumCheckoutSession = async (
   }
 
   const settings = await getOrCreatePaymentSettings();
-  const amount = settings.premiumListingFeeAmount;
+  const amount = settings.premiumListingFeeAmount; // Already in cents
   const currency = settings.currency.toLowerCase();
 
   const session = await stripe.checkout.sessions.create({
@@ -224,7 +272,7 @@ const createPremiumCheckoutSession = async (
           product_data: {
             name: `Premium listing for ${property.title}`,
           },
-          unit_amount: Math.round(amount * 100),
+          unit_amount: amount,
         },
       },
     ],
@@ -256,11 +304,119 @@ const createPremiumCheckoutSession = async (
 const handleCompletedCheckoutSession = async (
   session: Stripe.Checkout.Session,
 ) => {
+  const metadata = session.metadata ?? {};
+  const purpose = metadata.purpose as PaymentPurpose | undefined;
+
   const payment = await prisma.payment.findFirst({
     where: { transactionId: session.id },
   });
 
-  if (!payment || payment.status === PaymentStatus.SUCCESS) {
+  if (payment?.status === PaymentStatus.SUCCESS) {
+    return;
+  }
+
+  if (!payment && purpose === PaymentPurpose.BOOKING_FEE) {
+    const agentId = metadata.agentId;
+    const propertyId = metadata.propertyId;
+    const visitDateRaw = metadata.visitDate;
+    const message = metadata.message || undefined;
+
+    if (!agentId || !propertyId || !visitDateRaw) {
+      return;
+    }
+
+    const visitDate = new Date(visitDateRaw);
+    if (Number.isNaN(visitDate.getTime())) {
+      return;
+    }
+
+    await prisma.$transaction(async (tx) => {
+      const property = await tx.property.findUnique({
+        where: { id: propertyId },
+      });
+
+      if (!property || property.status !== PropertyStatus.AVAILABLE) {
+        return;
+      }
+
+      const existingBooking = await tx.bookingRequest.findUnique({
+        where: {
+          agentId_propertyId: {
+            agentId,
+            propertyId,
+          },
+        },
+        include: {
+          payment: true,
+        },
+      });
+
+      if (existingBooking?.payment?.status === PaymentStatus.SUCCESS) {
+        return;
+      }
+
+      const booking =
+        existingBooking ??
+        (await tx.bookingRequest.create({
+          data: {
+            agentId,
+            propertyId,
+            visitDate,
+            message,
+            status: RequestStatus.APPROVED,
+          },
+        }));
+
+      const amountMinor = Number(session.amount_total ?? 0);
+      const sessionCurrency = (session.currency ?? "usd").toLowerCase();
+      const amount = fromStripeMinorAmount(amountMinor, sessionCurrency);
+
+      if (!existingBooking?.payment) {
+        await tx.payment.create({
+          data: {
+            agentId,
+            propertyId,
+            bookingId: booking.id,
+            amount,
+            purpose: PaymentPurpose.BOOKING_FEE,
+            status: PaymentStatus.SUCCESS,
+            transactionId: session.id,
+            gatewayResponse: toInputJson(session),
+          },
+        });
+      } else {
+        await tx.payment.update({
+          where: { id: existingBooking.payment.id },
+          data: {
+            amount,
+            status: PaymentStatus.SUCCESS,
+            transactionId: session.id,
+            gatewayResponse: toInputJson(session),
+          },
+        });
+      }
+
+      await tx.property.update({
+        where: { id: propertyId },
+        data: { status: PropertyStatus.RENTED },
+      });
+
+      await tx.bookingRequest.updateMany({
+        where: {
+          propertyId,
+          status: RequestStatus.PENDING,
+          id: { not: booking.id },
+        },
+        data: {
+          status: RequestStatus.REJECTED,
+        },
+      });
+    });
+
+    return;
+  }
+
+  if (!payment) {
     return;
   }
 
@@ -272,6 +428,29 @@ const handleCompletedCheckoutSession = async (
         gatewayResponse: toInputJson(session),
       },
     });
+
+    if (payment.purpose === PaymentPurpose.BOOKING_FEE && payment.bookingId) {
+      await tx.bookingRequest.update({
+        where: { id: payment.bookingId },
+        data: { status: RequestStatus.APPROVED },
+      });
+
+      await tx.property.update({
+        where: { id: payment.propertyId },
+        data: { status: PropertyStatus.RENTED },
+      });
+
+      await tx.bookingRequest.updateMany({
+        where: {
+          propertyId: payment.propertyId,
+          status: RequestStatus.PENDING,
+          id: { not: payment.bookingId },
+        },
+        data: {
+          status: RequestStatus.REJECTED,
+        },
+      });
+    }
 
     if (payment.purpose === PaymentPurpose.PREMIUM_LISTING) {
       await tx.property.update({
@@ -319,6 +498,34 @@ const handleStripeWebhookEvent = async (event: Stripe.Event) => {
   }
 };
 
+const confirmCheckoutSession = async (sessionId: string) => {
+  if (!sessionId) {
+    throw new ApiError(StatusCodes.BAD_REQUEST, "Session id is required.");
+  }
+
+  let session: Stripe.Checkout.Session;
+
+  try {
+    session = await stripe.checkout.sessions.retrieve(sessionId);
+  } catch {
+    throw new ApiError(StatusCodes.NOT_FOUND, "Checkout session not found.");
+  }
+
+  if (session.payment_status !== "paid") {
+    throw new ApiError(
+      StatusCodes.BAD_REQUEST,
+      "Payment is not completed for this session.",
+    );
+  }
+
+  await handleCompletedCheckoutSession(session);
+
+  return {
+    sessionId: session.id,
+    paymentStatus: session.payment_status,
+  };
+};
+
 const getMyPayments = async (agentId: string) => {
   const payments = await prisma.payment.findMany({
     where: { agentId },
@@ -346,6 +553,7 @@ export const paymentService = {
   createBookingCheckoutSession,
   createPremiumCheckoutSession,
   handleStripeWebhookEvent,
+  confirmCheckoutSession,
   getMyPayments,
   getPaymentSettings,
   updatePaymentSettings,
