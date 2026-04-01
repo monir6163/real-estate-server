@@ -1678,3 +1678,8 @@ F:\level-2-assignment\real-state-server\src\app\modules\booking\booking.service.
 → 320 await prisma.bookingRequest.update(
 Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION_REQUESTED"
 2026-04-01 13:03:47:347 error: DELETE /api/v1/bookings/d87ae38d-f3d7-4312-a030-23842315058a - 400 - 1476ms
+2026-04-01 14:46:01:461 error: POST /api/auth/sign-in/email - 401 - 3318ms
+2026-04-01 14:50:08:508 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 14:50:08:508 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 33ms
+2026-04-01 14:50:08:508 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-01 14:50:08:508 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 13ms

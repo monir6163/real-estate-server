@@ -7,6 +7,8 @@ export const propertyFilterableFields = [
   "bedrooms",
   "bathrooms",
   "location",
+  "type",
+  "listingType",
 ];
 
 export const propertyIncludeConfig: Partial<

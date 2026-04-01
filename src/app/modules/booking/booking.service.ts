@@ -127,6 +127,7 @@ const getMyBookings = async (agentId: string) => {
     where: {
       agentId,
     },
+    orderBy: { createdAt: "desc" },
     include: {
       property: true,
       payment: true,
