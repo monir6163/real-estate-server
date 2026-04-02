@@ -2077,3 +2077,5 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
   }
 ]
 2026-04-02 19:58:32:5832 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 524ms
+2026-04-02 20:12:47:1247 error: [Error Handler] Cannot set user to INACTIVE. User has active bookings.
+2026-04-02 20:12:47:1247 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 804ms
