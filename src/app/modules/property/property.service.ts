@@ -44,6 +44,11 @@ const getAllProperties = async (query: IQueryParams) => {
     .include({
       agent: true,
       propertyImages: true,
+      reviews: {
+        select: {
+          rating: true,
+        },
+      },
     })
     .dynamicInclude(propertyIncludeConfig)
     .paginate()
@@ -59,7 +64,17 @@ const getSingleProperty = async (id: string) => {
     include: {
       agent: true,
       propertyImages: true,
-      reviews: true,
+      reviews: {
+        include: {
+          agent: {
+            select: {
+              id: true,
+              name: true,
+              image: true,
+            },
+          },
+        },
+      },
     },
   });
   return result;
@@ -212,6 +227,11 @@ const getAllFeaturedProperties = async (query: IQueryParams) => {
     .include({
       agent: true,
       propertyImages: true,
+      reviews: {
+        select: {
+          rating: true,
+        },
+      },
     })
     .dynamicInclude(propertyIncludeConfig)
     .paginate()
