@@ -7999,3 +7999,235 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-02 17:46:11:4611 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 38ms
 2026-04-02 17:46:11:4611 error: [Error Handler] Unauthorized! Please log in to access this resource.
 2026-04-02 17:46:11:4611 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 8ms
+2026-04-02 17:46:59:4659 http: GET /api/auth/get-session - 200 - 7ms
+2026-04-02 17:47:16:4716 http: GET /api/auth/get-session - 200 - 4ms
+2026-04-02 17:47:23:4723 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 4201ms
+2026-04-02 17:47:24:4724 http: GET /api/v1/properties?page=1&limit=12&sortBy=createdAt&sortOrder=desc - 200 - 1015ms
+2026-04-02 17:48:20:4820 http: GET /api/auth/get-session - 200 - 11ms
+2026-04-02 17:49:54:4954 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2116ms
+2026-04-02 17:49:54:4954 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2166ms
+2026-04-02 17:49:54:4954 http: GET /api/v1/reviews - 200 - 2331ms
+2026-04-02 17:49:54:4954 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2374ms
+2026-04-02 17:49:55:4955 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 3367ms
+2026-04-02 17:49:56:4956 http: GET /api/auth/get-session - 200 - 5ms
+2026-04-02 17:49:57:4957 http: GET /api/v1/properties/featured?limit=10 - 200 - 973ms
+2026-04-02 18:02:37:237 http: GET /api/auth/get-session - 200 - 7ms
+2026-04-02 18:02:41:241 http: GET /api/auth/get-session - 200 - 13ms
+2026-04-02 18:02:41:241 http: GET /api/auth/get-session - 200 - 11ms
+2026-04-02 18:02:45:245 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 4431ms
+2026-04-02 18:02:46:246 http: GET /api/v1/properties/c893ae01-277a-4c98-ab94-76909f2bc382 - 200 - 733ms
+2026-04-02 18:02:55:255 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 523ms
+2026-04-02 18:02:56:256 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 2039ms
+2026-04-02 18:02:56:256 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2159ms
+2026-04-02 18:02:56:256 http: GET /api/v1/reviews - 200 - 2273ms
+2026-04-02 18:02:58:258 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 4096ms
+2026-04-02 18:03:00:30 http: GET /api/v1/properties/featured?limit=10 - 200 - 1200ms
+2026-04-02 18:03:00:30 http: GET /api/v1/properties/featured?limit=10 - 200 - 476ms
+2026-04-02 18:04:20:420 http: GET /api/auth/get-session - 200 - 17ms
+2026-04-02 18:09:00:90 http: GET /api/auth/get-session - 200 - 34ms
+2026-04-02 18:55:45:5545 http: GET /api/v1/reviews - 200 - 2280ms
+2026-04-02 18:55:46:5546 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 3568ms
+2026-04-02 18:55:46:5546 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 3393ms
+2026-04-02 18:55:46:5546 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 3381ms
+2026-04-02 18:55:48:5548 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 4895ms
+2026-04-02 19:50:16:5016 http: GET /api/auth/get-session - 200 - 22ms
+2026-04-02 19:50:38:5038 http: POST /api/auth/sign-in/email - 200 - 2992ms
+2026-04-02 19:50:39:5039 http: GET /api/auth/get-session - 200 - 512ms
+2026-04-02 19:50:40:5040 http: GET /api/v1/reviews - 200 - 1920ms
+2026-04-02 19:50:40:5040 http: GET /api/v1/properties?page=1&limit=1&type=COMMERCIAL - 200 - 2149ms
+2026-04-02 19:50:40:5040 http: GET /api/v1/properties?page=1&limit=1&type=HOUSE - 200 - 2169ms
+2026-04-02 19:50:40:5040 http: GET /api/v1/properties?page=1&limit=1&type=APARTMENT - 200 - 2323ms
+2026-04-02 19:50:41:5041 http: GET /api/v1/properties?page=1&limit=1&type=LAND - 200 - 3596ms
+2026-04-02 19:50:42:5042 http: GET /api/v1/properties/featured?limit=10 - 200 - 763ms
+2026-04-02 19:50:43:5043 http: GET /api/v1/properties/featured?limit=10 - 200 - 776ms
+2026-04-02 19:51:30:5130 http: GET /api/auth/get-session - 200 - 7797ms
+2026-04-02 19:52:09:529 http: GET /api/auth/get-session - 200 - 2046ms
+2026-04-02 19:52:11:5211 http: GET /api/auth/get-session - 200 - 475ms
+2026-04-02 19:52:26:5226 http: GET /api/auth/get-session - 200 - 2028ms
+2026-04-02 19:52:55:5255 http: GET /api/auth/get-session - 200 - 2040ms
+2026-04-02 19:52:59:5259 http: GET /api/auth/get-session - 200 - 521ms
+2026-04-02 19:53:01:531 http: GET /api/auth/get-session - 200 - 2054ms
+2026-04-02 19:53:02:532 http: GET /api/auth/get-session - 200 - 512ms
+2026-04-02 19:53:02:532 http: GET /api/auth/get-session - 200 - 510ms
+2026-04-02 19:53:03:533 http: GET /api/auth/get-session - 200 - 519ms
+2026-04-02 19:53:05:535 http: GET /api/v1/properties - 200 - 2443ms
+2026-04-02 19:53:06:536 http: GET /api/auth/get-session - 200 - 496ms
+2026-04-02 19:53:06:536 http: GET /api/v1/users - 200 - 744ms
+2026-04-02 19:53:07:537 http: GET /api/auth/get-session - 200 - 480ms
+2026-04-02 19:53:08:538 http: GET /api/v1/bookings/admin - 200 - 1235ms
+2026-04-02 19:53:09:539 http: GET /api/auth/get-session - 200 - 519ms
+2026-04-02 19:53:09:539 http: GET /api/auth/get-session - 200 - 502ms
+2026-04-02 19:53:10:5310 http: GET /api/v1/properties - 200 - 762ms
+2026-04-02 19:53:10:5310 http: GET /api/auth/get-session - 200 - 510ms
+2026-04-02 19:53:11:5311 http: GET /api/v1/users - 200 - 792ms
+2026-04-02 19:53:11:5311 http: GET /api/auth/get-session - 200 - 510ms
+2026-04-02 19:53:13:5313 http: GET /api/v1/bookings/admin - 200 - 1256ms
+2026-04-02 19:53:13:5313 http: GET /api/auth/get-session - 200 - 528ms
+2026-04-02 19:53:25:5325 http: GET /api/auth/get-session - 200 - 2227ms
+2026-04-02 19:53:28:5328 http: GET /api/auth/get-session - 200 - 481ms
+2026-04-02 19:53:30:5330 http: GET /api/auth/get-session - 200 - 470ms
+2026-04-02 19:53:32:5332 http: GET /api/v1/reviews - 200 - 2244ms
+2026-04-02 19:53:46:5346 http: GET /api/auth/get-session - 200 - 1882ms
+2026-04-02 19:53:48:5348 http: GET /api/auth/get-session - 200 - 477ms
+2026-04-02 19:53:52:5352 http: GET /api/v1/properties - 200 - 4346ms
+2026-04-02 19:53:53:5353 http: GET /api/auth/get-session - 200 - 510ms
+2026-04-02 19:53:53:5353 http: GET /api/v1/properties - 200 - 963ms
+2026-04-02 19:54:01:541 http: GET /api/auth/get-session - 200 - 510ms
+2026-04-02 19:54:03:543 http: GET /api/auth/get-session - 200 - 638ms
+2026-04-02 19:54:05:545 http: GET /api/v1/bookings/admin - 200 - 2641ms
+2026-04-02 19:54:06:546 http: GET /api/auth/get-session - 200 - 478ms
+2026-04-02 19:54:07:547 http: GET /api/v1/bookings/admin - 200 - 1196ms
+2026-04-02 19:54:10:5410 http: GET /api/auth/get-session - 200 - 498ms
+2026-04-02 19:54:12:5412 http: GET /api/auth/get-session - 200 - 502ms
+2026-04-02 19:54:13:5413 http: GET /api/v1/users - 200 - 992ms
+2026-04-02 19:54:13:5413 http: GET /api/auth/get-session - 200 - 498ms
+2026-04-02 19:54:14:5414 http: GET /api/v1/users - 200 - 744ms
+2026-04-02 19:57:05:575 http: GET /api/auth/get-session - 200 - 3788ms
+2026-04-02 19:57:06:576 http: GET /api/auth/get-session - 200 - 523ms
+2026-04-02 19:57:07:577 http: GET /api/auth/get-session - 200 - 516ms
+2026-04-02 19:57:08:578 http: GET /api/v1/users - 200 - 809ms
+2026-04-02 19:57:20:5720 http: GET /api/auth/get-session - 200 - 2049ms
+2026-04-02 19:57:21:5721 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:57:21:5721 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 819ms
+2026-04-02 19:57:24:5724 http: GET /api/auth/get-session - 200 - 530ms
+2026-04-02 19:57:25:5725 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:57:25:5725 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 553ms
+2026-04-02 19:58:03:583 http: GET /api/auth/get-session - 200 - 2281ms
+2026-04-02 19:58:03:583 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:03:583 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 502ms
+2026-04-02 19:58:05:585 http: GET /api/auth/get-session - 200 - 481ms
+2026-04-02 19:58:06:586 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:06:586 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 476ms
+2026-04-02 19:58:09:589 http: GET /api/auth/get-session - 200 - 478ms
+2026-04-02 19:58:09:589 http: GET /api/auth/get-session - 200 - 477ms
+2026-04-02 19:58:11:5811 http: GET /api/auth/get-session - 200 - 476ms
+2026-04-02 19:58:12:5812 http: GET /api/v1/users - 200 - 960ms
+2026-04-02 19:58:15:5815 http: GET /api/auth/get-session - 200 - 473ms
+2026-04-02 19:58:16:5816 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:16:5816 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 473ms
+2026-04-02 19:58:31:5831 http: GET /api/auth/get-session - 200 - 2211ms
+2026-04-02 19:58:32:5832 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:32:5832 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 524ms
+2026-04-02 20:01:26:126 http: GET /api/auth/get-session - 200 - 2452ms
+2026-04-02 20:01:27:127 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 1172ms
+2026-04-02 20:01:29:129 http: GET /api/auth/get-session - 200 - 1651ms
+2026-04-02 20:01:31:131 http: GET /api/v1/users - 200 - 2529ms
+2026-04-02 20:02:08:28 http: GET /api/auth/get-session - 200 - 5094ms
+2026-04-02 20:02:10:210 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 2786ms
+2026-04-02 20:02:12:212 http: GET /api/auth/get-session - 200 - 1569ms
+2026-04-02 20:02:14:214 http: GET /api/v1/users - 200 - 1569ms
+2026-04-02 20:03:02:32 http: GET /api/auth/get-session - 200 - 2416ms
+2026-04-02 20:03:02:32 http: GET /api/auth/get-session - 200 - 524ms
+2026-04-02 20:03:04:34 http: GET /api/auth/get-session - 200 - 1820ms
+2026-04-02 20:03:08:38 http: GET /api/auth/get-session - 200 - 542ms
+2026-04-02 20:03:10:310 http: GET /api/auth/get-session - 200 - 525ms
+2026-04-02 20:03:11:311 http: GET /api/auth/get-session - 200 - 550ms
+2026-04-02 20:03:12:312 http: GET /api/v1/users - 200 - 803ms
+2026-04-02 20:03:12:312 http: GET /api/auth/get-session - 200 - 538ms
+2026-04-02 20:03:13:313 http: GET /api/auth/get-session - 200 - 521ms
+2026-04-02 20:03:14:314 http: GET /api/v1/properties - 200 - 5602ms
+2026-04-02 20:03:14:314 http: GET /api/auth/get-session - 200 - 519ms
+2026-04-02 20:03:14:314 http: GET /api/v1/bookings/admin - 200 - 1338ms
+2026-04-02 20:03:15:315 http: GET /api/auth/get-session - 200 - 491ms
+2026-04-02 20:03:15:315 http: GET /api/v1/users - 200 - 891ms
+2026-04-02 20:03:16:316 http: GET /api/v1/users - 200 - 719ms
+2026-04-02 20:03:23:323 http: GET /api/auth/get-session - 200 - 486ms
+2026-04-02 20:03:23:323 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 963ms
+2026-04-02 20:03:24:324 http: GET /api/auth/get-session - 200 - 467ms
+2026-04-02 20:03:25:325 http: GET /api/v1/users - 200 - 705ms
+2026-04-02 20:08:05:85 http: GET /api/auth/get-session - 200 - 12584ms
+2026-04-02 20:08:06:86 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 1762ms
+2026-04-02 20:08:10:810 http: GET /api/auth/get-session - 200 - 3171ms
+2026-04-02 20:08:12:812 http: GET /api/v1/users - 200 - 2588ms
+2026-04-02 20:09:56:956 http: GET /api/auth/get-session - 200 - 2773ms
+2026-04-02 20:09:57:957 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 1048ms
+2026-04-02 20:09:57:957 http: GET /api/auth/get-session - 200 - 526ms
+2026-04-02 20:09:58:958 http: GET /api/v1/users - 200 - 777ms
+2026-04-02 20:11:01:111 http: GET /api/auth/get-session - 200 - 3296ms
+2026-04-02 20:11:04:114 http: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 200 - 2644ms
+2026-04-02 20:11:06:116 http: GET /api/auth/get-session - 200 - 1866ms
+2026-04-02 20:11:07:117 http: GET /api/v1/users - 200 - 1048ms

@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
+import { Role } from "../../../generated/prisma/enums";
 import catchAsync from "../../shared/catchAsync";
 import sendResponse from "../../shared/sendResponse";
 import { reviewService } from "./review.service";
@@ -61,7 +62,8 @@ const updateReview = catchAsync(async (req: Request, res: Response) => {
 const deleteReview = catchAsync(async (req: Request, res: Response) => {
   const reviewId = req.params.id as string;
   const agentId = req.user?.id as string;
-  await reviewService.deleteReview(reviewId, agentId);
+  const requesterRole = req.user?.role as Role;
+  await reviewService.deleteReview(reviewId, agentId, requesterRole);
 
   sendResponse(res, {
     statusCode: StatusCodes.NO_CONTENT,

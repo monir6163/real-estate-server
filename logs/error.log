@@ -1981,3 +1981,99 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-02 17:46:11:4611 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 38ms
 2026-04-02 17:46:11:4611 error: [Error Handler] Unauthorized! Please log in to access this resource.
 2026-04-02 17:46:11:4611 error: GET /api/v1/reviews/my-reviews/5140d69c-f1ed-48d2-b49e-36a9cd19078e - 401 - 8ms
+2026-04-02 19:57:21:5721 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:57:21:5721 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 819ms
+2026-04-02 19:57:25:5725 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:57:25:5725 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 553ms
+2026-04-02 19:58:03:583 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:03:583 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 502ms
+2026-04-02 19:58:06:586 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:06:586 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 476ms
+2026-04-02 19:58:16:5816 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:16:5816 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 473ms
+2026-04-02 19:58:32:5832 error: [Error Handler] [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ADMIN",
+      "AGENT",
+      "USER"
+    ],
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"ADMIN\"|\"AGENT\"|\"USER\""
+  }
+]
+2026-04-02 19:58:32:5832 error: PATCH /api/v1/users/2TsuCkx7KArjDdCpKyjI7SYHBpdtHCe6 - 400 - 524ms

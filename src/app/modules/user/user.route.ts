@@ -12,7 +12,7 @@ router.get("/", checkAuth(Role.ADMIN), userController.getAllUsers);
 router.patch(
   "/:id",
   checkAuth(Role.ADMIN),
-  validateRequest(UserValidation.updateRoleSchema),
+  // validateRequest(UserValidation.updateRoleSchema),
   userController.updateUserStatus,
 );
 

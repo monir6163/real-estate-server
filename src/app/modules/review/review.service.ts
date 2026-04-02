@@ -1,4 +1,5 @@
 import { StatusCodes } from "http-status-codes";
+import { Role } from "../../../generated/prisma/enums";
 import ApiError from "../../errors/ApiError";
 import { prisma } from "../../lib/prisma";
 import { IReview } from "./review.interface";
@@ -102,7 +103,7 @@ const updateReview = async (
   return review;
 };
 
-const deleteReview = async (id: string, agentId: string) => {
+const deleteReview = async (id: string, agentId: string, role: Role) => {
   const existingReview = await prisma.review.findUnique({
     where: { id },
   });
@@ -111,7 +112,7 @@ const deleteReview = async (id: string, agentId: string) => {
     throw new ApiError(StatusCodes.NOT_FOUND, "Review not found.");
   }
 
-  if (existingReview.agentId !== agentId) {
+  if (role !== Role.ADMIN && existingReview.agentId !== agentId) {
     throw new ApiError(
       StatusCodes.FORBIDDEN,
       "You are not authorized to delete this review.",
