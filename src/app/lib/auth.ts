@@ -1,7 +1,7 @@
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { APIError, createAuthMiddleware } from "better-auth/api";
-import { emailOTP } from "better-auth/plugins";
+import { emailOTP, lastLoginMethod } from "better-auth/plugins";
 import { StatusCodes } from "http-status-codes";
 import { Role, UserStatus } from "../../generated/prisma/enums";
 import { sendEmail } from "./mailService";
@@ -102,6 +102,7 @@ export const auth = betterAuth({
       expiresIn: 2 * 60, // 2 minutes
       otpLength: 6,
     }),
+    lastLoginMethod(),
   ],
 
   hooks: {
