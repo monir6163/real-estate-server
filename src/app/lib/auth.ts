@@ -126,6 +126,18 @@ export const auth = betterAuth({
           });
         }
       }
+      if (ctx.path === "/sign-in/google") {
+        const { email } = ctx.body;
+        const user = await prisma.user.findUnique({
+          where: { email },
+        });
+        if (user && user.status === UserStatus.INACTIVE) {
+          throw new APIError("BAD_REQUEST", {
+            message: "Your account is inactive. Please contact support.",
+            statusCode: StatusCodes.BAD_REQUEST,
+          });
+        }
+      }
     }),
   },
 
