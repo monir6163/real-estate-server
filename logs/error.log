@@ -2083,3 +2083,4 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-02 20:52:21:5221 error: GET /api/v1/reviews/my-reviews/9a396092-6e61-460f-897e-5b687b2e2965 - 403 - 1795ms
 2026-04-02 20:52:23:5223 error: [Error Handler] Access Forbidden! You don't have permission.
 2026-04-02 20:52:23:5223 error: GET /api/v1/reviews/my-reviews/9a396092-6e61-460f-897e-5b687b2e2965 - 403 - 1559ms
+2026-04-05 12:35:16:3516 error: POST /api/auth/sign-in/email - 401 - 2767ms
