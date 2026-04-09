@@ -28,6 +28,8 @@ interface EnvConfig {
   };
   GOOGLE_CLIENT_ID: string;
   GOOGLE_CLIENT_SECRET: string;
+  OPENAI_API_KEY?: string;
+  GEMINI_API_KEY?: string;
 }
 
 const loadEnv = (): EnvConfig => {
@@ -51,6 +53,8 @@ const loadEnv = (): EnvConfig => {
     "CLOUDINARY_API_SECRET",
     "GOOGLE_CLIENT_ID",
     "GOOGLE_CLIENT_SECRET",
+    // Note: OPENAI_API_KEY and GEMINI_API_KEY are optional
+    // At least one AI provider key should be available
   ];
 
   for (const varName of requiredEnvVars) {
@@ -59,6 +63,13 @@ const loadEnv = (): EnvConfig => {
         `Environment variable ${varName} is required but not defined.`,
       );
     }
+  }
+
+  // Check that at least one AI provider is configured
+  if (!process.env.OPENAI_API_KEY && !process.env.GEMINI_API_KEY) {
+    console.warn(
+      "⚠️  WARNING: Neither OPENAI_API_KEY nor GEMINI_API_KEY is configured. AI chat features will not work.",
+    );
   }
 
   return {
@@ -87,6 +98,8 @@ const loadEnv = (): EnvConfig => {
     },
     GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID as string,
     GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET as string,
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY,
   };
 };
 

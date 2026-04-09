@@ -2084,3 +2084,17 @@ Invalid input value: invalid input value for enum "RequestStatus": "CANCELLATION
 2026-04-02 20:52:23:5223 error: [Error Handler] Access Forbidden! You don't have permission.
 2026-04-02 20:52:23:5223 error: GET /api/v1/reviews/my-reviews/9a396092-6e61-460f-897e-5b687b2e2965 - 403 - 1559ms
 2026-04-05 12:35:16:3516 error: POST /api/auth/sign-in/email - 401 - 2767ms
+2026-04-08 14:58:32:5832 error: POST /api/auth/sign-in/email - 401 - 3845ms
+2026-04-08 15:26:29:2629 error: POST /api/auth/sign-in/email - 401 - 4061ms
+2026-04-08 15:37:41:3741 error: GET /api/v1/properties/search/suggestions?searchTerm=Commercial+&limit=8 - 404 - 2ms
+2026-04-08 15:37:45:3745 error: GET /api/v1/properties/search/suggestions?searchTerm=Commercial&limit=8 - 404 - 1ms
+2026-04-08 15:38:10:3810 error: GET /api/v1/properties/search/suggestions?searchTerm=office&limit=8 - 404 - 1ms
+2026-04-08 19:23:01:231 error: GET /api/auth/get-session - 500 - 12181ms
+2026-04-08 19:24:37:2437 error: GET /api/auth/get-session - 500 - 95951ms
+2026-04-09 11:37:52:3752 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-09 11:37:52:3752 error: POST /api/v1/chat/stream - 401 - 123ms
+2026-04-09 11:38:12:3812 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-09 11:38:12:3812 error: POST /api/v1/chat/stream - 401 - 5ms
+2026-04-09 11:42:02:422 error: [Error Handler] Unauthorized! Please log in to access this resource.
+2026-04-09 11:42:02:422 error: POST /api/v1/chat/stream - 401 - 24ms
+2026-04-09 12:02:41:241 error: POST /api/v1/chat/feedback - 400 - 574ms
