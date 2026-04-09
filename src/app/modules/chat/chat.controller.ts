@@ -4,6 +4,8 @@ import { StatusCodes } from "http-status-codes";
 import { prisma } from "../../lib/prisma";
 import catchAsync from "../../shared/catchAsync";
 import sendResponse from "../../shared/sendResponse";
+import { fetchUserContextData, formatContextForPrompt } from "./chat.context";
+import { formatPropertiesForChat, searchProperties } from "./chat.search";
 import {
   getChatHistory,
   saveChatFeedback,
@@ -51,6 +53,78 @@ const streamChatHandler = catchAsync(async (req: Request, res: Response) => {
     });
   }
 
+  // Fetch enriched user context data
+  const enrichedContext = await fetchUserContextData(userId, user.role);
+  let contextFormatted = formatContextForPrompt(enrichedContext);
+
+  // Check if user is asking about properties - search database
+  const lastUserMessage = messages[messages.length - 1];
+  let hasSearchResults = false;
+
+  if (lastUserMessage?.role === "user") {
+    const userQuery = lastUserMessage.content.toLowerCase();
+    console.log("📨 User query:", userQuery);
+
+    // Keywords that suggest a property search
+    const searchKeywords = [
+      "property",
+      "flat",
+      "apartment",
+      "house",
+      "villa",
+      "price",
+      "location",
+      "rent",
+      "খোঁজ",
+      "প্রপার্টি",
+      "ফ্ল্যাট",
+      "বাড়ি",
+      "দাম",
+      "এলাকা",
+      "ঘর",
+    ];
+
+    const isPropertySearch = searchKeywords.some((keyword) =>
+      userQuery.includes(keyword),
+    );
+
+    console.log("🔎 Is property search?", isPropertySearch);
+
+    if (isPropertySearch && userQuery.length > 2) {
+      try {
+        console.log("🔍 SEARCHING PROPERTIES FOR:", userQuery);
+        const searchedProperties = await searchProperties(userQuery, 2);
+        console.log(
+          "📊 Search returned:",
+          searchedProperties?.length,
+          "properties",
+        );
+
+        if (searchedProperties && searchedProperties.length > 0) {
+          console.log("✅ FOUND PROPERTIES:", searchedProperties);
+          hasSearchResults = true;
+          const propertyInfo = formatPropertiesForChat(searchedProperties);
+          console.log("📄 Formatted property info:", propertyInfo);
+          // Limit property info to avoid payload issues
+          const limitedInfo = propertyInfo.substring(0, 350);
+          contextFormatted += `\n\n**DATABASE SEARCH RESULTS:**\n${limitedInfo}`;
+        } else {
+          console.log("❌ NO PROPERTIES FOUND IN DATABASE");
+        }
+      } catch (error) {
+        console.error("❌ Property search error:", error);
+      }
+    }
+  }
+
+  console.log(
+    "✓ Context formatted (length:",
+    contextFormatted.length,
+    ", results:",
+    hasSearchResults,
+    ")",
+  );
+
   // Set up streaming response
   res.setHeader("Content-Type", "text/event-stream");
   res.setHeader("Cache-Control", "no-cache");
@@ -59,9 +133,31 @@ const streamChatHandler = catchAsync(async (req: Request, res: Response) => {
 
   try {
     const messageId = randomUUID();
+
+    // Limit context size to prevent payload issues
+    const MAX_CONTEXT_LENGTH = 1000;
+    const trimmedContext = contextFormatted.substring(0, MAX_CONTEXT_LENGTH);
+
+    console.log(
+      "📝 Starting chat stream with context length:",
+      trimmedContext.length,
+    );
+
     const stream = await streamChat(messages, {
       userRole: userRole || user.role,
+      propertyCount: enrichedContext.propertyCount,
+      bookingCount: enrichedContext.bookingCount,
+      userProperties: enrichedContext.userProperties,
+      userBookings: enrichedContext.userBookings,
+      totalReviews: enrichedContext.totalReviews,
+      contextFormatted: trimmedContext,
     });
+
+    if (!stream) {
+      throw new Error("Stream is null or undefined");
+    }
+
+    console.log("✅ Stream received, starting to parse chunks");
 
     let fullResponse = "";
 
@@ -79,6 +175,8 @@ const streamChatHandler = catchAsync(async (req: Request, res: Response) => {
     );
     res.end();
 
+    console.log("✅ Stream completed successfully");
+
     // Save chat message asynchronously (don't wait for it)
     const lastUserMessage = messages[messages.length - 1];
     if (lastUserMessage?.role === "user") {
@@ -90,9 +188,10 @@ const streamChatHandler = catchAsync(async (req: Request, res: Response) => {
       }).catch((err) => console.error("Failed to save chat message:", err));
     }
   } catch (error) {
-    console.error("Stream error:", error);
+    console.error("❌ Stream error:", error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
     res.write(
-      `data: ${JSON.stringify({ error: "Failed to generate response" })}\n\n`,
+      `data: ${JSON.stringify({ error: "Failed to generate response. " + errorMessage })}\n\n`,
     );
     res.end();
   }
@@ -175,4 +274,60 @@ const getChatHistoryHandler = catchAsync(
   },
 );
 
-export { getChatHistoryHandler, saveChatFeedbackHandler, streamChatHandler };
+/**
+ * Test endpoint - debug database properties
+ * GET /api/v1/chat/test/properties
+ */
+const testPropertiesHandler = catchAsync(
+  async (req: Request, res: Response) => {
+    const { search } = req.query;
+
+    try {
+      if (search) {
+        console.log("🔍 TEST SEARCH FOR:", search);
+        const results = await searchProperties(String(search), 10);
+        return sendResponse(res, {
+          statusCode: StatusCodes.OK,
+          success: true,
+          message: `Found ${results.length} properties`,
+          data: results,
+        });
+      }
+
+      // Get all properties
+      const allProperties = await prisma.property.findMany({
+        select: {
+          id: true,
+          title: true,
+          location: true,
+          price: true,
+          type: true,
+          bedrooms: true,
+          bathrooms: true,
+        },
+        take: 20,
+      });
+
+      return sendResponse(res, {
+        statusCode: StatusCodes.OK,
+        success: true,
+        message: `Found ${allProperties.length} total properties`,
+        data: allProperties,
+      });
+    } catch (error) {
+      console.error("Test handler error:", error);
+      return sendResponse(res, {
+        statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
+        success: false,
+        message: "Error fetching properties",
+      });
+    }
+  },
+);
+
+export {
+  getChatHistoryHandler,
+  saveChatFeedbackHandler,
+  streamChatHandler,
+  testPropertiesHandler,
+};
